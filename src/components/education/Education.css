@@ -1,0 +1,70 @@
+.education-rows {
+  width: 80%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education-row {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.edu-name-box,
+.edu-desc-box {
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.51);
+  background-color: rgba(255, 255, 255, 0.03);
+  display: flex;
+  align-items: center;
+}
+
+.edu-name-box {
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;   /* ✅ this stacks name + year vertically */
+  justify-content: flex-start;
+  align-items: flex-start;  /* ✅ aligns text to the left */
+}
+
+
+.edu-desc-box {
+  flex: 1;
+}
+
+.edu-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.edu-year {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 0.3rem;
+}
+
+.edu-desc {
+  font-size: 1rem;
+}
+
+#education {
+  scroll-margin-top: 10rem; /* adjust as needed (e.g. 8rem for larger navs) */
+}
+
+
+@media (max-width: 768px) {
+  .education-row {
+    flex-direction: column;
+    margin-bottom: 50rem; /* or more/less depending on how much space you want */
+    
+  }
+
+  .edu-name-box,
+  .edu-desc-box {
+    width: 100%;
+  }
+}

@@ -1,0 +1,65 @@
+.workexperience {
+  width: 80%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.work-row {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 1.5rem;
+}
+
+.work-left {
+  min-width: 200px;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.work-company {
+  font-size: 1.2rem;
+}
+
+.work-year {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 0.3rem;
+}
+
+.work-right {
+  flex: 1;
+  padding-top: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.work-role {
+  font-size: 1rem;
+}
+
+#workexperience {
+  scroll-margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .work-row {
+    flex-direction: column;
+  }
+
+  .work-left,
+  .work-right {
+    width: 100%;
+  }
+}

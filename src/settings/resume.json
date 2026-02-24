@@ -1,0 +1,133 @@
+{
+    "basics": {
+        "name": "Atousa Garousian",
+        "label": "Game Developer & 3D Modeler",
+        "email": "atousa.garousian@gmail.com",
+        "phone": "(XXX) XXX-XXXX",
+        "picture": "mt.png",
+        "x_title": "Hello, I'm",
+        "job1": "Game Developer",
+        "job2": "3D Modeler",
+        "description": "Hello! I'm Atousa! Your game development enthusiast. Always down for something new and challenging!",
+        "summary": "based in Hagenberg, Austria",
+        "keywords": "personal,website,portfolio,template,kit,atousa,garousian,github,linkedin,google,gitlab,telegram,material",
+        "url": "https://taniyow.vercel.app/",
+        "location": {
+            "address": "XX XXXXXstreet",
+            "postalCode": "XXXXX",
+            "city": "Hagenberg",
+            "country": "Austria",
+            "countryCode": "AT",
+            "region": "Upper Austria"
+        },
+        "profiles": [
+            {
+                "network": "Google",
+                "username": "atousa.garousian@gmail.com",
+                "url": "mailto:atousa.garousian@gmail.com",
+                "x_icon": "fab fa-google"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "atousa-garousian",
+                "url": "https://www.linkedin.com/in/atousa-garousian/",
+                "x_icon": "fab fa-linkedin-in"
+            },
+            {
+                "network": "GitHub",
+                "username": "Atousa98",
+                "url": "https://github.com/Atousa98",
+                "x_icon": "fab fa-github"
+            },
+            {
+                "network": "Telegram",
+                "username": "atousasque",
+                "url": "https://t.me/atousasque",
+                "x_icon": "fab fa-telegram-plane"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Company",
+            "position": "President",
+            "website": "http://company.com",
+            "startDate": "2013-01-01",
+            "endDate": "2014-01-01",
+            "summary": "Description...",
+            "highlights": ["Started the company"]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Organization",
+            "position": "Volunteer",
+            "website": "http://organization.com/",
+            "startDate": "2012-01-01",
+            "endDate": "2013-01-01",
+            "summary": "Description...",
+            "highlights": ["Awarded 'Volunteer of the Month'"]
+        }
+    ],
+    "education": [
+        {
+            "institution": "University",
+            "area": "Software Development",
+            "studyType": "Bachelor",
+            "startDate": "2011-01-01",
+            "endDate": "2013-01-01",
+            "gpa": "4.0",
+            "courses": ["DB1101 - Basic SQL"]
+        }
+    ],
+    "awards": [
+        {
+            "title": "Award",
+            "date": "2014-11-01",
+            "awarder": "Company",
+            "summary": "There is no spoon."
+        }
+    ],
+    "publications": [
+        {
+            "name": "Publication",
+            "publisher": "Company",
+            "releaseDate": "2014-10-01",
+            "website": "http://publication.com",
+            "summary": "Description..."
+        }
+    ],
+    "skills": [
+        {
+            "name": "Game Development",
+            "level": "Master",
+            "keywords": ["Blender", "Unity", "XR"]
+        }
+    ],
+    "languages": [
+        {
+            "language": "German",
+            "fluency": "Good knowledge"
+        },
+        {
+            "language": "English",
+            "fluency": "Fluent speaker"
+        },
+        {
+            "language": "Persian",
+            "fluency": "Native Speaker"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Wildlife",
+            "keywords": ["Ferrets", "Unicorns"]
+        }
+    ],
+    "references": [
+        {
+            "name": "Jane Doe",
+            "reference": "Reference..."
+        }
+    ]
+}
