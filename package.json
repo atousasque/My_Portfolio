@@ -1,6 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
+  "private": true,
   "homepage": "https://atousasque.github.io/My_Portfolio",
   "description": "A clean and customizable ReactJS portfolio template for fellow developers. Credits to Jo Lienhoop!",
   "repository": "https://github.com/Atousa98/My_Portfolio",
@@ -57,22 +58,4 @@
     "emailjs": "^4.0.0",
     "gh-pages": "^6.3.0"
   }
-}
-{
-  "name": "react-portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://atousasque.github.io/My_Portfolio",
-  "dependencies": {
-    ...
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  ...
 }
