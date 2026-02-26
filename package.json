@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://atousasque.github.io/My_Portfolio",
   "description": "A clean and customizable ReactJS portfolio template for fellow developers. Credits to Jo Lienhoop!",
-  "repository": "https://github.com/Atousa98/My_Portfolio",
+  "repository": "https://github.com/atousasque/My_Portfolio",
   "author": "Atousa Garousian <atousa.garousian@gmail.com>",
   "license": "MIT",
   "dependencies": {

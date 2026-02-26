@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutme = `I’m a 26-year-old game developer and 3D artist with a passion for crafting immersive worlds and interactive stories. Originally from Iran and now based in Austria, I combine a background in Computer Engineering with a Master’s in Interactive Media to bridge creativity and technology.
+  const aboutme = `I’m a 27-year-old Game/XR Developer and 3D artist with a passion for crafting immersive worlds and interactive stories. Originally from Iran and now based in Austria, I combine a background in Computer Engineering with a Master’s in Interactive Media to bridge creativity and technology.
 
 From sculpting characters in Blender to building XR experiences in Unreal and Unity, I thrive at the intersection of art and code. I’m fluent in C++, C#, and Python, and bring strong design skills through tools like Photoshop, After Effects, and Premiere. My work spans AR, VR, and MR, always focused on emotion, atmosphere, and engagement.
 

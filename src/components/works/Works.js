@@ -11,6 +11,7 @@ import './Works.css';
 // import Fishing from '../../assets/recentprojects/FishingSimulator.mp4';
 // import Shooter from '../../assets/recentprojects/MultiplayerShooter.mp4';
 // import AfterEffect from '../../assets/recentprojects/AFterEffect.mp4';
+// import Blender3 from '../../assets/recentprojects/Blender3.mp4';
 
 const useStyles = makeStyles(() => ({
   main: {
@@ -48,9 +49,9 @@ const projects = [
     id: 1,
     title: 'LongDrive',
     description: `LongDrive is a semi-autonomous driving simulation built in Unity, based on Austria's real highway network. I co-developed the game systems and created the terrain and environment.`,
-    video: "https://github.com/Atousa98/My_Portfolio/releases/download/v1.1/LongDrive.mp4",
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.0.0/LongDrive.mp4",
     modal: {
-      image: "https://github.com/Atousa98/My_Portfolio/releases/download/v2.0/LongDrive.jpg",  // Make sure this exists in public/images/
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.1.1/LongDrive.jpg",  // Make sure this exists in public/images/
       content: (
         <>
           <p>
@@ -85,9 +86,9 @@ const projects = [
     id: 2,
     title: 'LongDrive: Extended',
     description: `LongDrive: Extended is the finalized version of our semi-autonomous highway driving simulator. It introduces infotainment-based in-car tasks and G29 steering wheel support.`,
-    video: "https://github.com/Atousa98/My_Portfolio/releases/download/v1.2/LongDrive2.mp4",
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.1.0/LongDrive2.mp4",
     modal: {
-      image: "https://github.com/Atousa98/My_Portfolio/releases/download/v2.1/Extended.jpg", // Replace with your actual modal image if any
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.2.1/Extended.jpg", // Replace with your actual modal image if any
       content: (
         <>
           <p>
@@ -116,11 +117,45 @@ const projects = [
     }
   },
 
-  { 
+  {
     id: 3,
+    title: 'ReWild - Mixed Reality Ecosystem',
+    description: `An interactive MR experience for the Ars Electronica Festival, allowing users to grow and nurture a digital ecosystem into physical space.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.9.0/ReWild.mp4",
+modal: {
+    //image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.0.0/ReWild_Modal.jpg", // Replace with your actual modal image if any
+    content: (
+      <>
+        <p>
+          <strong>🌿ReWild</strong> is an immersive Mixed Reality (MR) experience showcased at the prestigious Ars Electronica Center festival. 
+          The project empowers users to become digital gardeners, transforming physical spaces into thriving, interactive ecosystems.
+        </p>
+        <p><strong>Key features include:</strong></p>
+        <ul>
+          <li>Interactive MR mechanics allowing users to plant seeds and physically simulate watering them</li>
+          <li>Dynamic environmental growth, evolving from bare ground into lush meadows or dense jungles based on user choices</li>
+          <li>An ecosystem simulation where various animals dynamically populate the environments as they grow</li>
+          <li>Seamless blending of digital flora and fauna with the real-world exhibition space</li>
+        </ul>
+        <p>
+          As the Unreal Engine Developer, my core contributions focused on engineering the gameplay loop and interaction mechanics. I programmed the complex growth logic for the environments, built the planting and watering systems, and managed the Mixed Reality integration to ensure a smooth user experience, while collaborating with team members who handled the 3D animation and sound design.
+        </p>
+        <p>
+          <strong>Tech stack:</strong> Unreal Engine, Mixed Reality (MR/XR) Frameworks, Blueprints / C++.
+        </p>
+        <p>
+            🔒 This project is part of an academic study on driver distraction and trust in automation. Repository access is private.
+        </p>
+      </>
+    )
+  }
+  },
+
+  { 
+    id: 4,
     title: 'Fishing Simulator', 
     description: `A VR-ready Unity simulation recreating a peaceful fishing experience with natural terrain and immersive audio-visual design.`,
-    video: "https://github.com/Atousa98/My_Portfolio/releases/download/v1.6/FishingSimulator.mp4",
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.2.0/FishingSimulator.mp4",
     modal: {
       content: (
         <>
@@ -143,12 +178,12 @@ const projects = [
     }
   },
   {
-    id: 4,
+    id: 5,
     title: 'Recoil Rumble',
     description: `Recoil Rumble is a fast-paced, retro-style multiplayer FPS with powerful knockback mechanics and stylized visuals.`,
-    video: "https://github.com/Atousa98/My_Portfolio/releases/download/v1.5/MultiplayerShooter.mp4",
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.3.0/MultiplayerShooter.mp4",
     modal: {
-      image: "https://github.com/Atousa98/My_Portfolio/releases/download/v2.3/Recoil.jpg", // Replace with your actual modal image if any
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.3.1/Recoil.jpg", // Replace with your actual modal image if any
       content: (
         <>
           <p>
@@ -177,26 +212,40 @@ const projects = [
     }
   },  
   { 
-    id: 5,
+    id: 6,
     title: 'Blender Project 1', 
     description: `Designed and modeled a detailed interior filled with books, furniture, and decor. The camera rotates around the space to reveal different angles, emphasizing depth and layout. Applied custom textures to all assets, including wood, fabric, and paper materials. Focused on composition, lighting, and scene storytelling through asset placement and animation.`,
     alter: 'Blender Project 1',
-    video: "https://github.com/Atousa98/My_Portfolio/releases/download/v1.4/Blender2.mp4"
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.4.0/Blender2.mp4"
   },
   { 
-    id: 6,
+    id: 7,
     title: 'Blender Project 2', 
     description: `Created a detailed snow globe scene featuring a snowy cabin, Christmas tree, and snowman. Modeled all assets from scratch, applied custom shaders, and set up lighting for a cozy winter feel. Used rigid body physics to animate falling snowballs and a collapsing tree when the globe rotates. The project involved keyframe animation, material setup, and physics simulation within Blender.`,
     alter: 'Blender Project 2',
-    video: "https://github.com/Atousa98/My_Portfolio/releases/download/v1.3/Blender1.mp4"
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.5.0/Blender1.mp4"
+  },
+  { 
+    id: 8,
+    title: 'Blender Project 3', 
+    //description: `Created a detailed snow globe scene featuring a snowy cabin, Christmas tree, and snowman. Modeled all assets from scratch, applied custom shaders, and set up lighting for a cozy winter feel. Used rigid body physics to animate falling snowballs and a collapsing tree when the globe rotates. The project involved keyframe animation, material setup, and physics simulation within Blender.`,
+    alter: 'Blender Project 3',
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.7.0/Blender3.mp4"
+  },
+  { 
+    id: 9,
+    title: 'Blender Project 4', 
+    //description: `Created a detailed snow globe scene featuring a snowy cabin, Christmas tree, and snowman. Modeled all assets from scratch, applied custom shaders, and set up lighting for a cozy winter feel. Used rigid body physics to animate falling snowballs and a collapsing tree when the globe rotates. The project involved keyframe animation, material setup, and physics simulation within Blender.`,
+    alter: 'Blender Project 4',
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.8.0/Blender4.mp4"
   },
   {
-    id: 7,
+    id: 10,
     title: 'Logo Animation',
     description: `Animated logo and social content for a company’s branding, covering motion graphics, reels, and Instagram strategy.`,
-    video: "https://github.com/Atousa98/My_Portfolio/releases/download/v1.0/AfterEffect.mp4",
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.6.0/AFterEffect.mp4",
     modal: {
-      image: "https://github.com/Atousa98/My_Portfolio/releases/download/v2.2/Motion.jpg", // Add this image to your public folder
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.6.1/Motion.jpg", // Add this image to your public folder
       content: (
         <>
           <p>

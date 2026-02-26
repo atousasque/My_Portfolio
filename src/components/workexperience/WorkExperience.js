@@ -15,12 +15,12 @@ const useStyles = makeStyles(() => ({
 const workData = [
   {
     company: "FH Upper Austria",
-    year: "2025 – Present",
-    role: "Tutor — Working as a teacher's assistant in the field of OO programming and Graphics."
+    year: "March 2025 – February 2026",
+    role: "Tutor — Working as a teacher's assistant in the fields of: OO programming and Graphics, Games with a Purpose, Intelligent Systems, and Hypermedia Systems and Architecture."
   },
   {
     company: "Hegenberg Embedded System Lab",
-    year: "2024 – Present",
+    year: "May 2024 – June 2025",
     role: "Python/C# Developer — Working in a team as a Python/C# developer and researcher."
   },
   {
@@ -30,7 +30,7 @@ const workData = [
   },
   {
     company: "Cafedeep Company",
-    year: "2018 – 2023",
+    year: "2020 – 2023",
     role: "Artificial Intelligence Expert — Worked as an Artificial Intelligence researcher and content creator."
   },
   {
