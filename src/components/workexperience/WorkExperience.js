@@ -16,7 +16,7 @@ const workData = [
   {
     company: "FH Upper Austria",
     year: "March 2025 – February 2026",
-    role: "Tutor — Working as a teacher's assistant in the fields of: OO programming and Graphics, Games with a Purpose, Intelligent Systems, and Hypermedia Systems and Architecture."
+    role: "Tutor — Working as a teacher's assistant in the fields of: Mixed Reality, OO programming and Graphics, Games with a Purpose, Intelligent Systems, and Hypermedia Systems and Architecture."
   },
   {
     company: "Hegenberg Embedded System Lab",

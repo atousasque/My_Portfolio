@@ -138,7 +138,7 @@ modal: {
           <li>Seamless blending of digital flora and fauna with the real-world exhibition space</li>
         </ul>
         <p>
-          As the Unreal Engine Developer, my core contributions focused on engineering the gameplay loop and interaction mechanics. I programmed the complex growth logic for the environments, built the planting and watering systems, and managed the Mixed Reality integration to ensure a smooth user experience, while collaborating with team members who handled the 3D animation and sound design.
+          As the Unreal Engine Developer, my core contributions focused on co-engineering the gameplay loop and interaction mechanics. I helped programming the complex growth logic for the environments and managed the Mixed Reality integration to ensure a smooth user experience, while collaborating with team members who handled the 3D animation and sound design.
         </p>
         <p>
           <strong>Tech stack:</strong> Unreal Engine, Mixed Reality (MR/XR) Frameworks, Blueprints / C++.
@@ -198,9 +198,8 @@ modal: {
           </ul>
           <p><strong>My contributions included:</strong></p>
           <ul>
-            <li>Design and implementation of all user interface components (menus, HUD, status elements)</li>
+            <li>Helped with the Design and implementation of all user interface components (menus, HUD, status elements)</li>
             <li>Ensuring UI responsiveness and styling to match the PSX aesthetic</li>
-            <li>Supporting level design with layout adjustments and user feedback flow</li>
           </ul>
           <p><strong>Tech stack:</strong> Unreal Engine 5, Blueprints, custom UI widgets, multiplayer networking.</p>
           <p>
