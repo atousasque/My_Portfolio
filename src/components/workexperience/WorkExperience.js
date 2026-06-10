@@ -15,28 +15,28 @@ const useStyles = makeStyles(() => ({
 const workData = [
   {
     company: "FH Upper Austria",
-    year: "March 2025 – February 2026",
-    role: "Tutor — Working as a teacher's assistant in the fields of: Mixed Reality, OO programming and Graphics, Games with a Purpose, Intelligent Systems, and Hypermedia Systems and Architecture."
+    year: "March 2025 – Present",
+    role: "Mentoring students in Mixed Reality frameworks, Object-Oriented Programming, and Games with a Purpose. I guide students through creative technical debugging and help translate complex technological concepts into accessible development frameworks"
   },
   {
-    company: "Hegenberg Embedded System Lab",
+    company: "Hagenberg Embedded System Lab",
     year: "May 2024 – June 2025",
-    role: "Python/C# Developer — Working in a team as a Python/C# developer and researcher."
+    role: "Developed research-oriented code for interactive systems within a transdisciplinary lab environment. Collaborated closely with researchers to bridge technical limitations with innovative, creative software solutions."
   },
-  {
-    company: "Unity Developer & 3D Modeler",
-    year: "2019 – Present",
-    role: "Freelancer Game Developer and Designer — Working in teams or individually as a 3D modeler and Unity developer in game-related projects."
-  },
+  //{
+    //company: "Unity Developer & 3D Modeler",
+    //year: "2019 – Present",
+    //role: "Freelancer Game Developer and Designer — Working in teams or individually as a 3D modeler and Unity developer in game-related projects."
+  //},
   {
     company: "Cafedeep Company",
     year: "2020 – 2023",
-    role: "Artificial Intelligence Expert — Worked as an Artificial Intelligence researcher and content creator."
+    role: "Engineered Python-based AI pipelines and tools to facilitate advanced research. Integrated modern media design with intelligent, interactive visual content and motion graphics to process complex datasets."
   },
   {
     company: "Bualisina Incubator Center",
     year: "2017 – 2018",
-    role: "Junior Researcher of IoT Laboratory — Worked in teams and researched IoT devices in houses. Was the technical assistant and helped students with technical issues."
+    role: "Conducted transdisciplinary research on Internet of Things (IoT) devices, exploring the integration of physical sensors and smart environments. Served as a technical assistant, mentoring students on physical computing projects."
   }
 ];
 

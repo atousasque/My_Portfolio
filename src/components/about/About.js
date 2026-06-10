@@ -20,11 +20,11 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutme = `I’m a 27-year-old Game/XR Developer and 3D artist with a passion for crafting immersive worlds and interactive stories. Originally from Iran and now based in Austria, I combine a background in Computer Engineering with a Master’s in Interactive Media to bridge creativity and technology.
+  const aboutme = `I am a Creative Technologist and Digital Artist bridging the gap between physical materiality and virtual environments. Originally from Iran and now based in Austria, my journey is deeply rooted in exploring the intersection of human senses, critical data, and interactive art to rethink digital experiences. 
 
-From sculpting characters in Blender to building XR experiences in Unreal and Unity, I thrive at the intersection of art and code. I’m fluent in C++, C#, and Python, and bring strong design skills through tools like Photoshop, After Effects, and Premiere. My work spans AR, VR, and MR, always focused on emotion, atmosphere, and engagement.
+With a Bachelor’s in Computer Engineering and a Master’s in Interactive Media, I combine a robust technical foundation in creative coding with a passion for classical oil painting. My expertise spans across designing sensory-rich Mixed Reality (XR) ecosystems, virtual reality installations, and procedural 3D workflows using tools like Unity, Unreal Engine, Blender, and Houdini. Proficient in C++, C#, and Python, I am dedicated to deconstructing emerging technologies to tell powerful, unfiltered stories.
 
-I love working in diverse teams, sharing ideas, and constantly learning. Whether it’s a game, a character, or an extended reality experience—I create with purpose, empathy, and curiosity.`;
+Driven by empathy and a commitment to sustainability, my artistic research focuses on giving a voice to marginalized and unseen communities through heavy atmospheres and emotional depth. Whether engineering gameplay loops for international festivals or translating the tactile resistance of physical canvas into VR, I create with purpose, critical curiosity, and a transdisciplinary vision.`;
 
   return (
     <section id="about">

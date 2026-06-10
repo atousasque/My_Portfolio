@@ -45,8 +45,42 @@ modalBox: {
 }));
 
 const projects = [
-  {
+    
+{
     id: 1,
+    title: 'VirtuArt (Master\'s Thesis)',
+    description: `A conceptual VR prototype that simulates the physical constraints, friction, and tactile resistance of traditional oil painting within a minimalist virtual canvas.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.10.0/Atousa_Garousian.mp4", 
+    modal: {
+      //image: "https://github.com/atousasque/My_Portfolio/releases/download/.../VirtuArt.jpg", 
+      content: (
+        <>
+          <p>
+            <strong>VirtuArt</strong> is my Master's Thesis project, exploring the intersection of classical physical materiality and modern interactive technologies. It translates the sensory perception and bodily constraints of traditional oil painting into the boundless realm of virtual reality.
+          </p>
+          <p><strong>Key features and focus areas include:</strong></p>
+          <ul>
+            <li>Simulating the tactile resistance and physical friction of brushstrokes on a virtual canvas</li>
+            <li>Integrating modern impressionism and heavy impasto techniques into an immersive VR environment</li>
+            <li>Designing a minimalist virtual space that emphasizes the physical relationship between the artist and the medium</li>
+            <li>Bridging the gap between physical materiality and digital expression through sensory-rich interaction mechanics</li>
+          </ul>
+          <p>
+            As a transdisciplinary digital artist, this project represents my core philosophy: rethinking digital experiences by embedding human senses and artistic research into XR development.
+          </p>
+          <p>
+            <strong>Tech stack:</strong> Unity, XR Interaction Toolkit, C#, Shader Graph, 3D Modeling (Blender).
+          </p>
+          <p>
+            🎓 This is an ongoing Master's Thesis project at FH Upper Austria. Therefore, The finished prototype will be updated soon!
+          </p>
+        </>
+      )
+    }
+  },
+
+  {
+    id: 2,
     title: 'LongDrive',
     description: `LongDrive is a semi-autonomous driving simulation built in Unity, based on Austria's real highway network. I co-developed the game systems and created the terrain and environment.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.0.0/LongDrive.mp4",
@@ -83,7 +117,7 @@ const projects = [
   },
   
   {
-    id: 2,
+    id: 3,
     title: 'LongDrive: Extended',
     description: `LongDrive: Extended is the finalized version of our semi-autonomous highway driving simulator. It introduces infotainment-based in-car tasks and G29 steering wheel support.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.1.0/LongDrive2.mp4",
@@ -118,7 +152,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: 'ReWild - Mixed Reality Ecosystem',
     description: `An interactive MR experience for the Ars Electronica Festival, allowing users to grow and nurture a digital ecosystem into physical space.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.9.0/ReWild.mp4",
@@ -152,7 +186,7 @@ modal: {
   },
 
   { 
-    id: 4,
+    id: 5,
     title: 'Fishing Simulator', 
     description: `A VR-ready Unity simulation recreating a peaceful fishing experience with natural terrain and immersive audio-visual design.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.2.0/FishingSimulator.mp4",
@@ -178,7 +212,7 @@ modal: {
     }
   },
   {
-    id: 5,
+    id: 6,
     title: 'Recoil Rumble',
     description: `Recoil Rumble is a fast-paced, retro-style multiplayer FPS with powerful knockback mechanics and stylized visuals.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.3.0/MultiplayerShooter.mp4",
@@ -211,35 +245,35 @@ modal: {
     }
   },  
   { 
-    id: 6,
+    id: 7,
     title: 'Blender Project 1', 
     description: `Designed and modeled a detailed interior filled with books, furniture, and decor. The camera rotates around the space to reveal different angles, emphasizing depth and layout. Applied custom textures to all assets, including wood, fabric, and paper materials. Focused on composition, lighting, and scene storytelling through asset placement and animation.`,
     alter: 'Blender Project 1',
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.4.0/Blender2.mp4"
   },
   { 
-    id: 7,
+    id: 8,
     title: 'Blender Project 2', 
     description: `Created a detailed snow globe scene featuring a snowy cabin, Christmas tree, and snowman. Modeled all assets from scratch, applied custom shaders, and set up lighting for a cozy winter feel. Used rigid body physics to animate falling snowballs and a collapsing tree when the globe rotates. The project involved keyframe animation, material setup, and physics simulation within Blender.`,
     alter: 'Blender Project 2',
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.5.0/Blender1.mp4"
   },
   { 
-    id: 8,
-    title: 'Blender Project 3', 
+    id: 9,
+    title: 'Houdini Project 1', 
     //description: `Created a detailed snow globe scene featuring a snowy cabin, Christmas tree, and snowman. Modeled all assets from scratch, applied custom shaders, and set up lighting for a cozy winter feel. Used rigid body physics to animate falling snowballs and a collapsing tree when the globe rotates. The project involved keyframe animation, material setup, and physics simulation within Blender.`,
-    alter: 'Blender Project 3',
+    alter: 'Houdini Project 1',
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.7.0/Blender3.mp4"
   },
   { 
-    id: 9,
-    title: 'Blender Project 4', 
+    id: 10,
+    title: 'Houdini Project 2', 
     //description: `Created a detailed snow globe scene featuring a snowy cabin, Christmas tree, and snowman. Modeled all assets from scratch, applied custom shaders, and set up lighting for a cozy winter feel. Used rigid body physics to animate falling snowballs and a collapsing tree when the globe rotates. The project involved keyframe animation, material setup, and physics simulation within Blender.`,
-    alter: 'Blender Project 4',
+    alter: 'Houdini Project 2',
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.8.0/Blender4.mp4"
   },
   {
-    id: 10,
+    id: 11,
     title: 'Logo Animation',
     description: `Animated logo and social content for a company’s branding, covering motion graphics, reels, and Instagram strategy.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.6.0/AFterEffect.mp4",
@@ -267,6 +301,57 @@ modal: {
       )
     }
   },
+  {
+    id: 11,
+    title: 'In the Shackles of Suffocation',
+    description: `A psychedelic, biomorphic illustration mapping the psychological impact of severe artistic censorship and suppressed identity.`,
+    //video: "", 
+    image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg", 
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg", 
+      content: (
+        <>
+          <p>
+            <strong>In the Shackles of Suffocation</strong> is a raw visual exploration of artistic censorship, anxiety, and the struggle for free expression. Driven by the suffocating experience of severe social and political control, the piece serves as a psychological map of a silenced mind attempting to scream.
+          </p>
+          <p><strong>Artistic & Conceptual Highlights:</strong></p>
+          <ul>
+            <li>Utilizes the <em>Horror Vacui</em> (fear of empty space) technique to represent overwhelming anxiety and structural oppression.</li>
+            <li>Features interwoven biomorphic entities, teeth, and eyes that capture the constant, scrutinizing gaze of societal surveillance.</li>
+            <li>Contrasts chaotic, dark linework with vibrant, neon psychedelic hues of cyan and purple.</li>
+            <li>The striking neon highlights represent resilient, internal creative energy fighting to break through the darkness.</li>
+          </ul>
+          <p><strong>Medium:</strong> Ink and Digital Media.</p>
+        </>
+      )
+    }
+  },
+
+  {
+    id: 12,
+    title: 'Bloody Winter',
+    description: `A contemporary impressionist oil painting capturing the heavy, suffocating atmosphere of collective trauma during the "Woman, Life, Freedom" movement in Iran.`,
+    //video: "", 
+    image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.2.0/IMG_20250328_202440_991.jpg", 
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.2.0/IMG_20250328_202440_991.jpg", 
+      content: (
+        <>
+          <p>
+            <strong>Bloody Winter</strong> is a visceral translation of collective trauma, painted during the height of the "Woman, Life, Freedom" protests in Iran. The piece intentionally subverts the traditional tranquility and purity of a snow-covered winter landscape into a political and emotional metaphor.
+          </p>
+          <p><strong>Artistic & Conceptual Highlights:</strong></p>
+          <ul>
+            <li>Employs a contemporary impressionist style with heavy, textured impasto brushstrokes.</li>
+            <li>Contrasts the stark, freezing white of the trees with a deep, bleeding crimson sky and river.</li>
+            <li>Captures the heavy, chilling atmosphere of oppression and the undeniable reality of bloodshed that permanently altered our perception of safety and nature.</li>
+            <li>Explores the psychological weight of a historical turning point through dramatic color contrasts and atmospheric tension.</li>
+          </ul>
+          <p><strong>Medium:</strong> Oil on Canvas.</p>
+        </>
+      )
+    }
+  },
 
   ];
 
@@ -279,9 +364,23 @@ export const Works = () => {
       <Container component="main" className={classes.main} maxWidth="md">
         {projects.map((project, index) => (
           <div className="project" key={project.id}>
-            <div className="__img_wrapper">
-              <video controls src={project.video} />
+            <div className="__img_wrapper" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              {project.video ? (
+                <video controls src={project.video} />
+              ) : (
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  style={{ 
+                    width: '100%', 
+                    maxHeight: '450px', 
+                    objectFit: 'contain', 
+                    borderRadius: '8px' 
+                  }} 
+                />
+              )}
             </div>
+            
             <div className="__content_wrapper">
               <h3 className="title">
                 <TextDecrypt text={`${project.id}. ${project.title}`} />

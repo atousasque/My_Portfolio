@@ -16,18 +16,18 @@ const educationData = [
  {
     name: "FH Upper Austria",
     year: "2023 – Present",
-    description: "Master's in Interactive Media. Focus on VR/AR/MR, Game Development, and 3D Design.Thesis topic: VirtuArt: Understanding the Hidden Complexity of Simple Paintings through Virtual Reality."
+    description: "Master's in Interactive Media. Focus on XR Technologies, Mixed Reality, Human-Computer Interaction.Thesis topic: VirtuArt: Understanding the Hidden Complexity of Simple Paintings through Virtual Reality."
   },
   {
     name: "Hamedan University of Technology",
     year: "2016 – 2021",
     description: "Bachelor's in Computer Engineering. Coursework in Algorithms, AI, and Software Development."
   },
-  {
-    name: "SAMPAD High School",
-    year: "2012 – 2016",
-    description: "Mathematics and Physics track with honors. Active in computer Olympiads and Tech Clubs."
-  }
+  //{
+    //name: "SAMPAD High School",
+    //year: "2012 – 2016",
+    //description: "Mathematics and Physics track with honors. Active in computer Olympiads and Tech Clubs."
+  //}
 ];
 
 
