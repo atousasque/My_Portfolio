@@ -45,8 +45,39 @@ modalBox: {
 }));
 
 const projects = [
+
+ {
+    id: 0, 
+    title: 'Canvas of Confinement',
+    description: `An interactive VR intermedia installation transforming an obsessive physical ink artwork into an amorphous, suffocating digital cage that monitors and overstimulates the human body.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v3/Video.mp4", 
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg",  
+      content: (
+        <>
+          <p>
+            <strong>Canvas of Confinement</strong> is an interactive, site-specific VR installation exploring how the human body becomes engulfed and monitored by modern technology. The piece acts as an active point of entry into an overwhelming digital network, transforming psychological anxiety into a literal virtual void.
+          </p>
+          <p><strong>Note on Video Material:</strong></p>
+          <p>
+            Due to strict submission file size limits, the video preview above is a short teaser with highly compressed rendering and format limits. The full-length, high-quality walkthrough showing the complete atmosphere and spatial interaction is hosted permanently right here on this portfolio page.
+          </p>
+          <p><strong>Key features and focus areas include:</strong></p>
+          <ul>
+            <li><strong>The Analog Matrix:</strong> Built from a highly dense physical drawing using ink, fineliners (Rapidograph), and colored pencils on paper. It utilizes <em>Horror Vacui</em> (fear of empty spaces) to capture modern mental overstimulation and anxiety caused by high-speed information loops.</li>
+            <li><strong>Amorphous Confinement:</strong> Instead of a stable geometric cube, the hand-drawn lines wrap around the user in a shifting, nameless spatial trap. The endless multiplying eyes represent the invasive gaze of surveillance capitalism and political systems tracking our lives.</li>
+            <li><strong>Shader-Driven Tension:</strong> Built in Unity, the boundaries physically contract over time, forcing the user into anxious, disoriented head movements. A custom shader shifts the visual environment from cyberpunk neon cyan and purple veins into a heavy, deep crimson shadow.</li>
+            <li><strong>Interactive Audio-Visual System:</strong> Users pull the VR trigger to shoot streams of cyan particles to illuminate the darkness. This action is synced with a raw, three-layer soundscape featuring heavy industrial drones, mechanical data-logging clicks, and static echoes.</li>
+          </ul>
+          <p>
+            <strong>Tech stack:</strong> Unity, C#, XR Interaction Toolkit, Custom Shaders, Sound Design, Analog Media (Ink/Fineliners).
+          </p>
+        </>
+      )
+    }
+  },
     
-{
+  {
     id: 1,
     title: 'VirtuArt (Master\'s Thesis)',
     description: `A conceptual VR prototype that simulates the physical constraints, friction, and tactile resistance of traditional oil painting within a minimalist virtual canvas.`,
@@ -261,14 +292,14 @@ modal: {
   { 
     id: 9,
     title: 'Houdini Project 1', 
-    //description: `Created a detailed snow globe scene featuring a snowy cabin, Christmas tree, and snowman. Modeled all assets from scratch, applied custom shaders, and set up lighting for a cozy winter feel. Used rigid body physics to animate falling snowballs and a collapsing tree when the globe rotates. The project involved keyframe animation, material setup, and physics simulation within Blender.`,
+    description: `Simulated and rendered a dynamic 3D scene centered around a detailed glass jar. Animated the mechanical opening and closing of the jar's lid, and utilized rigid body physics to simulate the natural fall and accumulation of raspberries inside. Set up dynamic camera movements that shift angles depending on the ongoing action to optimally frame the interacting objects. The project involved a combination of keyframe animation, physics simulation, realistic transparent material setup, and studio lighting to emphasize depth and reflections.`,
     alter: 'Houdini Project 1',
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.7.0/Blender3.mp4"
   },
   { 
     id: 10,
     title: 'Houdini Project 2', 
-    //description: `Created a detailed snow globe scene featuring a snowy cabin, Christmas tree, and snowman. Modeled all assets from scratch, applied custom shaders, and set up lighting for a cozy winter feel. Used rigid body physics to animate falling snowballs and a collapsing tree when the globe rotates. The project involved keyframe animation, material setup, and physics simulation within Blender.`,
+    description: `Designed and modeled a festive Christmas-themed 3D scene featuring a gingerbread man character, a stack of cookies, and a pine tree. Implemented a dynamic lighting system for the tree lights to alternate and cycle every second, creating a vibrant holiday atmosphere. Animated a subtle blinking effect for the gingerbread man to bring the character to life. The project involved realistic material setup for the biscuit texture and icing, parametric control of emissive materials within Houdini, and a warm composition to capture the festive mood.`,
     alter: 'Houdini Project 2',
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.8.0/Blender4.mp4"
   },
@@ -301,27 +332,28 @@ modal: {
       )
     }
   },
-  {
+{
     id: 11,
     title: 'In the Shackles of Suffocation',
-    description: `A psychedelic, biomorphic illustration mapping the psychological impact of severe artistic censorship and suppressed identity.`,
-    //video: "", 
+    description: `A psychedelic, biomorphic illustration mapping the psychological impact of digital overstimulation and surveillance—core analog foundation and visual matrix for the VR installation "Canvas of Confinement".`,
     image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg", 
     modal: {
       image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg", 
       content: (
         <>
           <p>
-            <strong>In the Shackles of Suffocation</strong> is a raw visual exploration of artistic censorship, anxiety, and the struggle for free expression. Driven by the suffocating experience of severe social and political control, the piece serves as a psychological map of a silenced mind attempting to scream.
+            <strong>In the Shackles of Suffocation</strong> serves as the complete analog blueprint and visual infrastructure for the interactive VR installation, <em>Canvas of Confinement</em>. This piece maps the physical and psychological impact of severe data overstimulation, digital surveillance, and the modern commodification of human identity.
           </p>
-          <p><strong>Artistic & Conceptual Highlights:</strong></p>
+          <p><strong>Artistic & Conceptual Highlights for MFRU:</strong></p>
           <ul>
-            <li>Utilizes the <em>Horror Vacui</em> (fear of empty space) technique to represent overwhelming anxiety and structural oppression.</li>
-            <li>Features interwoven biomorphic entities, teeth, and eyes that capture the constant, scrutinizing gaze of societal surveillance.</li>
-            <li>Contrasts chaotic, dark linework with vibrant, neon psychedelic hues of cyan and purple.</li>
-            <li>The striking neon highlights represent resilient, internal creative energy fighting to break through the darkness.</li>
+            <li>Utilizes the <em>Horror Vacui</em> (fear of empty space) technique to visually represent perfectionism, chronic mental anxiety, and the suffocating flood of high-speed digital information today.</li>
+            <li>Features an overwhelming matrix of interwoven biomorphic textures and multiplying eyes, symbolizing the invasive, constant gaze of surveillance capitalism and modern economic control.</li>
+            <li>Contrasts chaotic, dense ink linework with vibrant, cyberpunk neon hues of cyan and purple. In the VR adaptation, these cold digital veins actively shift to represent the system processing and altering the human presence.</li>
           </ul>
-          <p><strong>Medium:</strong> Ink and Digital Media.</p>
+          <p><strong>Medium:</strong> Ink, Fineliners (Rapidograph), and Colored Pencils on Paper.</p>
+          <p>
+            🌐 <strong>VR Implementation:</strong> The intricate lines and eyes of this physical paper have been completely mapped onto the deconstructed, amorphous virtual canvases of <strong>Canvas of Confinement</strong>, expanding this traditional illustration into a fully immersive, hostile digital environment.
+          </p>
         </>
       )
     }
