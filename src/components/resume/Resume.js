@@ -24,21 +24,21 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const Resume = () => {
-  const classes = useStyles();
+  //const classes = useStyles();
 
-  return (
-    <Link
-      color='inherit'
-      underline='none'
-      href= {`${ResumePDF}`}
-      target='_blank'
-      rel='noopener noreferrer'
-      className={classes.footerText}
-    >
-      <ResumeIcon />
-      <Typography component='span'>
-        <TextDecrypt text={' Resume'} />
-      </Typography>
-    </Link>
-  );
+  return null;
+  //   <Link
+  //     color='inherit'
+  //     underline='none'
+  //     href= {`${ResumePDF}`}
+  //     target='_blank'
+  //     rel='noopener noreferrer'
+  //     className={classes.footerText}
+  //   >
+  //     <ResumeIcon />
+  //     <Typography component='span'>
+  //       <TextDecrypt text={' Resume'} />
+  //     </Typography>
+  //   </Link>
+  // );
 };

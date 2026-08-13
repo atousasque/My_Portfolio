@@ -16,7 +16,7 @@ const workData = [
   {
     company: "FH Upper Austria",
     year: "March 2025 – Present",
-    role: "Mentoring students in Mixed Reality frameworks, Object-Oriented Programming, and Games with a Purpose. I guide students through creative technical debugging and help translate complex technological concepts into accessible development frameworks"
+    role: "Mentoring students in Hypermedia Systems and Architectures, Intelligent Systems, Relational Databases, Object-Oriented Programming, and Games with a Purpose. I guide students through creative technical debugging and help translate complex technological concepts into accessible development frameworks"
   },
   {
     company: "Hagenberg Embedded System Lab",
@@ -31,7 +31,7 @@ const workData = [
   {
     company: "Cafedeep Company",
     year: "2020 – 2023",
-    role: "Engineered Python-based AI pipelines and tools to facilitate advanced research. Integrated modern media design with intelligent, interactive visual content and motion graphics to process complex datasets."
+    role: "Engineered end-to-end software solutions by bridging interactive frontend web components, Python-based AI pipelines, and RESTful API integrations—combining modern media design with robust backend logic and performance optimization."
   },
   {
     company: "Bualisina Incubator Center",

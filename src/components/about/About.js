@@ -20,11 +20,11 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutme = `I am a Creative Technologist and Digital Artist bridging the gap between physical materiality and virtual environments. Originally from Iran and now based in Austria, my journey is deeply rooted in exploring the intersection of human senses, critical data, and interactive art to rethink digital experiences. 
+  const aboutme = `I am a Software Engineer and Interactive Systems Developer based in Austria, with a Bachelor's in Computer Engineering and an M.Sc. in Interactive Media from FH Hagenberg. I bridge the gap between robust software architecture and immersive digital experiences—specializing in JavaScript/TypeScript, React, Java, C#, and C++.
 
-With a Bachelor’s in Computer Engineering and a Master’s in Interactive Media, I combine a robust technical foundation in creative coding with a passion for traditional fine arts and analog media. My expertise spans across designing sensory-rich Mixed Reality (XR) ecosystems, virtual reality installations, and procedural 3D workflows using tools like Unity, Unreal Engine, Blender, and Houdini. Proficient in C++, C#, and Python, I am dedicated to deconstructing emerging technologies to tell powerful, unfiltered stories.
+My work spans two complementary worlds: engineering web-based tools, RESTful APIs, and component-based architectures, alongside developing interactive XR (VR/MR) installations, 3D real-time simulations, and game systems (using Unity and Unreal Engine). Projects like ReWild (Ars Electronica), VirtuArt (Master's Thesis), and LongDrive reflect my passion for interactive logic, complex state management, and real-time performance optimization.
 
-Driven by empathy and a commitment to sustainability, my artistic research focuses on giving a voice to marginalized and unseen communities through heavy atmospheres and emotional depth. Whether engineering gameplay loops for international festivals or translating the tactile resistance of physical canvas into VR, I create with purpose, critical curiosity, and a transdisciplinary vision.`;
+Driven by clean code, Object-Oriented Design, and continuous learning, I thrive in collaborative, agile environments. Whether building enterprise web interfaces or experimenting with 3D graphics and physical interaction, I create with technical rigor and creative curiosity.`;
 
   return (
     <section id="about">
