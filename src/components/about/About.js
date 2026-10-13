@@ -20,11 +20,11 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutme = `I am a Software Engineer and Interactive Systems Developer based in Austria, with a Bachelor's in Computer Engineering and an M.Sc. in Interactive Media from FH Hagenberg. I bridge the gap between robust software architecture and immersive digital experiences—specializing in JavaScript/TypeScript, React, Java, C#, and C++.
+  const aboutme = `I am a Creative Technologist & XR Developer based in Upper Austria, completing my M.Sc. in Interactive Media at FH Hagenberg (focus: XR & Human-Computer Interaction) with a B.Sc. in Computer Engineering and a strong background in classical oil painting.
 
-My work spans two complementary worlds: engineering web-based tools, RESTful APIs, and component-based architectures, alongside developing interactive XR (VR/MR) installations, 3D real-time simulations, and game systems (using Unity and Unreal Engine). Projects like ReWild (Ars Electronica), VirtuArt (Master's Thesis), and LongDrive reflect my passion for interactive logic, complex state management, and real-time performance optimization.
+I work at the intersection of Mixed Reality, physical computing, and interactive art. My engineering background bridges robust software architectures (C#, C++, Python, Java, JavaScript/TypeScript, React) with real-time immersive systems in Unity and Unreal Engine. My work spans interactive VR/MR environments, sensor-to-cloud IoT ecosystems (ESP32, MQTT), and data-driven pipelines, reflected in projects like VirtuArt (Master's Thesis), Canvas of Confinement, Smart Plants, and ReWild.
 
-Driven by clean code, Object-Oriented Design, and continuous learning, I thrive in collaborative, agile environments. Whether building enterprise web interfaces or experimenting with 3D graphics and physical interaction, I create with technical rigor and creative curiosity.`;
+I am driven to create interactive experiences that go beyond the screen—tackling real social, environmental, and human questions with technical rigor and critical inquiry.`;
 
   return (
     <section id="about">

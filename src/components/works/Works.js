@@ -103,7 +103,7 @@ const projects = [
             <strong>Tech stack:</strong> Unity, XR Interaction Toolkit, C#, Shader Graph, 3D Modeling (Blender).
           </p>
           <p>
-            🎓 This is an ongoing Master's Thesis project at FH Upper Austria. Therefore, The finished prototype will be updated soon!
+            🎓 Master's Thesis project at FH Upper Austria (Defense: December 2026). Paper in preparation for submission to IEEE VR.
           </p>
         </>
       )
@@ -192,7 +192,7 @@ modal: {
     content: (
       <>
         <p>
-          <strong>🌿ReWild</strong> is an immersive Mixed Reality (MR) experience showcased at the prestigious Ars Electronica Center festival. 
+          <strong>🌿ReWild</strong> is an immersive Mixed Reality (MR) ecosystem prototype conceived for the Ars Electronica Festival context. 
           The project empowers users to become digital gardeners, transforming physical spaces into thriving, interactive ecosystems.
         </p>
         <p><strong>Key features include:</strong></p>
@@ -209,15 +209,123 @@ modal: {
           <strong>Tech stack:</strong> Unreal Engine, Mixed Reality (MR/XR) Frameworks, Blueprints / C++.
         </p>
         <p>
-            🔒 This project is part of an academic study on driver distraction and trust in automation. Repository access is private.
+            🔒 Developed as an interactive prototype for the Game Spaces course at FH Upper Austria (private repository). The project provided vital practical insights into the technical constraints and high maintenance demands of deploying interactive ecosystems in public settings.
         </p>
       </>
     )
   }
   },
 
-  { 
+  {
     id: 5,
+    title: 'Smart Plants: Pervasive IoT Ecosystem',
+    description: `A sensor-to-cloud automated plant monitoring system with closed-loop grow-light control and a rule-based Python health scoring engine.`,
+    image: "https://github.com/atousasque/My_Portfolio/releases/download/v4/Plant.jpg", 
+    imgStyle: {
+    width: "75%",
+    aspectRatio: "16 / 9",
+    objectFit: "contain",
+    backgroundColor: "#ffffff",
+    margin: "10px auto",
+    display: "block",
+    borderRadius: "8px"
+    },
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v5/Pixlr_20261013070122747.jpg", 
+      content: (
+        <>
+          <p>
+            <strong>Smart Plants</strong> is a pervasive computing and IoT monitoring ecosystem engineered by a team of five. The project connects physical plant environments to the cloud, combining automated sensor telemetry, closed-loop environmental actuators, and subjective human observations into a unified plant care pipeline.
+          </p>
+
+          <p><strong>System Architecture & Workflow:</strong></p>
+          <ul>
+            <li>
+              <strong>Sensing & Edge Computing:</strong> Environmental data (soil moisture, ambient light via LDR voltage divider, temperature, and relative humidity via DHT11) are continuously gathered by an ESP32 microcontroller and published securely over MQTT (HiveMQ Cloud).
+            </li>
+            <li>
+              <strong>Closed-Loop Light Actuation:</strong> A Raspberry Pi 4 edge hub runs a custom Python MQTT bridge and Zigbee2MQTT service to control smart lighting (IKEA TRÅDFRI via Sonoff Zigbee 3.0), automatically toggling supplemental grow light when ambient levels drop below calibrated thresholds.
+            </li>
+            <li>
+              <strong>Algorithmic Evaluation Layer (Python):</strong> Built the rule-based analytical engine using Python, <code>pymongo</code>, and <code>paho-mqtt</code>. The engine calculates an overall plant health score (0–100) by comparing live telemetry against species-specific tolerance ranges, detecting environmental state shifts, and factoring in user feedback.
+            </li>
+            <li>
+              <strong>Full-Stack Data Pipeline:</strong> Telemetry is ingested by an Express.js backend, stored in MongoDB collections (caching precomputed daily/weekly historical aggregations), and presented through an interactive React dashboard with historical trend graphs.
+            </li>
+          </ul>
+
+          <p><strong>My Contributions:</strong></p>
+          <ul>
+            <li>Architected and implemented the core Python evaluation and health-scoring logic (<code>logic.py</code>, <code>db.py</code>) analyzing sensor data streams and user logs.</li>
+            <li>Assisted in hardware prototyping, ESP32 sensor circuit breadboarding, calibration curves, and Raspberry Pi edge-service setup.</li>
+            <li>Collaborated on system concept design and end-to-end MQTT topic schema structuring.</li>
+          </ul>
+
+          <p>
+            <strong>Tech stack:</strong> Python (pymongo, paho-mqtt), ESP32 (C++/Arduino), Raspberry Pi 4, Zigbee2MQTT, MQTT (HiveMQ), MongoDB, Express.js, React.
+          </p>
+
+          <p>
+            🏆 <em>Awarded the highest grade in the Pervasive Computing course at FH Upper Austria.</em>
+          </p>
+        </>
+      )
+    }
+  },
+
+  {
+    id: 6, 
+    title: 'Historical Portals: Spatial Memory & Material Archives',
+    description: `An ongoing Mixed Reality research framework bridging urban physical spaces with archival memory—originating from photographic and material field research in historical corridors.`,
+    image: "https://github.com/atousasque/My_Portfolio/releases/download/v6/photo_2026-10-13_07-15-07.jpg",
+    imgStyle: {
+    width: "75%",
+    maxWidth: "100%",
+    margin: "10px auto",
+     display: "block",
+    borderRadius: "8px",
+     objectFit: "contain"
+    }, 
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v7/photo_2026-10-13_07-08-57.jpg", 
+      content: (
+        <>
+          <p>
+            <strong>Historical Portals</strong> is an ongoing Mixed Reality (MR) research initiative investigating how site-specific storytelling and archival memory can be directly embodied within physical architectural spaces.
+          </p>
+
+          <p><strong>The Conceptual Catalyst (Fieldwork in Ancient Corridors):</strong></p>
+          <p>
+            The project originated from extensive visual and material field research across the historic bazaar and living ruins of Hamedan (Ecbatana). Documenting eroding brick vaulting, layered textiles, and traditional craft environments provided the tactile and atmospheric benchmark for virtual time-portals—treating history not as flat photographic data, but as a sensory, physical volume.
+          </p>
+
+          <p><strong>Mixed Reality Implementation & Linz Urban Context:</strong></p>
+          <ul>
+            <li>
+              <strong>Spatial Storytelling:</strong> Connects contemporary physical coordinates (such as public squares in Linz) with localized historical memory layers through immersive spatial computing.
+            </li>
+            <li>
+              <strong>Material-Driven Portals:</strong> Translates physical weathering, architectural erosion, and ambient acoustics into real-time environments, examining the emotional resonance of navigating forgotten temporal spaces.
+            </li>
+            <li>
+              <strong>Digital Twins & Archival Layers:</strong> Investigates multi-user physical presence and archival interaction, bridging historical cultural heritage with interactive spatial interfaces.
+            </li>
+          </ul>
+
+          <p>
+            <strong>Methodologies & Tools:</strong> Visual Field Research, Spatial Archiving, Mixed Reality Prototyping (Unreal Engine / Unity), Photogrammetry, HCI.
+          </p>
+
+          <p>
+            🔒 <em>Ongoing transdisciplinary R&D project exploring archival memory and affective spatial computing.</em>
+          </p>
+        </>
+      )
+    }
+  },
+
+  { 
+    id: 7,
     title: 'Fishing Simulator', 
     description: `A VR-ready Unity simulation recreating a peaceful fishing experience with natural terrain and immersive audio-visual design.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.2.0/FishingSimulator.mp4",
@@ -242,8 +350,44 @@ modal: {
       )
     }
   },
+
   {
-    id: 6,
+  id: 7,
+  title: 'AR Image Tracking: Interactive Flight Controller',
+  description: `A mobile Augmented Reality system built with Unity AR Foundation and ARCore, featuring real-time 2D image target recognition, dynamic 3D asset spawning, and math-driven 6DoF flight physics.`,
+  video: "https://github.com/atousasque/My_Portfolio/releases/download/v9/587867536-05287f23-6b51-4c53-98d2-12ba2a796a40.mp4",
+  modal: {
+    content: (
+      <>
+        <p>
+          An interactive mobile Augmented Reality (AR) application exploring 2D planar tracking, dynamic prefab instantiation, and real-time physical control within spatial computing environments.
+        </p>
+
+        <p><strong>Core Architectural Features:</strong></p>
+        <ul>
+          <li>
+            <strong>AR Image Target Tracking:</strong> Implemented using Unity’s <code>AR Tracked Image Manager</code> and serialized Reference Image Libraries, seamlessly anchoring digital twins to real-world physical markers.
+          </li>
+          <li>
+            <strong>Dynamic Spawning & Offset Logic:</strong> Developed a responsive event listener (<code>trackedImagesChanged</code>) in C# to dynamically instantiate and orient rigged animated assets upon detection.
+          </li>
+          <li>
+            <strong>Math-Driven Flight Mechanics:</strong> Integrated on-screen UI joystick telemetry mapped to 3D world space. Real-time directional rotation is computed using <code>Mathf.Atan2(xVal, yVal) * Mathf.Rad2Deg</code> with non-gravitational kinematic physics (Rigidbody velocity control).
+          </li>
+          <li>
+            <strong>Mobile Performance & Pipeline Optimization:</strong> Stripped Vulkan dependencies in favor of OpenGLES3, compiled with 64-bit IL2CPP architecture, and balanced render hierarchies for optimal mobile thermal and frame rates.
+          </li>
+        </ul>
+
+        <p>
+          <strong>Tech Stack:</strong> Unity (C#), AR Foundation, ARCore XR Plugin, IL2CPP Architecture, Mobile UI Systems.
+        </p>
+      </>
+    )
+  }
+},
+  {
+    id: 8,
     title: 'Recoil Rumble',
     description: `Recoil Rumble is a fast-paced, retro-style multiplayer FPS with powerful knockback mechanics and stylized visuals.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.3.0/MultiplayerShooter.mp4",
@@ -275,68 +419,76 @@ modal: {
       )
     }
   },  
-  { 
-    id: 7,
-    title: 'Blender Project 1', 
-    description: `Designed and modeled a detailed interior filled with books, furniture, and decor. The camera rotates around the space to reveal different angles, emphasizing depth and layout. Applied custom textures to all assets, including wood, fabric, and paper materials. Focused on composition, lighting, and scene storytelling through asset placement and animation.`,
-    alter: 'Blender Project 1',
-    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.4.0/Blender2.mp4"
-  },
-  { 
-    id: 8,
-    title: 'Blender Project 2', 
-    description: `Created a detailed snow globe scene featuring a snowy cabin, Christmas tree, and snowman. Modeled all assets from scratch, applied custom shaders, and set up lighting for a cozy winter feel. Used rigid body physics to animate falling snowballs and a collapsing tree when the globe rotates. The project involved keyframe animation, material setup, and physics simulation within Blender.`,
-    alter: 'Blender Project 2',
-    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.5.0/Blender1.mp4"
-  },
-  { 
-    id: 9,
-    title: 'Houdini Project 1', 
-    description: `Simulated and rendered a dynamic 3D scene centered around a detailed glass jar. Animated the mechanical opening and closing of the jar's lid, and utilized rigid body physics to simulate the natural fall and accumulation of raspberries inside. Set up dynamic camera movements that shift angles depending on the ongoing action to optimally frame the interacting objects. The project involved a combination of keyframe animation, physics simulation, realistic transparent material setup, and studio lighting to emphasize depth and reflections.`,
-    alter: 'Houdini Project 1',
-    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.7.0/Blender3.mp4"
-  },
-  { 
-    id: 10,
-    title: 'Houdini Project 2', 
-    description: `Designed and modeled a festive Christmas-themed 3D scene featuring a gingerbread man character, a stack of cookies, and a pine tree. Implemented a dynamic lighting system for the tree lights to alternate and cycle every second, creating a vibrant holiday atmosphere. Animated a subtle blinking effect for the gingerbread man to bring the character to life. The project involved realistic material setup for the biscuit texture and icing, parametric control of emissive materials within Houdini, and a warm composition to capture the festive mood.`,
-    alter: 'Houdini Project 2',
-    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.8.0/Blender4.mp4"
-  },
-  {
-    id: 11,
-    title: 'Logo Animation',
-    description: `Animated logo and social content for a company’s branding, covering motion graphics, reels, and Instagram strategy.`,
-    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.6.0/AFterEffect.mp4",
-    modal: {
-      image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.6.1/Motion.jpg", // Add this image to your public folder
-      content: (
-        <>
-          <p>
-            <strong>Logo Animation & Content Design</strong> involved creating a custom animated logo intro/outro using Adobe After Effects, designed to enhance the brand identity of a client’s video content.
-          </p>
-          <p><strong>My responsibilities included:</strong></p>
-          <ul>
-            <li>Designing and animating a professional logo motion tailored for Instagram reels and video content</li>
-            <li>Managing visual branding across their Instagram page, including all post/reel layouts</li>
-            <li>Editing short-form video content optimized for social media engagement</li>
-          </ul>
-          <p>
-            I ensured consistent style, modern animation timing, and engaging visuals for content across different formats and screen sizes.
-          </p>
-          <p><strong>Tools used:</strong> Adobe After Effects, Premiere Pro, Photoshop.</p>
-          <p>🔗 <a href="https://instagram.com/khabarchain" target="_blank" rel="noopener noreferrer">View on Instagram</a></p>
-          <p>🔗 <a href="https://instagram.com/cafedeep.ir" target="_blank" rel="noopener noreferrer">View on Instagram</a></p>
+  // { 
+  //   id: 9,
+  //   title: 'Blender Project 1', 
+  //   description: `Designed and modeled a detailed interior filled with books, furniture, and decor. The camera rotates around the space to reveal different angles, emphasizing depth and layout. Applied custom textures to all assets, including wood, fabric, and paper materials. Focused on composition, lighting, and scene storytelling through asset placement and animation.`,
+  //   alter: 'Blender Project 1',
+  //   video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.4.0/Blender2.mp4"
+  // },
+  // { 
+  //   id: 10,
+  //   title: 'Blender Project 2', 
+  //   description: `Created a detailed snow globe scene featuring a snowy cabin, Christmas tree, and snowman. Modeled all assets from scratch, applied custom shaders, and set up lighting for a cozy winter feel. Used rigid body physics to animate falling snowballs and a collapsing tree when the globe rotates. The project involved keyframe animation, material setup, and physics simulation within Blender.`,
+  //   alter: 'Blender Project 2',
+  //   video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.5.0/Blender1.mp4"
+  // },
+  // { 
+  //   id: 11,
+  //   title: 'Houdini Project 1', 
+  //   description: `Simulated and rendered a dynamic 3D scene centered around a detailed glass jar. Animated the mechanical opening and closing of the jar's lid, and utilized rigid body physics to simulate the natural fall and accumulation of raspberries inside. Set up dynamic camera movements that shift angles depending on the ongoing action to optimally frame the interacting objects. The project involved a combination of keyframe animation, physics simulation, realistic transparent material setup, and studio lighting to emphasize depth and reflections.`,
+  //   alter: 'Houdini Project 1',
+  //   video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.7.0/Blender3.mp4"
+  // },
+  // { 
+  //   id: 12,
+  //   title: 'Houdini Project 2', 
+  //   description: `Designed and modeled a festive Christmas-themed 3D scene featuring a gingerbread man character, a stack of cookies, and a pine tree. Implemented a dynamic lighting system for the tree lights to alternate and cycle every second, creating a vibrant holiday atmosphere. Animated a subtle blinking effect for the gingerbread man to bring the character to life. The project involved realistic material setup for the biscuit texture and icing, parametric control of emissive materials within Houdini, and a warm composition to capture the festive mood.`,
+  //   alter: 'Houdini Project 2',
+  //   video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.8.0/Blender4.mp4"
+  // },
+  // {
+  //   id: 12,
+  //   title: 'Logo Animation',
+  //   description: `Animated logo and social content for a company’s branding, covering motion graphics, reels, and Instagram strategy.`,
+  //   video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.6.0/AFterEffect.mp4",
+  //   modal: {
+  //     image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.6.1/Motion.jpg", // Add this image to your public folder
+  //     content: (
+  //       <>
+  //         <p>
+  //           <strong>Logo Animation & Content Design</strong> involved creating a custom animated logo intro/outro using Adobe After Effects, designed to enhance the brand identity of a client’s video content.
+  //         </p>
+  //         <p><strong>My responsibilities included:</strong></p>
+  //         <ul>
+  //           <li>Designing and animating a professional logo motion tailored for Instagram reels and video content</li>
+  //           <li>Managing visual branding across their Instagram page, including all post/reel layouts</li>
+  //           <li>Editing short-form video content optimized for social media engagement</li>
+  //         </ul>
+  //         <p>
+  //           I ensured consistent style, modern animation timing, and engaging visuals for content across different formats and screen sizes.
+  //         </p>
+  //         <p><strong>Tools used:</strong> Adobe After Effects, Premiere Pro, Photoshop.</p>
+  //         <p>🔗 <a href="https://instagram.com/khabarchain" target="_blank" rel="noopener noreferrer">View on Instagram</a></p>
+  //         <p>🔗 <a href="https://instagram.com/cafedeep.ir" target="_blank" rel="noopener noreferrer">View on Instagram</a></p>
          
-        </>
-      )
-    }
-  },
+  //       </>
+  //     )
+  //   }
+  // },
 {
-    id: 11,
+    id: 13,
     title: 'In the Shackles of Suffocation',
     description: `A psychedelic, biomorphic illustration mapping the psychological impact of digital overstimulation and surveillance—core analog foundation and visual matrix for the VR installation "Canvas of Confinement".`,
     image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg", 
+    imgStyle: {
+      width: "85%",          
+      maxHeight: "650px",    
+      objectFit: "contain",
+      borderRadius: "8px",
+      margin: "10px auto",
+      display: "block"
+    },
     modal: {
       image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg", 
       content: (
@@ -360,13 +512,21 @@ modal: {
   },
 
   {
-    id: 12,
+    id: 14,
     title: 'Bloody Winter',
     description: `A contemporary impressionist oil painting capturing the heavy, suffocating atmosphere of collective trauma during the "Woman, Life, Freedom" movement in Iran.`,
     //video: "", 
     image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.2.0/IMG_20250328_202440_991.jpg", 
+    imgStyle: {
+        width: "85%",          
+        maxHeight: "650px",    
+        objectFit: "contain",
+        borderRadius: "8px",
+        margin: "10px auto",
+        display: "block"
+      }, 
     modal: {
-      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.2.0/IMG_20250328_202440_991.jpg", 
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.2.0/IMG_20250328_202440_991.jpg",
       content: (
         <>
           <p>
@@ -380,6 +540,51 @@ modal: {
             <li>Explores the psychological weight of a historical turning point through dramatic color contrasts and atmospheric tension.</li>
           </ul>
           <p><strong>Medium:</strong> Oil on Canvas.</p>
+        </>
+      )
+    }
+  },
+
+  {
+    id: 15,
+    title: 'The Last Offering',
+    description: `A socio-political gothic allegory painted after the January 2026 uprisings in Iran, depicting the cold commodification of human life in geopolitical bargains where human lives weigh less than oil.`,
+    image: "https://github.com/atousasque/My_Portfolio/releases/download/v8/photo_2026-10-13_07-35-22.jpg", 
+    imgStyle: {
+      width: "85%",
+      maxHeight: "650px",
+      objectFit: "contain",
+      borderRadius: "8px",
+      margin: "10px auto",
+      display: "block"
+    },
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v8/photo_2026-10-13_07-35-22.jpg",
+      content: (
+        <>
+          <p>
+            <strong>The Last Offering</strong> is a visceral socio-political allegory created in the aftermath of the January 2026 (Dey 1404) uprisings in Iran. It confronts the grotesque reality of global geopolitical deals, where human lives and collective struggles are bartered like plague-ridden commodities beneath the shadow of oil diplomacy.
+          </p>
+
+          <p><strong>Artistic & Conceptual Highlights:</strong></p>
+          <ul>
+            <li>
+              <strong>Plague Doctors of Geopolitics:</strong> The central grotesque figures bear avian, plague-doctor silhouettes—symbolizing international political brokers trading silently above the suffering of ordinary people.
+            </li>
+            <li>
+              <strong>The Toxic Transaction:</strong> A luminescent, acrid yellow stream pours between their clawed hands, embodying oil wealth and extractive greed masquerading as diplomacy, flowing directly over the soil of collective loss.
+            </li>
+            <li>
+              <strong>The Unmarked Grave:</strong> An anonymous tombstone stands quietly in the foreground beneath a petrified, dead landscape, honoring the forgotten lives sacrificed in backroom political bargains.
+            </li>
+            <li>
+              <strong>Texture & Tension:</strong> Combines dense, suffocating cross-hatching and decaying organic textures with dramatic violet and neon contrasts to capture the chilling indifference of modern power structures.
+            </li>
+          </ul>
+
+          <p>
+            <strong>Medium:</strong> Mixed Media on Paper (Ink, Fineliners, and Colored Pencils).
+          </p>
         </>
       )
     }
@@ -403,10 +608,12 @@ export const Works = () => {
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  style={{ 
+                  style={project.imgStyle || { 
                     width: '100%', 
                     maxHeight: '450px', 
-                    objectFit: 'contain', 
+                    objectFit: 'contain',
+                    margin: "10px auto",
+                    display: "block",
                     borderRadius: '8px' 
                   }} 
                 />

@@ -14,29 +14,24 @@ const useStyles = makeStyles(() => ({
 
 const workData = [
   {
-    company: "FH Upper Austria",
+    company: "Campus Hagenberg – FH Upper Austria",
     year: "March 2025 – Present",
-    role: "Mentoring students in Hypermedia Systems and Architectures, Intelligent Systems, Relational Databases, Object-Oriented Programming, and Games with a Purpose. I guide students through creative technical debugging and help translate complex technological concepts into accessible development frameworks"
+    role: "Student Tutor — Mentoring students across Mixed Reality frameworks, AI, Graphics, Object-Oriented Programming, Relational Databases, and Games with a Purpose. Translating complex software design into accessible development frameworks and guiding technical debugging."
   },
   {
-    company: "Hagenberg Embedded System Lab",
+    company: "Embedded Systems Laboratory – Softwarepark",
     year: "May 2024 – June 2025",
-    role: "Developed research-oriented code for interactive systems within a transdisciplinary lab environment. Collaborated closely with researchers to bridge technical limitations with innovative, creative software solutions."
+    role: "Software Developer & Researcher — Maintained modular Java and C# codebases in an iterative research environment. Engineered the 'Embedded Systems SRAM Data Visualizer & Analyzer' (Python, Tkinter, Pandas, MySQL, Seaborn) to extract, query, and visualize physical memory component data."
   },
-  //{
-    //company: "Unity Developer & 3D Modeler",
-    //year: "2019 – Present",
-    //role: "Freelancer Game Developer and Designer — Working in teams or individually as a 3D modeler and Unity developer in game-related projects."
-  //},
   {
-    company: "Cafedeep Company",
+    company: "Mapno Company (Cafedeep | Khabarchain)",
     year: "2020 – 2023",
-    role: "Engineered end-to-end software solutions by bridging interactive frontend web components, Python-based AI pipelines, and RESTful API integrations—combining modern media design with robust backend logic and performance optimization."
+    role: "Junior Backend Developer & AI Researcher — Contributed to backend services and REST APIs for an AI-focused web platform using Python and Java. Researched emerging AI methods and authored technical articles translating complex architectures."
   },
   {
-    company: "Bualisina Incubator Center",
+    company: "BualiSina Incubator Center",
     year: "2017 – 2018",
-    role: "Conducted transdisciplinary research on Internet of Things (IoT) devices, exploring the integration of physical sensors and smart environments. Served as a technical assistant, mentoring students on physical computing projects."
+    role: "Junior Researcher of IoT & Physical Computing — Conducted transdisciplinary research on Internet of Things (IoT) devices, exploring sensor integration and smart environments. Served as a technical assistant mentoring students on physical computing projects."
   }
 ];
 
