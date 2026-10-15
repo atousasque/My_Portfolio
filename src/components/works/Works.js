@@ -58,10 +58,10 @@ const projects = [
           <p>
             <strong>Canvas of Confinement</strong> is an interactive, site-specific VR installation exploring how the human body becomes engulfed and monitored by modern technology. The piece acts as an active point of entry into an overwhelming digital network, transforming psychological anxiety into a literal virtual void.
           </p>
-          <p><strong>Note on Video Material:</strong></p>
-          <p>
+          {/* <p><strong>Note on Video Material:</strong></p> */}
+          {/* <p>
             Due to strict submission file size limits, the video preview above is a short teaser with highly compressed rendering and format limits. The full-length, high-quality walkthrough showing the complete atmosphere and spatial interaction is hosted permanently right here on this portfolio page.
-          </p>
+          </p> */}
           <p><strong>Key features and focus areas include:</strong></p>
           <ul>
             <li><strong>The Analog Matrix:</strong> Built from a highly dense physical drawing using ink, fineliners (Rapidograph), and colored pencils on paper. It utilizes <em>Horror Vacui</em> (fear of empty spaces) to capture modern mental overstimulation and anxiety caused by high-speed information loops.</li>
@@ -77,24 +77,23 @@ const projects = [
     }
   },
     
-  {
+{
     id: 1,
     title: 'VirtuArt (Master\'s Thesis)',
     description: `A conceptual VR prototype that simulates the physical constraints, friction, and tactile resistance of traditional oil painting within a minimalist virtual canvas.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.10.0/Atousa_Garousian.mp4", 
     modal: {
-      //image: "https://github.com/atousasque/My_Portfolio/releases/download/.../VirtuArt.jpg", 
       content: (
         <>
           <p>
-            <strong>VirtuArt</strong> is my Master's Thesis project, exploring the intersection of classical physical materiality and modern interactive technologies. It translates the sensory perception and bodily constraints of traditional oil painting into the boundless realm of virtual reality.
+            <strong>VirtuArt</strong> is my Master's Thesis project, exploring the intersection of classical physical materiality and modern interactive technologies. It translates the sensory perception, tactile friction, and bodily constraints of traditional oil painting into the boundless realm of virtual reality.
           </p>
           <p><strong>Key features and focus areas include:</strong></p>
           <ul>
-            <li>Simulating the tactile resistance and physical friction of brushstrokes on a virtual canvas</li>
-            <li>Integrating modern impressionism and heavy impasto techniques into an immersive VR environment</li>
-            <li>Designing a minimalist virtual space that emphasizes the physical relationship between the artist and the medium</li>
-            <li>Bridging the gap between physical materiality and digital expression through sensory-rich interaction mechanics</li>
+            <li>Simulating the tactile resistance and physical friction of brushstrokes on a virtual canvas.</li>
+            <li>Integrating modern impressionism and heavy impasto techniques into an immersive VR environment.</li>
+            <li>Designing a minimalist virtual space that emphasizes the physical relationship between the artist and the medium.</li>
+            <li>Bridging the gap between physical materiality and digital expression through sensory-rich interaction mechanics.</li>
           </ul>
           <p>
             As a transdisciplinary digital artist, this project represents my core philosophy: rethinking digital experiences by embedding human senses and artistic research into XR development.
@@ -105,6 +104,18 @@ const projects = [
           <p>
             🎓 Master's Thesis project at FH Upper Austria (Defense: December 2026). Paper in preparation for submission to IEEE VR.
           </p>
+          <hr style={{ borderColor: 'rgba(255,255,255,0.1)', margin: '1.2rem 0' }} />
+          <p><strong>Open-Source Repositories & Prototypes:</strong></p>
+          <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
+            <li style={{ marginBottom: '12px' }}>
+              🔗 <a href="https://github.com/Atousa98/VR_Painting" target="_blank" rel="noopener noreferrer" style={{ color: '#ec704c', textDecoration: 'none', fontWeight: 600 }}>VirtuArt: Final RenderTexture Prototype (GitHub)</a>
+              <span style={{ display: 'block', fontSize: '0.85rem', opacity: 0.8, marginTop: '2px' }}>The final, selected architecture utilizing dynamic RenderTexture UV mapping to simulate continuous brush friction, tactile resistance, and material layering.</span>
+            </li>
+            <li style={{ marginTop: '10px' }}>
+              🔗 <a href="https://github.com/Atousa98/VR_Raycast" target="_blank" rel="noopener noreferrer" style={{ color: '#ec704c', textDecoration: 'none', fontWeight: 600 }}>VirtuArt: Raycast Drawing Prototype (GitHub)</a>
+              <span style={{ display: 'block', fontSize: '0.85rem', opacity: 0.8, marginTop: '2px' }}>Initial exploratory prototype evaluating collision-based Raycasting mechanics for spatial 2D canvas interaction.</span>
+            </li>
+          </ul>
         </>
       )
     }
