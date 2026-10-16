@@ -26,7 +26,7 @@ const useStyles = makeStyles(() => ({
     },
   },
   card: {
-    backgroundColor: "rgba(30, 30, 30, 0.85)", // Matches original modal tone with glassmorphism
+    backgroundColor: "rgba(30, 30, 30, 0.85)",
     border: "1px solid rgba(255, 255, 255, 0.2)",
     borderRadius: "16px",
     padding: "2.5rem",
@@ -63,8 +63,11 @@ const useStyles = makeStyles(() => ({
   },
   modalImage: {
     width: "100%",
+    maxHeight: "550px",
+    objectFit: "contain",
     borderRadius: "10px",
-    margin: "1rem 0",
+    margin: "1rem 0 2rem 0",
+    display: "block",
   },
   title: {
     fontSize: "2.2rem",
@@ -78,7 +81,6 @@ export const ProjectDetail = () => {
   const classes = useStyles();
   const { slug } = useParams();
 
-  // Find target project
   const project = projects.find((p) => p.slug === slug);
 
   useEffect(() => {
@@ -107,16 +109,14 @@ export const ProjectDetail = () => {
       <div className={classes.card}>
         <h1 className={classes.title}>{project.title}</h1>
 
-        {/* Primary Project Preview (Video or Image) */}
-        <div className={classes.mediaWrapper}>
-          {project.video ? (
+        {/* Display video ONLY if explicitly enabled for this project */}
+        {project.showVideoInDetail && project.video && (
+          <div className={classes.mediaWrapper}>
             <video controls src={project.video} className={classes.mainMedia} />
-          ) : project.image ? (
-            <img src={project.image} alt={project.title} className={classes.mainMedia} />
-          ) : null}
-        </div>
+          </div>
+        )}
 
-        {/* Dedicated Modal Image (Exact same logic as previous Modal) */}
+        {/* Display image if defined for modal */}
         {project.modal && project.modal.image && (
           <img
             src={project.modal.image}

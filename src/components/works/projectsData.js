@@ -33,6 +33,7 @@ export const projects = [
     id: 1,
     slug: "virtuart",
     title: "VirtuArt (Master's Thesis)",
+    showVideoInDetail: true,
     description: `A conceptual VR prototype that simulates the physical constraints, friction, and tactile resistance of traditional oil painting within a minimalist virtual canvas.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.10.0/Atousa_Garousian.mp4",
     modal: {
@@ -146,6 +147,7 @@ export const projects = [
     id: 4,
     slug: "rewild",
     title: "ReWild - Mixed Reality Ecosystem",
+    showVideoInDetail: true,
     description: `An interactive MR experience for the Ars Electronica Festival, allowing users to grow and nurture a digital ecosystem into physical space.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.9.0/ReWild.mp4",
     modal: {
@@ -279,6 +281,7 @@ export const projects = [
     id: 7,
     slug: "fishing-simulator",
     title: "Fishing Simulator",
+    showVideoInDetail: true,
     description: `A VR-ready Unity simulation recreating a peaceful fishing experience with natural terrain and immersive audio-visual design.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.2.0/FishingSimulator.mp4",
     modal: {
@@ -306,6 +309,7 @@ export const projects = [
     id: 8,
     slug: "ar-flight-controller",
     title: "AR Image Tracking: Interactive Flight Controller",
+    showVideoInDetail: true,
     description: `A mobile Augmented Reality system built with Unity AR Foundation and ARCore, featuring real-time 2D image target recognition, dynamic 3D asset spawning, and math-driven 6DoF flight physics.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v9/587867536-05287f23-6b51-4c53-98d2-12ba2a796a40.mp4",
     modal: {
@@ -332,6 +336,7 @@ export const projects = [
           <p>
             <strong>Tech Stack:</strong> Unity (C#), AR Foundation, ARCore XR Plugin, IL2CPP Architecture, Mobile UI Systems.
           </p>
+          <p>🔗 <a href="https://github.com/Atousa98/AR_Dragon" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
         </>
       )
     }
@@ -385,7 +390,7 @@ export const projects = [
       display: "block"
     },
     modal: {
-      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg",
+    //   image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg",
       content: (
         <>
           <p>
@@ -420,7 +425,7 @@ export const projects = [
       display: "block"
     },
     modal: {
-      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.2.0/IMG_20250328_202440_991.jpg",
+    //   image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.2.0/IMG_20250328_202440_991.jpg",
       content: (
         <>
           <p>
@@ -453,7 +458,7 @@ export const projects = [
       display: "block"
     },
     modal: {
-      image: "https://github.com/atousasque/My_Portfolio/releases/download/v8/photo_2026-10-13_07-35-22.jpg",
+    //   image: "https://github.com/atousasque/My_Portfolio/releases/download/v8/photo_2026-10-13_07-35-22.jpg",
       content: (
         <>
           <p>
