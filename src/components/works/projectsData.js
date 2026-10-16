@@ -1,0 +1,484 @@
+// src/components/works/projectsData.js
+import React from "react";
+
+export const projects = [
+  {
+    id: 0,
+    slug: "canvas-of-confinement",
+    title: "Canvas of Confinement",
+    description: `An interactive VR intermedia installation transforming an obsessive physical ink artwork into an amorphous, suffocating digital cage that monitors and overstimulates the human body.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v3/Video.mp4",
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg",
+      content: (
+        <>
+          <p>
+            <strong>Canvas of Confinement</strong> is an interactive, site-specific VR installation exploring how the human body becomes engulfed and monitored by modern technology. The piece acts as an active point of entry into an overwhelming digital network, transforming psychological anxiety into a literal virtual void.
+          </p>
+          <p><strong>Key features and focus areas include:</strong></p>
+          <ul>
+            <li><strong>The Analog Matrix:</strong> Built from a highly dense physical drawing using ink, fineliners (Rapidograph), and colored pencils on paper. It utilizes <em>Horror Vacui</em> (fear of empty spaces) to capture modern mental overstimulation and anxiety caused by high-speed information loops.</li>
+            <li><strong>Amorphous Confinement:</strong> Instead of a stable geometric cube, the hand-drawn lines wrap around the user in a shifting, nameless spatial trap. The endless multiplying eyes represent the invasive gaze of surveillance capitalism and political systems tracking our lives.</li>
+            <li><strong>Shader-Driven Tension:</strong> Built in Unity, the boundaries physically contract over time, forcing the user into anxious, disoriented head movements. A custom shader shifts the visual environment from cyberpunk neon cyan and purple veins into a heavy, deep crimson shadow.</li>
+            <li><strong>Interactive Audio-Visual System:</strong> Users pull the VR trigger to shoot streams of cyan particles to illuminate the darkness. This action is synced with a raw, three-layer soundscape featuring heavy industrial drones, mechanical data-logging clicks, and static echoes.</li>
+          </ul>
+          <p>
+            <strong>Tech stack:</strong> Unity, C#, XR Interaction Toolkit, Custom Shaders, Sound Design, Analog Media (Ink/Fineliners).
+          </p>
+        </>
+      )
+    }
+  },
+  {
+    id: 1,
+    slug: "virtuart",
+    title: "VirtuArt (Master's Thesis)",
+    description: `A conceptual VR prototype that simulates the physical constraints, friction, and tactile resistance of traditional oil painting within a minimalist virtual canvas.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.10.0/Atousa_Garousian.mp4",
+    modal: {
+      content: (
+        <>
+          <p>
+            <strong>VirtuArt</strong> is my Master's Thesis project, exploring the intersection of classical physical materiality and modern interactive technologies. It translates the sensory perception, tactile friction, and bodily constraints of traditional oil painting into the boundless realm of virtual reality.
+          </p>
+          <p><strong>Key features and focus areas include:</strong></p>
+          <ul>
+            <li>Simulating the tactile resistance and physical friction of brushstrokes on a virtual canvas.</li>
+            <li>Integrating modern impressionism and heavy impasto techniques into an immersive VR environment.</li>
+            <li>Designing a minimalist virtual space that emphasizes the physical relationship between the artist and the medium.</li>
+            <li>Bridging the gap between physical materiality and digital expression through sensory-rich interaction mechanics.</li>
+          </ul>
+          <p>
+            As a transdisciplinary digital artist, this project represents my core philosophy: rethinking digital experiences by embedding human senses and artistic research into XR development.
+          </p>
+          <p>
+            <strong>Tech stack:</strong> Unity, XR Interaction Toolkit, C#, Shader Graph, 3D Modeling (Blender).
+          </p>
+          <p>
+            🎓 Master's Thesis project at FH Upper Austria (Defense: December 2026). Paper in preparation for submission to IEEE VR.
+          </p>
+          <hr style={{ borderColor: 'rgba(255,255,255,0.1)', margin: '1.2rem 0' }} />
+          <p><strong>Open-Source Repositories & Prototypes:</strong></p>
+          <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
+            <li style={{ marginBottom: '12px' }}>
+              🔗 <a href="https://github.com/Atousa98/VR_Painting" target="_blank" rel="noopener noreferrer" style={{ color: '#ec704c', textDecoration: 'none', fontWeight: 600 }}>VirtuArt: Final RenderTexture Prototype (GitHub)</a>
+              <span style={{ display: 'block', fontSize: '0.85rem', opacity: 0.8, marginTop: '2px' }}>The final, selected architecture utilizing dynamic RenderTexture UV mapping to simulate continuous brush friction, tactile resistance, and material layering.</span>
+            </li>
+            <li style={{ marginTop: '10px' }}>
+              🔗 <a href="https://github.com/Atousa98/VR_Raycast" target="_blank" rel="noopener noreferrer" style={{ color: '#ec704c', textDecoration: 'none', fontWeight: 600 }}>VirtuArt: Raycast Drawing Prototype (GitHub)</a>
+              <span style={{ display: 'block', fontSize: '0.85rem', opacity: 0.8, marginTop: '2px' }}>Initial exploratory prototype evaluating collision-based Raycasting mechanics for spatial 2D canvas interaction.</span>
+            </li>
+          </ul>
+        </>
+      )
+    }
+  },
+  {
+    id: 2,
+    slug: "longdrive",
+    title: "LongDrive",
+    description: `LongDrive is a semi-autonomous driving simulation built in Unity, based on Austria's real highway network. I co-developed the game systems and created the terrain and environment.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.0.0/LongDrive.mp4",
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.1.1/LongDrive.jpg",
+      content: (
+        <>
+          <p>
+            <strong>LongDrive</strong> is a collaborative Unity simulation inspired by truck-driving games like Euro Truck Simulator.
+            It was designed for testing automated driving behavior, featuring tasks like paying tolls or handling distractions
+            while monitoring the vehicle’s AI.
+          </p>
+          <p><strong>My contributions included:</strong></p>
+          <ul>
+            <li>Modeling the cities</li>
+            <li>Painting and shaping the terrain using imported heightmaps</li>
+            <li>Designing and placing natural environments, including trees, roadsides, and forests</li>
+            <li>Adjusting the scenery to align with the handcrafted road network (EasyRoads3D)</li>
+          </ul>
+          <p>My teammate developed the UI, delivery logic, and AI behavior.</p>
+          <p>
+            🔒 This project is part of an academic course and stored in a <strong>private repository</strong>,
+            so the source code is not publicly shareable.
+          </p>
+          <p>
+            <strong>Tech stack:</strong> Unity 2023.3, EasyRoads3D, RCC, Gley AI Traffic, Terrain Tools, custom prefabs.
+          </p>
+        </>
+      )
+    }
+  },
+  {
+    id: 3,
+    slug: "longdrive-extended",
+    title: "LongDrive: Extended",
+    description: `LongDrive: Extended is the finalized version of our semi-autonomous highway driving simulator. It introduces infotainment-based in-car tasks and G29 steering wheel support.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.1.0/LongDrive2.mp4",
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.2.1/Extended.jpg",
+      content: (
+        <>
+          <p>
+            <strong>LongDrive: Extended</strong> builds on the original prototype, enhancing realism and complexity.
+            Players drive on a recreated Austrian highway network while managing tasks in a fully interactive infotainment system.
+          </p>
+          <p><strong>Key features include:</strong></p>
+          <ul>
+            <li>Infotainment system with live internet radio, media player, phone, navigation, and task menus</li>
+            <li>Task system requiring the player to complete road tax payments, phone calls, and text messages during autonomous driving</li>
+            <li>Support for G29 steering wheel with Force Feedback and realistic controls</li>
+            <li>Position selector scene for custom spawn points</li>
+            <li>AI improvements for NPCs and player-car lane behavior</li>
+          </ul>
+          <p>
+            My contributions focused on terrain and environment design, implementing internet-radio and media player, building the task system, traffic-signs and car interior, as well as designing the UI for the main menu and ensuring visual polish across the scene.
+          </p>
+          <p>
+            <strong>Tech stack:</strong> Unity 2023.3, VLC for Unity, Gley AI Traffic, RCC, Terrain Tools, Logitech SDK.
+          </p>
+          <p>
+            🔒 This project is part of an academic study on driver distraction and trust in automation. Repository access is private.
+          </p>
+        </>
+      )
+    }
+  },
+  {
+    id: 4,
+    slug: "rewild",
+    title: "ReWild - Mixed Reality Ecosystem",
+    description: `An interactive MR experience for the Ars Electronica Festival, allowing users to grow and nurture a digital ecosystem into physical space.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.9.0/ReWild.mp4",
+    modal: {
+      content: (
+        <>
+          <p>
+            <strong>🌿ReWild</strong> is an immersive Mixed Reality (MR) ecosystem prototype conceived for the Ars Electronica Festival context. 
+            The project empowers users to become digital gardeners, transforming physical spaces into thriving, interactive ecosystems.
+          </p>
+          <p><strong>Key features include:</strong></p>
+          <ul>
+            <li>Interactive MR mechanics allowing users to plant seeds and physically simulate watering them</li>
+            <li>Dynamic environmental growth, evolving from bare ground into lush meadows or dense jungles based on user choices</li>
+            <li>An ecosystem simulation where various animals dynamically populate the environments as they grow</li>
+            <li>Seamless blending of digital flora and fauna with the real-world exhibition space</li>
+          </ul>
+          <p>
+            As the Unreal Engine Developer, my core contributions focused on co-engineering the gameplay loop and interaction mechanics. I helped programming the complex growth logic for the environments and managed the Mixed Reality integration to ensure a smooth user experience, while collaborating with team members who handled the 3D animation and sound design.
+          </p>
+          <p>
+            <strong>Tech stack:</strong> Unreal Engine, Mixed Reality (MR/XR) Frameworks, Blueprints / C++.
+          </p>
+          <p>
+            🔒 Developed as an interactive prototype for the Game Spaces course at FH Upper Austria (private repository). The project provided vital practical insights into the technical constraints and high maintenance demands of deploying interactive ecosystems in public settings.
+          </p>
+        </>
+      )
+    }
+  },
+  {
+    id: 5,
+    slug: "smart-plants",
+    title: "Smart Plants: Pervasive IoT Ecosystem",
+    description: `A sensor-to-cloud automated plant monitoring system with closed-loop grow-light control and a rule-based Python health scoring engine.`,
+    image: "https://github.com/atousasque/My_Portfolio/releases/download/v4/Plant.jpg",
+    imgStyle: {
+      width: "75%",
+      aspectRatio: "16 / 9",
+      objectFit: "contain",
+      backgroundColor: "#ffffff",
+      margin: "10px auto",
+      display: "block",
+      borderRadius: "8px"
+    },
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v5/Pixlr_20261013070122747.jpg",
+      content: (
+        <>
+          <p>
+            <strong>Smart Plants</strong> is a pervasive computing and IoT monitoring ecosystem engineered by a team of five. The project connects physical plant environments to the cloud, combining automated sensor telemetry, closed-loop environmental actuators, and subjective human observations into a unified plant care pipeline.
+          </p>
+          <p><strong>System Architecture & Workflow:</strong></p>
+          <ul>
+            <li>
+              <strong>Sensing & Edge Computing:</strong> Environmental data (soil moisture, ambient light via LDR voltage divider, temperature, and relative humidity via DHT11) are continuously gathered by an ESP32 microcontroller and published securely over MQTT (HiveMQ Cloud).
+            </li>
+            <li>
+              <strong>Closed-Loop Light Actuation:</strong> A Raspberry Pi 4 edge hub runs a custom Python MQTT bridge and Zigbee2MQTT service to control smart lighting (IKEA TRÅDFRI via Sonoff Zigbee 3.0), automatically toggling supplemental grow light when ambient levels drop below calibrated thresholds.
+            </li>
+            <li>
+              <strong>Algorithmic Evaluation Layer (Python):</strong> Built the rule-based analytical engine using Python, <code>pymongo</code>, and <code>paho-mqtt</code>. The engine calculates an overall plant health score (0–100) by comparing live telemetry against species-specific tolerance ranges, detecting environmental state shifts, and factoring in user feedback.
+            </li>
+            <li>
+              <strong>Full-Stack Data Pipeline:</strong> Telemetry is ingested by an Express.js backend, stored in MongoDB collections (caching precomputed daily/weekly historical aggregations), and presented through an interactive React dashboard with historical trend graphs.
+            </li>
+          </ul>
+          <p><strong>My Contributions:</strong></p>
+          <ul>
+            <li>Architected and implemented the core Python evaluation and health-scoring logic (<code>logic.py</code>, <code>db.py</code>) analyzing sensor data streams and user logs.</li>
+            <li>Assisted in hardware prototyping, ESP32 sensor circuit breadboarding, calibration curves, and Raspberry Pi edge-service setup.</li>
+            <li>Collaborated on system concept design and end-to-end MQTT topic schema structuring.</li>
+          </ul>
+          <p>
+            <strong>Tech stack:</strong> Python (pymongo, paho-mqtt), ESP32 (C++/Arduino), Raspberry Pi 4, Zigbee2MQTT, MQTT (HiveMQ), MongoDB, Express.js, React.
+          </p>
+          <p>
+            🏆 <em>Awarded the highest grade in the Pervasive Computing course at FH Upper Austria.</em>
+          </p>
+        </>
+      )
+    }
+  },
+  {
+    id: 6,
+    slug: "historical-portals",
+    title: "Historical Portals: Spatial Memory & Material Archives",
+    description: `An ongoing Mixed Reality research framework bridging urban physical spaces with archival memory—originating from photographic and material field research in historical corridors.`,
+    image: "https://github.com/atousasque/My_Portfolio/releases/download/v6/photo_2026-10-13_07-15-07.jpg",
+    imgStyle: {
+      width: "75%",
+      maxWidth: "100%",
+      margin: "10px auto",
+      display: "block",
+      borderRadius: "8px",
+      objectFit: "contain"
+    },
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v7/photo_2026-10-13_07-08-57.jpg",
+      content: (
+        <>
+          <p>
+            <strong>Historical Portals</strong> is an ongoing Mixed Reality (MR) research initiative investigating how site-specific storytelling and archival memory can be directly embodied within physical architectural spaces.
+          </p>
+          <p><strong>The Conceptual Catalyst (Fieldwork in Ancient Corridors):</strong></p>
+          <p>
+            The project originated from extensive visual and material field research across the historic bazaar and living ruins of Hamedan (Ecbatana). Documenting eroding brick vaulting, layered textiles, and traditional craft environments provided the tactile and atmospheric benchmark for virtual time-portals—treating history not as flat photographic data, but as a sensory, physical volume.
+          </p>
+          <p><strong>Mixed Reality Implementation & Linz Urban Context:</strong></p>
+          <ul>
+            <li>
+              <strong>Spatial Storytelling:</strong> Connects contemporary physical coordinates (such as public squares in Linz) with localized historical memory layers through immersive spatial computing.
+            </li>
+            <li>
+              <strong>Material-Driven Portals:</strong> Translates physical weathering, architectural erosion, and ambient acoustics into real-time environments, examining the emotional resonance of navigating forgotten temporal spaces.
+            </li>
+            <li>
+              <strong>Digital Twins & Archival Layers:</strong> Investigates multi-user physical presence and archival interaction, bridging historical cultural heritage with interactive spatial interfaces.
+            </li>
+          </ul>
+          <p>
+            <strong>Methodologies & Tools:</strong> Visual Field Research, Spatial Archiving, Mixed Reality Prototyping (Unreal Engine / Unity), Photogrammetry, HCI.
+          </p>
+          <p>
+            🔒 <em>Ongoing transdisciplinary R&D project exploring archival memory and affective spatial computing.</em>
+          </p>
+        </>
+      )
+    }
+  },
+  {
+    id: 7,
+    slug: "fishing-simulator",
+    title: "Fishing Simulator",
+    description: `A VR-ready Unity simulation recreating a peaceful fishing experience with natural terrain and immersive audio-visual design.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.2.0/FishingSimulator.mp4",
+    modal: {
+      content: (
+        <>
+          <p>
+            <strong>Fishing Simulator</strong> is a calm, immersive Unity-based simulation originally built for VR headsets, 
+            but also playable without them for exhibition purposes. The experience focuses on sensory realism through detailed environmental design.
+          </p>
+          <p><strong>My contributions included:</strong></p>
+          <ul>
+            <li>Designing and updating the high-fidelity environment of the simulation.</li>
+            <li>Helped with integrating the simulation with VR hardware (head tracking, input controls)</li>
+          </ul>
+          <p>
+            The simulation was designed with accessibility in mind, allowing seamless transitions between VR and screen-based setups for demonstrations.
+          </p>
+          <p><strong>Tech stack:</strong> Unity HDRP, VR Toolkit (XR Interaction Toolkit), baked lighting, water shaders, and Gaia procedural world.</p>
+          <p>🔗 <a href="https://github.com/reapphil/HGB_FishingSimulator" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+        </>
+      )
+    }
+  },
+  {
+    id: 8,
+    slug: "ar-flight-controller",
+    title: "AR Image Tracking: Interactive Flight Controller",
+    description: `A mobile Augmented Reality system built with Unity AR Foundation and ARCore, featuring real-time 2D image target recognition, dynamic 3D asset spawning, and math-driven 6DoF flight physics.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v9/587867536-05287f23-6b51-4c53-98d2-12ba2a796a40.mp4",
+    modal: {
+      content: (
+        <>
+          <p>
+            An interactive mobile Augmented Reality (AR) application exploring 2D planar tracking, dynamic prefab instantiation, and real-time physical control within spatial computing environments.
+          </p>
+          <p><strong>Core Architectural Features:</strong></p>
+          <ul>
+            <li>
+              <strong>AR Image Target Tracking:</strong> Implemented using Unity’s <code>AR Tracked Image Manager</code> and serialized Reference Image Libraries, seamlessly anchoring digital twins to real-world physical markers.
+            </li>
+            <li>
+              <strong>Dynamic Spawning & Offset Logic:</strong> Developed a responsive event listener (<code>trackedImagesChanged</code>) in C# to dynamically instantiate and orient rigged animated assets upon detection.
+            </li>
+            <li>
+              <strong>Math-Driven Flight Mechanics:</strong> Integrated on-screen UI joystick telemetry mapped to 3D world space. Real-time directional rotation is computed using <code>Mathf.Atan2(xVal, yVal) * Mathf.Rad2Deg</code> with non-gravitational kinematic physics (Rigidbody velocity control).
+            </li>
+            <li>
+              <strong>Mobile Performance & Pipeline Optimization:</strong> Stripped Vulkan dependencies in favor of OpenGLES3, compiled with 64-bit IL2CPP architecture, and balanced render hierarchies for optimal mobile thermal and frame rates.
+            </li>
+          </ul>
+          <p>
+            <strong>Tech Stack:</strong> Unity (C#), AR Foundation, ARCore XR Plugin, IL2CPP Architecture, Mobile UI Systems.
+          </p>
+        </>
+      )
+    }
+  },
+  {
+    id: 9,
+    slug: "recoil-rumble",
+    title: "Recoil Rumble",
+    description: `Recoil Rumble is a fast-paced, retro-style multiplayer FPS with powerful knockback mechanics and stylized visuals.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.3.0/MultiplayerShooter.mp4",
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.3.1/Recoil.jpg",
+      content: (
+        <>
+          <p>
+            <strong>Recoil Rumble</strong> is a multiplayer arena shooter built in Unreal Engine, focused on chaotic movement and tactical physics. Players battle using a unique recoil system that launches them across maps using high-knockback weapons.
+          </p>
+          <p><strong>Game highlights:</strong></p>
+          <ul>
+            <li>Fast-paced gameplay with 7 distinct weapons, including a grappling hook and remote-detonated mines</li>
+            <li>3 game modes: Team Deathmatch, Free For All, Capture The Flag</li>
+            <li>3 stylized, retro-inspired maps</li>
+            <li>Retro PSX-style visuals using dithering shaders and minimalist lighting</li>
+          </ul>
+          <p><strong>My contributions included:</strong></p>
+          <ul>
+            <li>Helped with the Design and implementation of all user interface components (menus, HUD, status elements)</li>
+            <li>Ensuring UI responsiveness and styling to match the PSX aesthetic</li>
+          </ul>
+          <p><strong>Tech stack:</strong> Unreal Engine 5, Blueprints, custom UI widgets, multiplayer networking.</p>
+          <p>
+            🔒 This project is part of a university collaboration and is stored in a <strong>private repository</strong>,
+            so the source code is not publicly accessible.
+          </p>
+        </>
+      )
+    }
+  },
+  {
+    id: 10,
+    slug: "in-the-shackles-of-suffocation",
+    title: "In the Shackles of Suffocation",
+    description: `A psychedelic, biomorphic illustration mapping the psychological impact of digital overstimulation and surveillance—core analog foundation and visual matrix for the VR installation "Canvas of Confinement".`,
+    image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg",
+    imgStyle: {
+      width: "85%",
+      maxHeight: "650px",
+      objectFit: "contain",
+      borderRadius: "8px",
+      margin: "10px auto",
+      display: "block"
+    },
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg",
+      content: (
+        <>
+          <p>
+            <strong>In the Shackles of Suffocation</strong> serves as the complete analog blueprint and visual infrastructure for the interactive VR installation, <em>Canvas of Confinement</em>. This piece maps the physical and psychological impact of severe data overstimulation, digital surveillance, and the modern commodification of human identity.
+          </p>
+          <p><strong>Artistic & Conceptual Highlights for MFRU:</strong></p>
+          <ul>
+            <li>Utilizes the <em>Horror Vacui</em> (fear of empty space) technique to visually represent perfectionism, chronic mental anxiety, and the suffocating flood of high-speed digital information today.</li>
+            <li>Features an overwhelming matrix of interwoven biomorphic textures and multiplying eyes, symbolizing the invasive, constant gaze of surveillance capitalism and modern economic control.</li>
+            <li>Contrasts chaotic, dense ink linework with vibrant, cyberpunk neon hues of cyan and purple. In the VR adaptation, these cold digital veins actively shift to represent the system processing and altering the human presence.</li>
+          </ul>
+          <p><strong>Medium:</strong> Ink, Fineliners (Rapidograph), and Colored Pencils on Paper.</p>
+          <p>
+            🌐 <strong>VR Implementation:</strong> The intricate lines and eyes of this physical paper have been completely mapped onto the deconstructed, amorphous virtual canvases of <strong>Canvas of Confinement</strong>, expanding this traditional illustration into a fully immersive, hostile digital environment.
+          </p>
+        </>
+      )
+    }
+  },
+  {
+    id: 11,
+    slug: "bloody-winter",
+    title: "Bloody Winter",
+    description: `A contemporary impressionist oil painting capturing the heavy, suffocating atmosphere of collective trauma during the "Woman, Life, Freedom" movement in Iran.`,
+    image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.2.0/IMG_20250328_202440_991.jpg",
+    imgStyle: {
+      width: "85%",
+      maxHeight: "650px",
+      objectFit: "contain",
+      borderRadius: "8px",
+      margin: "10px auto",
+      display: "block"
+    },
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.2.0/IMG_20250328_202440_991.jpg",
+      content: (
+        <>
+          <p>
+            <strong>Bloody Winter</strong> is a visceral translation of collective trauma, painted during the height of the "Woman, Life, Freedom" protests in Iran. The piece intentionally subverts the traditional tranquility and purity of a snow-covered winter landscape into a political and emotional metaphor.
+          </p>
+          <p><strong>Artistic & Conceptual Highlights:</strong></p>
+          <ul>
+            <li>Employs a contemporary impressionist style with heavy, textured impasto brushstrokes.</li>
+            <li>Contrasts the stark, freezing white of the trees with a deep, bleeding crimson sky and river.</li>
+            <li>Captures the heavy, chilling atmosphere of oppression and the undeniable reality of bloodshed that permanently altered our perception of safety and nature.</li>
+            <li>Explores the psychological weight of a historical turning point through dramatic color contrasts and atmospheric tension.</li>
+          </ul>
+          <p><strong>Medium:</strong> Oil on Canvas.</p>
+        </>
+      )
+    }
+  },
+  {
+    id: 12,
+    slug: "the-last-offering",
+    title: "The Last Offering",
+    description: `A socio-political gothic allegory painted after the January 2026 uprisings in Iran, depicting the cold commodification of human life in geopolitical bargains where human lives weigh less than oil.`,
+    image: "https://github.com/atousasque/My_Portfolio/releases/download/v8/photo_2026-10-13_07-35-22.jpg",
+    imgStyle: {
+      width: "85%",
+      maxHeight: "650px",
+      objectFit: "contain",
+      borderRadius: "8px",
+      margin: "10px auto",
+      display: "block"
+    },
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v8/photo_2026-10-13_07-35-22.jpg",
+      content: (
+        <>
+          <p>
+            <strong>The Last Offering</strong> is a visceral socio-political allegory created in the aftermath of the January 2026 (Dey 1404) uprisings in Iran. It confronts the grotesque reality of global geopolitical deals, where human lives and collective struggles are bartered like plague-ridden commodities beneath the shadow of oil diplomacy.
+          </p>
+          <p><strong>Artistic & Conceptual Highlights:</strong></p>
+          <ul>
+            <li>
+              <strong>Plague Doctors of Geopolitics:</strong> The central grotesque figures bear avian, plague-doctor silhouettes—symbolizing international political brokers trading silently above the suffering of ordinary people.
+            </li>
+            <li>
+              <strong>The Toxic Transaction:</strong> A luminescent, acrid yellow stream pours between their clawed hands, embodying oil wealth and extractive greed masquerading as diplomacy, flowing directly over the soil of collective loss.
+            </li>
+            <li>
+              <strong>The Unmarked Grave:</strong> An anonymous tombstone stands quietly in the foreground beneath a petrified, dead landscape, honoring the forgotten lives sacrificed in backroom political bargains.
+            </li>
+            <li>
+              <strong>Texture & Tension:</strong> Combines dense, suffocating cross-hatching and decaying organic textures with dramatic violet and neon contrasts to capture the chilling indifference of modern power structures.
+            </li>
+          </ul>
+          <p>
+            <strong>Medium:</strong> Mixed Media on Paper (Ink, Fineliners, and Colored Pencils).
+          </p>
+        </>
+      )
+    }
+  }
+];
