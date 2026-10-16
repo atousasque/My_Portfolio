@@ -390,7 +390,7 @@ export const projects = [
       display: "block"
     },
     modal: {
-    //   image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg",
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg",
       content: (
         <>
           <p>
@@ -425,7 +425,7 @@ export const projects = [
       display: "block"
     },
     modal: {
-    //   image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.2.0/IMG_20250328_202440_991.jpg",
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.2.0/IMG_20250328_202440_991.jpg",
       content: (
         <>
           <p>
@@ -458,7 +458,7 @@ export const projects = [
       display: "block"
     },
     modal: {
-    //   image: "https://github.com/atousasque/My_Portfolio/releases/download/v8/photo_2026-10-13_07-35-22.jpg",
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v8/photo_2026-10-13_07-35-22.jpg",
       content: (
         <>
           <p>
