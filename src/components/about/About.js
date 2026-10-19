@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutme = `I am a Creative Technologist & XR Developer based in Upper Austria, completing my M.Sc. in Interactive Media at FH Hagenberg (focus: XR & Human-Computer Interaction) with a B.Sc. in Computer Engineering and a strong background in classical oil painting.
+  const aboutme = `I am Atousa Garousian, an Iranian Creative Technologist & XR Developer based in Upper Austria, completing my M.Sc. in Interactive Media at FH Hagenberg (focus: XR & Human-Computer Interaction) with a B.Sc. in Computer Engineering and a strong background in classical oil/Mixed painting.
 
 I work at the intersection of Mixed Reality, physical computing, and interactive art. My engineering background bridges robust software architectures (C#, C++, Python, Java, JavaScript/TypeScript, React) with real-time immersive systems in Unity and Unreal Engine. My work spans interactive VR/MR environments, sensor-to-cloud IoT ecosystems (ESP32, MQTT), and data-driven pipelines, reflected in projects like VirtuArt (Master's Thesis), Canvas of Confinement, Smart Plants, and ReWild.
 
