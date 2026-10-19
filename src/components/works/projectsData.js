@@ -149,7 +149,7 @@ export const projects = [
     title: "ReWild - Mixed Reality Ecosystem",
     showVideoInDetail: true,
     description: `An interactive MR experience for the Ars Electronica Festival, allowing users to grow and nurture a digital ecosystem into physical space.`,
-    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.9.0/ReWild.mp4",
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v14/video_2026-10-15_07-14-20.mp4",
     modal: {
       content: (
         <>
@@ -179,6 +179,110 @@ export const projects = [
   },
   {
     id: 5,
+    slug: "historical-portals",
+    title: "Historical Portals: Spatial Memory & Material Archives",
+    showVideoInDetail: true,
+    description: `A site-specific Mixed Reality research framework and interactive prototype bridging urban physical spaces with archival memory, merging real-time Passthrough with custom stencil-masked historical environments.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v10/video_2026-10-19_10-07-30.mp4",
+    imgStyle: {
+      width: "75%",
+      maxWidth: "100%",
+      margin: "10px auto",
+      display: "block",
+      borderRadius: "8px",
+      objectFit: "contain"
+    },
+    modal: {
+      content: (
+        <>
+          <p>
+            <strong>Historical Portals</strong> is an ongoing Mixed Reality (MR) research and spatial computing initiative investigating how site-specific storytelling and archival temporal layers can be physically embodied within tangible urban landscapes.
+          </p>
+
+          <p><strong>The Conceptual Framework (Urban Layers of Linz):</strong></p>
+          <p>
+            Instead of looking at old photos in a book or museum, <strong>Historical Portals</strong> lets people step right into history in the middle of the city. By placing virtual doorways in public spaces, passersby can look through and see how that exact spot looked in the past.
+          </p>
+
+          <p><strong>Linz Hauptplatz Mixed Reality Prototype:</strong></p>
+          <p>
+            This prototype places a classic ornate frame in <strong>Linz Hauptplatz (Main Square)</strong>. Looking through the frame reveals a historical 360° view of the square and the Holy Trinity Column (Dreifaltigkeitssäule), blending the past directly into today's busy streets using real-time Passthrough.
+          </p>
+
+          {/* --- Section: Final Prototype Concept Sketch --- */}
+          <div style={{ margin: "20px 0", textAlign: "center" }}>
+            <p style={{ fontWeight: 600, marginBottom: "8px" }}>
+              Final Prototype Concept: Architectural Spatial Integration
+            </p>
+            <img
+              src="https://github.com/atousasque/My_Portfolio/releases/download/v12/Ornate.Frame.Over.a.Sketchy.City.Street.png"
+              alt="Historical Portal Final Concept Sketch"
+              style={{
+                width: "100%",
+                maxWidth: "680px",
+                borderRadius: "10px",
+                border: "1px solid rgba(255, 255, 255, 0.15)",
+                boxShadow: "0 6px 20px rgba(0,0,0,0.3)"
+              }}
+            />
+            <span style={{ fontSize: "0.85rem", color: "#aaa", display: "block", marginTop: "6px" }}>
+              Conceptual spatial juxtaposition: Real-time urban context aligned with an archival temporal threshold.
+            </span>
+          </div>
+
+          <p><strong>Technical Architecture & Rendering Pipeline:</strong></p>
+          <ul>
+            <li>
+              <strong>Custom URP Stencil Shader Pipeline:</strong> Engineered a lightweight HLSL Stencil Shader (Geometry Queue) coupled with Universal Render Pipeline (URP) Render Objects features, to reveal the 360° historical photo only inside the opening of the frame.
+            </li>
+            <li>
+              <strong>High-Fidelity Equirectangular Projection:</strong> Mapped an 8K panorama inside an inverted sphere, rotated to match the real-world direction of Linz Hauptplatz.
+            </li>
+            <li>
+              <strong>Meta Quest Passthrough Integration:</strong> Implemented low-latency Passthrough underlay layers via Meta XR Core SDK and OpenXR, ensuring seamless occlusion and spatial alignment between real physical architecture and virtual archival geometry.
+            </li>
+            <li>
+              <strong>Spatial Anchoring:</strong> Pinned the frame in place with spatial anchors so it stays locked to the ground as the user walks around.
+            </li>
+          </ul>
+
+          {/* --- Section: 360 Photosphere Visual Archive --- */}
+          <div style={{ margin: "20px 0", textAlign: "center" }}>
+            <p style={{ fontWeight: 600, marginBottom: "8px" }}>
+              Archival 360° Equirectangular Environment: Linz Hauptplatz
+            </p>
+            <img
+              src="https://github.com/atousasque/My_Portfolio/releases/download/v11/photo_2026-10-19_10-07-40.jpg"
+              alt="Linz Hauptplatz 360 Archival Photosphere"
+              style={{
+                width: "100%",
+                maxWidth: "680px",
+                borderRadius: "10px",
+                border: "1px solid rgba(255, 255, 255, 0.15)",
+                boxShadow: "0 6px 20px rgba(0,0,0,0.3)"
+              }}
+            />
+            <span style={{ fontSize: "0.85rem", color: "#aaa", display: "block", marginTop: "6px" }}>
+              8K Panoramic projection mapped onto inverted geometry within the stencil portal volume.
+            </span>
+          </div>
+
+          <p>
+            <strong>Core Methodologies & Technologies:</strong> Meta XR Core SDK (v60+), Unity 6 (URP), HLSL / Stencil Buffer Masking, Spatial Computing & Passthrough Underlay, Equirectangular 360 Mapping, Field Archiving, Cultural Heritage HCI.
+          </p>
+
+          <p>
+            🔒 <em>Ongoing transdisciplinary R&D exploring affective urban memory, digital twins, and sensory spatial thresholds.</em>
+          </p>
+          <p>🔗 <a href="https://github.com/Atousa98/Historical_Portals" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+
+        </>
+      )
+    }
+  },
+
+    {
+    id: 6,
     slug: "smart-plants",
     title: "Smart Plants: Pervasive IoT Ecosystem",
     description: `A sensor-to-cloud automated plant monitoring system with closed-loop grow-light control and a rule-based Python health scoring engine.`,
@@ -193,7 +297,7 @@ export const projects = [
       borderRadius: "8px"
     },
     modal: {
-      image: "https://github.com/atousasque/My_Portfolio/releases/download/v5/Pixlr_20261013070122747.jpg",
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v13/1792399948747.jpg",
       content: (
         <>
           <p>
@@ -225,53 +329,6 @@ export const projects = [
           </p>
           <p>
             🏆 <em>Awarded the highest grade in the Pervasive Computing course at FH Upper Austria.</em>
-          </p>
-        </>
-      )
-    }
-  },
-  {
-    id: 6,
-    slug: "historical-portals",
-    title: "Historical Portals: Spatial Memory & Material Archives",
-    description: `An ongoing Mixed Reality research framework bridging urban physical spaces with archival memory—originating from photographic and material field research in historical corridors.`,
-    image: "https://github.com/atousasque/My_Portfolio/releases/download/v6/photo_2026-10-13_07-15-07.jpg",
-    imgStyle: {
-      width: "75%",
-      maxWidth: "100%",
-      margin: "10px auto",
-      display: "block",
-      borderRadius: "8px",
-      objectFit: "contain"
-    },
-    modal: {
-      image: "https://github.com/atousasque/My_Portfolio/releases/download/v7/photo_2026-10-13_07-08-57.jpg",
-      content: (
-        <>
-          <p>
-            <strong>Historical Portals</strong> is an ongoing Mixed Reality (MR) research initiative investigating how site-specific storytelling and archival memory can be directly embodied within physical architectural spaces.
-          </p>
-          <p><strong>The Conceptual Catalyst (Fieldwork in Ancient Corridors):</strong></p>
-          <p>
-            The project originated from extensive visual and material field research across the historic bazaar and living ruins of Hamedan (Ecbatana). Documenting eroding brick vaulting, layered textiles, and traditional craft environments provided the tactile and atmospheric benchmark for virtual time-portals—treating history not as flat photographic data, but as a sensory, physical volume.
-          </p>
-          <p><strong>Mixed Reality Implementation & Linz Urban Context:</strong></p>
-          <ul>
-            <li>
-              <strong>Spatial Storytelling:</strong> Connects contemporary physical coordinates (such as public squares in Linz) with localized historical memory layers through immersive spatial computing.
-            </li>
-            <li>
-              <strong>Material-Driven Portals:</strong> Translates physical weathering, architectural erosion, and ambient acoustics into real-time environments, examining the emotional resonance of navigating forgotten temporal spaces.
-            </li>
-            <li>
-              <strong>Digital Twins & Archival Layers:</strong> Investigates multi-user physical presence and archival interaction, bridging historical cultural heritage with interactive spatial interfaces.
-            </li>
-          </ul>
-          <p>
-            <strong>Methodologies & Tools:</strong> Visual Field Research, Spatial Archiving, Mixed Reality Prototyping (Unreal Engine / Unity), Photogrammetry, HCI.
-          </p>
-          <p>
-            🔒 <em>Ongoing transdisciplinary R&D project exploring archival memory and affective spatial computing.</em>
           </p>
         </>
       )
