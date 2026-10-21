@@ -1,6 +1,6 @@
 // src/pages/ProjectDetail.js
 import React, { useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import { Container, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { projects } from "../components/works/projectsData";
@@ -20,6 +20,10 @@ const useStyles = makeStyles(() => ({
     fontWeight: 600,
     fontSize: "1rem",
     marginBottom: "2rem",
+    background: "none",
+    border: "none",
+    padding: 0,
+    cursor: "pointer",
     transition: "transform 0.2s ease",
     "&:hover": {
       transform: "translateX(-4px)",
@@ -80,19 +84,34 @@ const useStyles = makeStyles(() => ({
 export const ProjectDetail = () => {
   const classes = useStyles();
   const { slug } = useParams();
+  const history = useHistory();
 
   const project = projects.find((p) => p.slug === slug);
 
+  // Scroll to top when opening detail page
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const handleBack = (e) => {
+    e.preventDefault();
+    history.push("/");
+
+    // Scroll smoothly to the exact project card after returning to the main page
+    setTimeout(() => {
+      const targetElement = document.getElementById(`project-${slug}`);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }, 50);
+  };
+
   if (!project) {
     return (
       <Container maxWidth="md" className={classes.root}>
-        <Link to="/" className={classes.backLink}>
+        <button onClick={handleBack} className={classes.backLink}>
           ← Back to Portfolio
-        </Link>
+        </button>
         <Typography variant="h4" style={{ color: "#fff" }}>
           Project not found.
         </Typography>
@@ -102,9 +121,9 @@ export const ProjectDetail = () => {
 
   return (
     <Container maxWidth="md" className={classes.root}>
-      <Link to="/" className={classes.backLink}>
+      <button onClick={handleBack} className={classes.backLink}>
         ← Back to Projects
-      </Link>
+      </button>
 
       <div className={classes.card}>
         <h1 className={classes.title}>{project.title}</h1>

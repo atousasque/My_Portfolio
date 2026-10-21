@@ -282,7 +282,7 @@ export const projects = [
   },
 
     {
-    id: 7,
+    id: 6,
     slug: "tangible-optical-holograms",
     title: "Tangible Optical Holograms: Pepper's Ghost & Spatial MR Interfaces",
     showVideoInDetail: true,
@@ -355,7 +355,7 @@ export const projects = [
   },
 
     {
-    id: 6,
+    id: 7,
     slug: "smart-plants",
     title: "Smart Plants: Pervasive IoT Ecosystem",
     description: `A sensor-to-cloud automated plant monitoring system with closed-loop grow-light control and a rule-based Python health scoring engine.`,
@@ -408,7 +408,7 @@ export const projects = [
     }
   },
   {
-    id: 7,
+    id: 8,
     slug: "fishing-simulator",
     title: "Fishing Simulator",
     showVideoInDetail: true,
@@ -436,7 +436,7 @@ export const projects = [
     }
   },
   {
-    id: 8,
+    id: 9,
     slug: "ar-flight-controller",
     title: "AR Image Tracking: Interactive Flight Controller",
     showVideoInDetail: true,
@@ -472,7 +472,7 @@ export const projects = [
     }
   },
   {
-    id: 9,
+    id: 10,
     slug: "recoil-rumble",
     title: "Recoil Rumble",
     description: `Recoil Rumble is a fast-paced, retro-style multiplayer FPS with powerful knockback mechanics and stylized visuals.`,
@@ -506,7 +506,7 @@ export const projects = [
     }
   },
   {
-    id: 10,
+    id: 11,
     slug: "in-the-shackles-of-suffocation",
     title: "In the Shackles of Suffocation",
     description: `A psychedelic, biomorphic illustration mapping the psychological impact of digital overstimulation and surveillance—core analog foundation and visual matrix for the VR installation "Canvas of Confinement".`,
@@ -541,7 +541,7 @@ export const projects = [
     }
   },
   {
-    id: 11,
+    id: 12,
     slug: "bloody-winter",
     title: "Bloody Winter",
     description: `A contemporary impressionist oil painting capturing the heavy, suffocating atmosphere of collective trauma during the "Woman, Life, Freedom" movement in Iran.`,
@@ -574,7 +574,7 @@ export const projects = [
     }
   },
   {
-    id: 12,
+    id: 13,
     slug: "the-last-offering",
     title: "The Last Offering",
     description: `A socio-political gothic allegory painted after the January 2026 uprisings in Iran, depicting the cold commodification of human life in geopolitical bargains where human lives weigh less than oil.`,
