@@ -282,6 +282,79 @@ export const projects = [
   },
 
     {
+    id: 7,
+    slug: "tangible-optical-holograms",
+    title: "Tangible Optical Holograms: Pepper's Ghost & Spatial MR Interfaces",
+    showVideoInDetail: true,
+    description: `An exploratory physical-digital research prototype investigating floating optical holograms using the Pepper's Ghost principle, exploring lightweight spatial interfaces without head-mounted displays.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v15/video_2026-10-21_10-15-56.mp4",
+    imgStyle: {
+      width: "75%",
+      maxWidth: "100%",
+      margin: "10px auto",
+      display: "block",
+      borderRadius: "8px",
+      objectFit: "contain"
+    },
+    modal: {
+      content: (
+        <>
+          <p>
+            <strong>Tangible Optical Holograms</strong> is an exploratory spatial computing experiment investigating how analog optical phenomena can merge with digital graphics to project floating, volumetric visuals into physical space without requiring a VR/MR headset.
+          </p>
+
+          <p><strong>The Core Concept & Optical Mechanism:</strong></p>
+          <p>
+            Using a handcrafted transparent pyramid combiner based on the classic <em>Pepper's Ghost</em> illusion, the prototype reflects multi-perspective 2D screen projections into a central 3D optical illusion. By projecting four synchronized views (Front, Back, Left, Right) over high-contrast black backgrounds, the light reflects off 45-degree angled transparent planes, creating the perception of a free-floating volumetric entity.
+          </p>
+
+          {/* --- Video / Media Showcase ---
+          <div style={{ margin: "20px 0", textAlign: "center" }}>
+            <video
+              src="https://your-domain.com/hologram-video.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              style={{
+                width: "100%",
+                maxWidth: "600px",
+                borderRadius: "10px",
+                border: "1px solid rgba(255, 255, 255, 0.15)",
+                boxShadow: "0 6px 20px rgba(0,0,0,0.5)"
+              }}
+            />
+            <span style={{ fontSize: "0.85rem", color: "#aaa", display: "block", marginTop: "6px" }}>
+              Physical prototype test: Handcrafted optical combiner reflecting a 4-view projection in low-light conditions.
+            </span>
+          </div> */}
+
+          <p><strong>Technical Setup & Pipeline:</strong></p>
+          <ul>
+            <li>
+              <strong>Physical Fabrication:</strong> Assembled a lightweight transparent prism combiner calibrated at precise 45-degree reflection angles to maximize internal refraction and minimize secondary ghosting.
+            </li>
+            <li>
+              <strong>Multi-Perspective Projection:</strong> Structured a synchronized 4-camera layout reflecting isometric angles around a shared center, maintaining rotational parallax as the observer moves around the display.
+            </li>
+            <li>
+              <strong>Spatial MR Convergence (Ongoing Work):</strong> Designing a real-time Unity 6 pipeline using Render Textures to feed dynamic, interactable 3D assets into the optical display, exploring shared physical interactions and hand tracking integrations.
+            </li>
+          </ul>
+
+          <p>
+            <strong>Methods & Tools:</strong> Optical Prototyping (Pepper's Ghost), Physical Fabrication, Unity 6, Real-time Volumetric Simulation, Spatial Computing, Human-Computer Interaction (HCI).
+          </p>
+
+          <p>
+            🔒 <em>Ongoing hands-on R&D into tangible displays, optical illusions, and headset-free spatial computing interfaces.</em>
+          </p>
+        </>
+      )
+    }
+  },
+
+    {
     id: 6,
     slug: "smart-plants",
     title: "Smart Plants: Pervasive IoT Ecosystem",
