@@ -215,7 +215,7 @@ export const projects = [
               Final Prototype Concept: Architectural Spatial Integration
             </p>
             <img
-              src="https://github.com/atousasque/My_Portfolio/releases/download/v12/Ornate.Frame.Over.a.Sketchy.City.Street.png"
+              src="https://github.com/atousasque/My_Portfolio/releases/download/v16/Blue.Ink.Baroque.Street.Portal.Sketch.png"
               alt="Historical Portal Final Concept Sketch"
               style={{
                 width: "100%",
