@@ -16,22 +16,22 @@ const workData = [
   {
     company: "Campus Hagenberg – FH Upper Austria",
     year: "March 2025 – Present",
-    role: "Student Tutor — Mentoring students across Mixed Reality frameworks, AI, Graphics, Object-Oriented Programming, Relational Databases, and Games with a Purpose. Translating complex software design into accessible development frameworks and guiding technical debugging."
+    role: "Student Tutor — Mentoring students across Mixed Reality frameworks, AI, Graphics & Object-Oriented Programming, Databases, WebGL, and Games with a Purpose. Translating complex technical concepts into accessible workflows and guiding creative problem-solving and debugging."
   },
   {
     company: "Embedded Systems Laboratory – Softwarepark",
     year: "May 2024 – June 2025",
-    role: "Software Developer & Researcher — Maintained modular Java and C# codebases in an iterative research environment. Engineered the 'Embedded Systems SRAM Data Visualizer & Analyzer' (Python, Tkinter, Pandas, MySQL, Seaborn) to extract, query, and visualize physical memory component data."
+    role: "Software Developer & Researcher — Maintained and extended modular Java and C# codebases in an iterative research environment. Engineered the 'Embedded Systems SRAM Data Visualizer & Analyzer' (Python, Tkinter, Pandas, MySQL, Seaborn) to filter raw hardware telemetry, apply statistical analyses, and generate reproducible diagnostic visualizations."
   },
   {
     company: "Mapno Company (Cafedeep | Khabarchain)",
     year: "2020 – 2023",
-    role: "Junior Backend Developer & AI Researcher — Contributed to backend services and REST APIs for an AI-focused web platform using Python and Java. Researched emerging AI methods and authored technical articles translating complex architectures."
+    role: "Junior Frontend Developer & AI Researcher — Developed and maintained frontend web components and interfaces for an AI-focused web platform. Researched emerging AI methods and authored technical articles translating complex model architectures into accessible documentation."
   },
   {
     company: "BualiSina Incubator Center",
     year: "2017 – 2018",
-    role: "Junior Researcher of IoT & Physical Computing — Conducted transdisciplinary research on Internet of Things (IoT) devices, exploring sensor integration and smart environments. Served as a technical assistant mentoring students on physical computing projects."
+    role: "Junior Researcher of IoT & Physical Computing — Conducted transdisciplinary research on Internet of Things (IoT) devices, exploring physical sensor integration and smart environments. Served as a technical assistant mentoring students and facilitating physical computing projects."
   }
 ];
 

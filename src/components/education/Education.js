@@ -13,15 +13,15 @@ const useStyles = makeStyles(() => ({
 }));
 
 const educationData = [
- {
-    name: "FH Upper Austria",
-    year: "2023 – Present",
-    description: "Master's in Interactive Media. Focus on Web Development, XR Technologies, Mixed Reality, Human-Computer Interaction.Thesis topic: VirtuArt: Understanding the Hidden Complexity of Simple Paintings through Virtual Reality."
+  {
+    name: "FH Upper Austria (Hagenberg)",
+    year: "October 2023 – December 2026",
+    description: "Master's in Interactive Media. Focus: XR Technologies, Data Visualization, and Human-Computer Interaction. Master's thesis (defense: early December 2026): VirtuArt: Exploring Art Appreciation Through Embodied Difficulty and Physical Friction in Virtual Reality."
   },
   {
     name: "Hamedan University of Technology",
-    year: "2016 – 2021",
-    description: "Bachelor's in Computer Engineering. Coursework in Algorithms, AI, and Software Development."
+    year: "October 2016 – November 2021",
+    description: "Bachelor's in Computer Engineering. Coursework in Algorithms, Artificial Intelligence, and Software Engineering."
   },
   //{
     //name: "SAMPAD High School",
@@ -44,9 +44,9 @@ export const Education = () => {
                 <Typography className="edu-name">
                   {item.name}
                 </Typography>
-                    <Typography className="edu-year">
-                      {item.year}
-                    </Typography>
+                <Typography className="edu-year">
+                  {item.year}
+                </Typography>
               </div>
               <div className="edu-desc-box">
                 <Typography className="edu-desc">
@@ -59,6 +59,4 @@ export const Education = () => {
       </Container>
     </section>
   );
-  
-  
 };

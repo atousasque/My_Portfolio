@@ -20,11 +20,11 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutme = `I'm Atousa Garousian, an Iranian Creative Technologist & XR Developer based in Upper Austria, completing my M.Sc. in Interactive Media at FH Hagenberg (focus: XR & Human-Computer Interaction) with a B.Sc. in Computer Engineering and a strong background in classical oil/Mixed painting.
+  const aboutme = `I'm Atousa Garousian, an XR Developer & HCI Researcher based in Vienna / Linz, Austria, completing my M.Sc. in Interactive Media at FH Upper Austria (focus: XR Technologies, Data Visualization, and Human-Computer Interaction) with a B.Sc. in Computer Engineering and a background in mixed-media painting.
 
-I work at the intersection of Mixed Reality, physical computing, and interactive art. My engineering background bridges robust software architectures (C#, C++, Python, Java, JavaScript/TypeScript, React) with real-time immersive systems in Unity and Unreal Engine. My work spans interactive VR/MR environments, sensor-to-cloud IoT ecosystems (ESP32, MQTT), and data-driven pipelines, reflected in projects like VirtuArt (Master's Thesis), Canvas of Confinement, Smart Plants, and ReWild.
+I work at the intersection of haptic and embodied interaction, physical computing, and real-time visualization. My engineering background bridges software architectures (C#, C++, Python, Java, JavaScript/TypeScript, React, HLSL) with immersive Unity and Unreal Engine systems, sensor-driven hardware pipelines (ESP32, MQTT), and hardware telemetry analysis—reflected in projects such as VirtuArt (Master's thesis on physical friction in VR), Smart Plants, Linz Historical Portal, Tangible Optical Holograms, and the SRAM Data Visualizer.
 
-I am driven to create interactive experiences that go beyond the screen—tackling real social, environmental, and human questions with technical rigor and critical inquiry.`;
+I am driven to build interactive systems that extend beyond flat screens—combining tactile materiality, sensing, and empirical user evaluation to explore how physical interaction deepens human understanding.`;
 
   return (
     <section id="about">
