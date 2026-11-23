@@ -2,34 +2,7 @@
 import React from "react";
 
 export const projects = [
-  {
-    id: 0,
-    slug: "canvas-of-confinement",
-    title: "Canvas of Confinement",
-    description: `An interactive VR intermedia installation transforming an obsessive physical ink artwork into an amorphous, suffocating digital cage that monitors and overstimulates the human body.`,
-    video: "https://github.com/atousasque/My_Portfolio/releases/download/v3/Video.mp4",
-    modal: {
-      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg",
-      content: (
-        <>
-          <p>
-            <strong>Canvas of Confinement</strong> is an interactive, site-specific VR installation exploring how the human body becomes engulfed and monitored by modern technology. The piece acts as an active point of entry into an overwhelming digital network, transforming psychological anxiety into a literal virtual void.
-          </p>
-          <p><strong>Key features and focus areas include:</strong></p>
-          <ul>
-            <li><strong>The Analog Matrix:</strong> Built from a highly dense physical drawing using ink, fineliners (Rapidograph), and colored pencils on paper. It utilizes <em>Horror Vacui</em> (fear of empty spaces) to capture modern mental overstimulation and anxiety caused by high-speed information loops.</li>
-            <li><strong>Amorphous Confinement:</strong> Instead of a stable geometric cube, the hand-drawn lines wrap around the user in a shifting, nameless spatial trap. The endless multiplying eyes represent the invasive gaze of surveillance capitalism and political systems tracking our lives.</li>
-            <li><strong>Shader-Driven Tension:</strong> Built in Unity, the boundaries physically contract over time, forcing the user into anxious, disoriented head movements. A custom shader shifts the visual environment from cyberpunk neon cyan and purple veins into a heavy, deep crimson shadow.</li>
-            <li><strong>Interactive Audio-Visual System:</strong> Users pull the VR trigger to shoot streams of cyan particles to illuminate the darkness. This action is synced with a raw, three-layer soundscape featuring heavy industrial drones, mechanical data-logging clicks, and static echoes.</li>
-          </ul>
-          <p>
-            <strong>Tech stack:</strong> Unity, C#, XR Interaction Toolkit, Custom Shaders, Sound Design, Analog Media (Ink/Fineliners).
-          </p>
-        </>
-      )
-    }
-  },
-  {
+    {
     id: 1,
     slug: "virtuart",
     title: "VirtuArt (Master's Thesis)",
@@ -73,33 +46,46 @@ export const projects = [
   },
   {
     id: 2,
-    slug: "longdrive",
-    title: "LongDrive",
-    description: `LongDrive is a semi-autonomous driving simulation built in Unity, based on Austria's real highway network. I co-developed the game systems and created the terrain and environment.`,
-    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.0.0/LongDrive.mp4",
+    slug: "sram-data-visualizer",
+    title: "Embedded Systems SRAM Data Visualizer & Analyzer",
+    description: `A Python-based visual analytics desktop tool built at the Embedded Systems Laboratory to filter raw SRAM hardware telemetry across boards, memory regions, and temperatures, and compute statistical fingerprint distributions.`,
+    image: "https://github.com/atousasque/My_Portfolio/releases/download/2/tool.1.png",
+    imgStyle: {
+      width: "75%",
+      aspectRatio: "16 / 9",
+      objectFit: "contain",
+      backgroundColor: "#ffffff",
+      margin: "10px auto",
+      display: "block",
+      borderRadius: "8px"
+    },
     modal: {
-      image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.1.1/LongDrive.jpg",
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/2/tool.1.png",
       content: (
         <>
           <p>
-            <strong>LongDrive</strong> is a collaborative Unity simulation inspired by truck-driving games like Euro Truck Simulator.
-            It was designed for testing automated driving behavior, featuring tasks like paying tolls or handling distractions
-            while monitoring the vehicle’s AI.
+            <strong>Embedded Systems SRAM Data Visualizer &amp; Analyzer</strong> is a Python-based visual analytics and telemetry tool developed during my research role at the Embedded Systems Laboratory (Softwarepark Hagenberg) to bridge raw physical memory readings and reproducible statistical analysis.
           </p>
-          <p><strong>My contributions included:</strong></p>
+          <p><strong>Key Features &amp; Analytical Workflow:</strong></p>
           <ul>
-            <li>Modeling the cities</li>
-            <li>Painting and shaping the terrain using imported heightmaps</li>
-            <li>Designing and placing natural environments, including trees, roadsides, and forests</li>
-            <li>Adjusting the scenery to align with the handcrafted road network (EasyRoads3D)</li>
+            <li>
+              <strong>Multi-Cohort Interactive Filtering:</strong> Enables side-by-side selection of up to three independent measurement cohorts (Lists A, B, and C) filtered by Board ID, hexadecimal memory address ranges, operating temperature bounds (°C), and timestamps.
+            </li>
+            <li>
+              <strong>Database-Backed Telemetry Pipeline:</strong> Connects to a MySQL backend via SQLAlchemy and Pandas to query, clean, and aggregate large hardware measurement sets for reproducible diagnostic workflows.
+            </li>
+            <li>
+              <strong>Hardware Fingerprint Metrics:</strong> Computes Fractional Hamming Distance (including Mean HD), Uniqueness, and Bit Stability across physical memory samples using NumPy and Itertools.
+            </li>
+            <li>
+              <strong>Embedded Statistical Visualization:</strong> Integrates Matplotlib and Seaborn directly inside the Tkinter interface to plot comparative probability density distributions across selected hardware cohorts in real time.
+            </li>
           </ul>
-          <p>My teammate developed the UI, delivery logic, and AI behavior.</p>
           <p>
-            🔒 This project is part of an academic course and stored in a <strong>private repository</strong>,
-            so the source code is not publicly shareable.
+            <strong>Tech stack:</strong> Python, Tkinter, Pandas, NumPy, SQLAlchemy, MySQL, Matplotlib, Seaborn.
           </p>
           <p>
-            <strong>Tech stack:</strong> Unity 2023.3, EasyRoads3D, RCC, Gley AI Traffic, Terrain Tools, custom prefabs.
+            🔗 <a href="https://github.com/Atousa98/SRAM-Data-Visualizer" target="_blank" rel="noopener noreferrer">View on GitHub</a>
           </p>
         </>
       )
@@ -107,74 +93,130 @@ export const projects = [
   },
   {
     id: 3,
-    slug: "longdrive-extended",
-    title: "LongDrive: Extended",
-    description: `LongDrive: Extended is the finalized version of our semi-autonomous highway driving simulator. It introduces infotainment-based in-car tasks and G29 steering wheel support.`,
-    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.1.0/LongDrive2.mp4",
+    slug: "smart-plants",
+    title: "Smart Plants: Pervasive IoT Ecosystem",
+    description: `A sensor-to-cloud automated plant monitoring system with closed-loop grow-light control and a rule-based Python health scoring engine.`,
+    image: "https://github.com/atousasque/My_Portfolio/releases/download/v4/Plant.jpg",
+    imgStyle: {
+      width: "75%",
+      aspectRatio: "16 / 9",
+      objectFit: "contain",
+      backgroundColor: "#ffffff",
+      margin: "10px auto",
+      display: "block",
+      borderRadius: "8px"
+    },
     modal: {
-      image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.2.1/Extended.jpg",
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v13/1792399948747.jpg",
       content: (
         <>
           <p>
-            <strong>LongDrive: Extended</strong> builds on the original prototype, enhancing realism and complexity.
-            Players drive on a recreated Austrian highway network while managing tasks in a fully interactive infotainment system.
+            <strong>Smart Plants</strong> is a pervasive computing and IoT monitoring ecosystem engineered by a team of five. The project connects physical plant environments to the cloud, combining automated sensor telemetry, closed-loop environmental actuators, and subjective human observations into a unified plant care pipeline.
           </p>
-          <p><strong>Key features include:</strong></p>
+          <p><strong>System Architecture & Workflow:</strong></p>
           <ul>
-            <li>Infotainment system with live internet radio, media player, phone, navigation, and task menus</li>
-            <li>Task system requiring the player to complete road tax payments, phone calls, and text messages during autonomous driving</li>
-            <li>Support for G29 steering wheel with Force Feedback and realistic controls</li>
-            <li>Position selector scene for custom spawn points</li>
-            <li>AI improvements for NPCs and player-car lane behavior</li>
+            <li>
+              <strong>Sensing & Edge Computing:</strong> Environmental data (soil moisture, ambient light via LDR voltage divider, temperature, and relative humidity via DHT11) are continuously gathered by an ESP32 microcontroller and published securely over MQTT (HiveMQ Cloud).
+            </li>
+            <li>
+              <strong>Closed-Loop Light Actuation:</strong> A Raspberry Pi 4 edge hub runs a custom Python MQTT bridge and Zigbee2MQTT service to control smart lighting (IKEA TRÅDFRI via Sonoff Zigbee 3.0), automatically toggling supplemental grow light when ambient levels drop below calibrated thresholds.
+            </li>
+            <li>
+              <strong>Algorithmic Evaluation Layer (Python):</strong> Built the rule-based analytical engine using Python, <code>pymongo</code>, and <code>paho-mqtt</code>. The engine calculates an overall plant health score (0–100) by comparing live telemetry against species-specific tolerance ranges, detecting environmental state shifts, and factoring in user feedback.
+            </li>
+            <li>
+              <strong>Full-Stack Data Pipeline:</strong> Telemetry is ingested by an Express.js backend, stored in MongoDB collections (caching precomputed daily/weekly historical aggregations), and presented through an interactive React dashboard with historical trend graphs.
+            </li>
+          </ul>
+          <p><strong>My Contributions:</strong></p>
+          <ul>
+            <li>Architected and implemented the core Python evaluation and health-scoring logic (<code>logic.py</code>, <code>db.py</code>) analyzing sensor data streams and user logs.</li>
+            <li>Assisted in hardware prototyping, ESP32 sensor circuit breadboarding, calibration curves, and Raspberry Pi edge-service setup.</li>
+            <li>Collaborated on system concept design and end-to-end MQTT topic schema structuring.</li>
           </ul>
           <p>
-            My contributions focused on terrain and environment design, implementing internet-radio and media player, building the task system, traffic-signs and car interior, as well as designing the UI for the main menu and ensuring visual polish across the scene.
+            <strong>Tech stack:</strong> Python (pymongo, paho-mqtt), ESP32 (C++/Arduino), Raspberry Pi 4, Zigbee2MQTT, MQTT (HiveMQ), MongoDB, Express.js, React.
           </p>
           <p>
-            <strong>Tech stack:</strong> Unity 2023.3, VLC for Unity, Gley AI Traffic, RCC, Terrain Tools, Logitech SDK.
-          </p>
-          <p>
-            🔒 This project is part of an academic study on driver distraction and trust in automation. Repository access is private.
+            🏆 <em>Awarded the highest grade in the Pervasive Computing course at FH Upper Austria.</em>
           </p>
         </>
       )
     }
   },
-  {
+    {
     id: 4,
-    slug: "rewild",
-    title: "ReWild - Mixed Reality Ecosystem",
+    slug: "tangible-optical-holograms",
+    title: "Tangible Optical Holograms: Pepper's Ghost & Spatial MR Interfaces",
     showVideoInDetail: true,
-    description: `An interactive MR experience for the Ars Electronica Festival, allowing users to grow and nurture a digital ecosystem into physical space.`,
-    video: "https://github.com/atousasque/My_Portfolio/releases/download/v14/video_2026-10-15_07-14-20.mp4",
+    description: `An exploratory physical-digital research prototype investigating floating optical holograms using the Pepper's Ghost principle, exploring lightweight spatial interfaces without head-mounted displays.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v15/video_2026-10-21_10-15-56.mp4",
+    imgStyle: {
+      width: "75%",
+      maxWidth: "100%",
+      margin: "10px auto",
+      display: "block",
+      borderRadius: "8px",
+      objectFit: "contain"
+    },
     modal: {
       content: (
         <>
           <p>
-            <strong>🌿ReWild</strong> is an immersive Mixed Reality (MR) ecosystem prototype conceived for the Ars Electronica Festival context. 
-            The project empowers users to become digital gardeners, transforming physical spaces into thriving, interactive ecosystems.
+            <strong>Tangible Optical Holograms</strong> is an exploratory spatial computing experiment investigating how analog optical phenomena can merge with digital graphics to project floating, volumetric visuals into physical space without requiring a VR/MR headset.
           </p>
-          <p><strong>Key features include:</strong></p>
+
+          <p><strong>The Core Concept & Optical Mechanism:</strong></p>
+          <p>
+            Using a handcrafted transparent pyramid combiner based on the classic <em>Pepper's Ghost</em> illusion, the prototype reflects multi-perspective 2D screen projections into a central 3D optical illusion. By projecting four synchronized views (Front, Back, Left, Right) over high-contrast black backgrounds, the light reflects off 45-degree angled transparent planes, creating the perception of a free-floating volumetric entity.
+          </p>
+
+          {/* --- Video / Media Showcase ---
+          <div style={{ margin: "20px 0", textAlign: "center" }}>
+            <video
+              src="https://your-domain.com/hologram-video.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              style={{
+                width: "100%",
+                maxWidth: "600px",
+                borderRadius: "10px",
+                border: "1px solid rgba(255, 255, 255, 0.15)",
+                boxShadow: "0 6px 20px rgba(0,0,0,0.5)"
+              }}
+            />
+            <span style={{ fontSize: "0.85rem", color: "#aaa", display: "block", marginTop: "6px" }}>
+              Physical prototype test: Handcrafted optical combiner reflecting a 4-view projection in low-light conditions.
+            </span>
+          </div> */}
+
+          <p><strong>Technical Setup & Pipeline:</strong></p>
           <ul>
-            <li>Interactive MR mechanics allowing users to plant seeds and physically simulate watering them</li>
-            <li>Dynamic environmental growth, evolving from bare ground into lush meadows or dense jungles based on user choices</li>
-            <li>An ecosystem simulation where various animals dynamically populate the environments as they grow</li>
-            <li>Seamless blending of digital flora and fauna with the real-world exhibition space</li>
+            <li>
+              <strong>Physical Fabrication:</strong> Assembled a lightweight transparent prism combiner calibrated at precise 45-degree reflection angles to maximize internal refraction and minimize secondary ghosting.
+            </li>
+            <li>
+              <strong>Multi-Perspective Projection:</strong> Structured a synchronized 4-camera layout reflecting isometric angles around a shared center, maintaining rotational parallax as the observer moves around the display.
+            </li>
+            <li>
+              <strong>Spatial MR Convergence (Ongoing Work):</strong> Designing a real-time Unity 6 pipeline using Render Textures to feed dynamic, interactable 3D assets into the optical display, exploring shared physical interactions and hand tracking integrations.
+            </li>
           </ul>
+
           <p>
-            As the Unreal Engine Developer, my core contributions focused on co-engineering the gameplay loop and interaction mechanics. I helped programming the complex growth logic for the environments and managed the Mixed Reality integration to ensure a smooth user experience, while collaborating with team members who handled the 3D animation and sound design.
+            <strong>Methods & Tools:</strong> Optical Prototyping (Pepper's Ghost), Physical Fabrication, Unity 6, Real-time Volumetric Simulation, Spatial Computing, Human-Computer Interaction (HCI).
           </p>
+
           <p>
-            <strong>Tech stack:</strong> Unreal Engine, Mixed Reality (MR/XR) Frameworks, Blueprints / C++.
-          </p>
-          <p>
-            🔒 Developed as an interactive prototype for the Game Spaces course at FH Upper Austria (private repository). The project provided vital practical insights into the technical constraints and high maintenance demands of deploying interactive ecosystems in public settings.
+            🔒 <em>Ongoing hands-on R&D into tangible displays, optical illusions, and headset-free spatial computing interfaces.</em>
           </p>
         </>
       )
     }
   },
-  {
+    {
     id: 5,
     slug: "historical-portals",
     title: "Historical Portals: Spatial Memory & Material Archives",
@@ -277,163 +319,8 @@ export const projects = [
       )
     }
   },
-
-  {
+    {
     id: 6,
-    slug: "tangible-optical-holograms",
-    title: "Tangible Optical Holograms: Pepper's Ghost & Spatial MR Interfaces",
-    showVideoInDetail: true,
-    description: `An exploratory physical-digital research prototype investigating floating optical holograms using the Pepper's Ghost principle, exploring lightweight spatial interfaces without head-mounted displays.`,
-    video: "https://github.com/atousasque/My_Portfolio/releases/download/v15/video_2026-10-21_10-15-56.mp4",
-    imgStyle: {
-      width: "75%",
-      maxWidth: "100%",
-      margin: "10px auto",
-      display: "block",
-      borderRadius: "8px",
-      objectFit: "contain"
-    },
-    modal: {
-      content: (
-        <>
-          <p>
-            <strong>Tangible Optical Holograms</strong> is an exploratory spatial computing experiment investigating how analog optical phenomena can merge with digital graphics to project floating, volumetric visuals into physical space without requiring a VR/MR headset.
-          </p>
-
-          <p><strong>The Core Concept & Optical Mechanism:</strong></p>
-          <p>
-            Using a handcrafted transparent pyramid combiner based on the classic <em>Pepper's Ghost</em> illusion, the prototype reflects multi-perspective 2D screen projections into a central 3D optical illusion. By projecting four synchronized views (Front, Back, Left, Right) over high-contrast black backgrounds, the light reflects off 45-degree angled transparent planes, creating the perception of a free-floating volumetric entity.
-          </p>
-
-          {/* --- Video / Media Showcase ---
-          <div style={{ margin: "20px 0", textAlign: "center" }}>
-            <video
-              src="https://your-domain.com/hologram-video.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              style={{
-                width: "100%",
-                maxWidth: "600px",
-                borderRadius: "10px",
-                border: "1px solid rgba(255, 255, 255, 0.15)",
-                boxShadow: "0 6px 20px rgba(0,0,0,0.5)"
-              }}
-            />
-            <span style={{ fontSize: "0.85rem", color: "#aaa", display: "block", marginTop: "6px" }}>
-              Physical prototype test: Handcrafted optical combiner reflecting a 4-view projection in low-light conditions.
-            </span>
-          </div> */}
-
-          <p><strong>Technical Setup & Pipeline:</strong></p>
-          <ul>
-            <li>
-              <strong>Physical Fabrication:</strong> Assembled a lightweight transparent prism combiner calibrated at precise 45-degree reflection angles to maximize internal refraction and minimize secondary ghosting.
-            </li>
-            <li>
-              <strong>Multi-Perspective Projection:</strong> Structured a synchronized 4-camera layout reflecting isometric angles around a shared center, maintaining rotational parallax as the observer moves around the display.
-            </li>
-            <li>
-              <strong>Spatial MR Convergence (Ongoing Work):</strong> Designing a real-time Unity 6 pipeline using Render Textures to feed dynamic, interactable 3D assets into the optical display, exploring shared physical interactions and hand tracking integrations.
-            </li>
-          </ul>
-
-          <p>
-            <strong>Methods & Tools:</strong> Optical Prototyping (Pepper's Ghost), Physical Fabrication, Unity 6, Real-time Volumetric Simulation, Spatial Computing, Human-Computer Interaction (HCI).
-          </p>
-
-          <p>
-            🔒 <em>Ongoing hands-on R&D into tangible displays, optical illusions, and headset-free spatial computing interfaces.</em>
-          </p>
-        </>
-      )
-    }
-  },
-
-  {
-    id: 7,
-    slug: "smart-plants",
-    title: "Smart Plants: Pervasive IoT Ecosystem",
-    description: `A sensor-to-cloud automated plant monitoring system with closed-loop grow-light control and a rule-based Python health scoring engine.`,
-    image: "https://github.com/atousasque/My_Portfolio/releases/download/v4/Plant.jpg",
-    imgStyle: {
-      width: "75%",
-      aspectRatio: "16 / 9",
-      objectFit: "contain",
-      backgroundColor: "#ffffff",
-      margin: "10px auto",
-      display: "block",
-      borderRadius: "8px"
-    },
-    modal: {
-      image: "https://github.com/atousasque/My_Portfolio/releases/download/v13/1792399948747.jpg",
-      content: (
-        <>
-          <p>
-            <strong>Smart Plants</strong> is a pervasive computing and IoT monitoring ecosystem engineered by a team of five. The project connects physical plant environments to the cloud, combining automated sensor telemetry, closed-loop environmental actuators, and subjective human observations into a unified plant care pipeline.
-          </p>
-          <p><strong>System Architecture & Workflow:</strong></p>
-          <ul>
-            <li>
-              <strong>Sensing & Edge Computing:</strong> Environmental data (soil moisture, ambient light via LDR voltage divider, temperature, and relative humidity via DHT11) are continuously gathered by an ESP32 microcontroller and published securely over MQTT (HiveMQ Cloud).
-            </li>
-            <li>
-              <strong>Closed-Loop Light Actuation:</strong> A Raspberry Pi 4 edge hub runs a custom Python MQTT bridge and Zigbee2MQTT service to control smart lighting (IKEA TRÅDFRI via Sonoff Zigbee 3.0), automatically toggling supplemental grow light when ambient levels drop below calibrated thresholds.
-            </li>
-            <li>
-              <strong>Algorithmic Evaluation Layer (Python):</strong> Built the rule-based analytical engine using Python, <code>pymongo</code>, and <code>paho-mqtt</code>. The engine calculates an overall plant health score (0–100) by comparing live telemetry against species-specific tolerance ranges, detecting environmental state shifts, and factoring in user feedback.
-            </li>
-            <li>
-              <strong>Full-Stack Data Pipeline:</strong> Telemetry is ingested by an Express.js backend, stored in MongoDB collections (caching precomputed daily/weekly historical aggregations), and presented through an interactive React dashboard with historical trend graphs.
-            </li>
-          </ul>
-          <p><strong>My Contributions:</strong></p>
-          <ul>
-            <li>Architected and implemented the core Python evaluation and health-scoring logic (<code>logic.py</code>, <code>db.py</code>) analyzing sensor data streams and user logs.</li>
-            <li>Assisted in hardware prototyping, ESP32 sensor circuit breadboarding, calibration curves, and Raspberry Pi edge-service setup.</li>
-            <li>Collaborated on system concept design and end-to-end MQTT topic schema structuring.</li>
-          </ul>
-          <p>
-            <strong>Tech stack:</strong> Python (pymongo, paho-mqtt), ESP32 (C++/Arduino), Raspberry Pi 4, Zigbee2MQTT, MQTT (HiveMQ), MongoDB, Express.js, React.
-          </p>
-          <p>
-            🏆 <em>Awarded the highest grade in the Pervasive Computing course at FH Upper Austria.</em>
-          </p>
-        </>
-      )
-    }
-  },
-  {
-    id: 8,
-    slug: "fishing-simulator",
-    title: "Fishing Simulator",
-    showVideoInDetail: true,
-    description: `A VR-ready Unity simulation recreating a peaceful fishing experience with natural terrain and immersive audio-visual design.`,
-    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.2.0/FishingSimulator.mp4",
-    modal: {
-      content: (
-        <>
-          <p>
-            <strong>Fishing Simulator</strong> is a calm, immersive Unity-based simulation originally built for VR headsets, 
-            but also playable without them for exhibition purposes. The experience focuses on sensory realism through detailed environmental design.
-          </p>
-          <p><strong>My contributions included:</strong></p>
-          <ul>
-            <li>Designing and updating the high-fidelity environment of the simulation.</li>
-            <li>Helped with integrating the simulation with VR hardware (head tracking, input controls)</li>
-          </ul>
-          <p>
-            The simulation was designed with accessibility in mind, allowing seamless transitions between VR and screen-based setups for demonstrations.
-          </p>
-          <p><strong>Tech stack:</strong> Unity HDRP, VR Toolkit (XR Interaction Toolkit), baked lighting, water shaders, and Gaia procedural world.</p>
-          <p>🔗 <a href="https://github.com/reapphil/HGB_FishingSimulator" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
-        </>
-      )
-    }
-  },
-  {
-    id: 9,
     slug: "ar-flight-controller",
     title: "AR Dragon: Mobile Tracking & Physical 3D Artifact Prototype",
     showVideoInDetail: true,
@@ -494,39 +381,202 @@ export const projects = [
     }
   },
   {
-    id: 10,
-    slug: "recoil-rumble",
-    title: "Recoil Rumble",
-    description: `Recoil Rumble is a fast-paced, retro-style multiplayer FPS with powerful knockback mechanics and stylized visuals.`,
-    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.3.0/MultiplayerShooter.mp4",
+    id: 7,
+    slug: "canvas-of-confinement",
+    title: "Canvas of Confinement",
+    description: `An interactive VR intermedia installation transforming an obsessive physical ink artwork into an amorphous, suffocating digital cage that monitors and overstimulates the human body.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v3/Video.mp4",
     modal: {
-      image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.3.1/Recoil.jpg",
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v2.1.0/IMG_20260513_034308_540.jpg",
       content: (
         <>
           <p>
-            <strong>Recoil Rumble</strong> is a multiplayer arena shooter built in Unreal Engine, focused on chaotic movement and tactical physics. Players battle using a unique recoil system that launches them across maps using high-knockback weapons.
+            <strong>Canvas of Confinement</strong> is an interactive, site-specific VR installation exploring how the human body becomes engulfed and monitored by modern technology. The piece acts as an active point of entry into an overwhelming digital network, transforming psychological anxiety into a literal virtual void.
           </p>
-          <p><strong>Game highlights:</strong></p>
+          <p><strong>Key features and focus areas include:</strong></p>
           <ul>
-            <li>Fast-paced gameplay with 7 distinct weapons, including a grappling hook and remote-detonated mines</li>
-            <li>3 game modes: Team Deathmatch, Free For All, Capture The Flag</li>
-            <li>3 stylized, retro-inspired maps</li>
-            <li>Retro PSX-style visuals using dithering shaders and minimalist lighting</li>
+            <li><strong>The Analog Matrix:</strong> Built from a highly dense physical drawing using ink, fineliners (Rapidograph), and colored pencils on paper. It utilizes <em>Horror Vacui</em> (fear of empty spaces) to capture modern mental overstimulation and anxiety caused by high-speed information loops.</li>
+            <li><strong>Amorphous Confinement:</strong> Instead of a stable geometric cube, the hand-drawn lines wrap around the user in a shifting, nameless spatial trap. The endless multiplying eyes represent the invasive gaze of surveillance capitalism and political systems tracking our lives.</li>
+            <li><strong>Shader-Driven Tension:</strong> Built in Unity, the boundaries physically contract over time, forcing the user into anxious, disoriented head movements. A custom shader shifts the visual environment from cyberpunk neon cyan and purple veins into a heavy, deep crimson shadow.</li>
+            <li><strong>Interactive Audio-Visual System:</strong> Users pull the VR trigger to shoot streams of cyan particles to illuminate the darkness. This action is synced with a raw, three-layer soundscape featuring heavy industrial drones, mechanical data-logging clicks, and static echoes.</li>
           </ul>
-          <p><strong>My contributions included:</strong></p>
-          <ul>
-            <li>Helped with the Design and implementation of all user interface components (menus, HUD, status elements)</li>
-            <li>Ensuring UI responsiveness and styling to match the PSX aesthetic</li>
-          </ul>
-          <p><strong>Tech stack:</strong> Unreal Engine 5, Blueprints, custom UI widgets, multiplayer networking.</p>
           <p>
-            🔒 This project is part of a university collaboration and is stored in a <strong>private repository</strong>,
-            so the source code is not publicly accessible.
+            <strong>Tech stack:</strong> Unity, C#, XR Interaction Toolkit, Custom Shaders, Sound Design, Analog Media (Ink/Fineliners).
           </p>
         </>
       )
     }
   },
+    {
+    id: 7,
+    slug: "rewild",
+    title: "ReWild - Mixed Reality Ecosystem",
+    showVideoInDetail: true,
+    description: `An interactive MR experience for the Ars Electronica Festival, allowing users to grow and nurture a digital ecosystem into physical space.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v14/video_2026-10-15_07-14-20.mp4",
+    modal: {
+      content: (
+        <>
+          <p>
+            <strong>🌿ReWild</strong> is an immersive Mixed Reality (MR) ecosystem prototype conceived for the Ars Electronica Festival context. 
+            The project empowers users to become digital gardeners, transforming physical spaces into thriving, interactive ecosystems.
+          </p>
+          <p><strong>Key features include:</strong></p>
+          <ul>
+            <li>Interactive MR mechanics allowing users to plant seeds and physically simulate watering them</li>
+            <li>Dynamic environmental growth, evolving from bare ground into lush meadows or dense jungles based on user choices</li>
+            <li>An ecosystem simulation where various animals dynamically populate the environments as they grow</li>
+            <li>Seamless blending of digital flora and fauna with the real-world exhibition space</li>
+          </ul>
+          <p>
+            As the Unreal Engine Developer, my core contributions focused on co-engineering the gameplay loop and interaction mechanics. I helped programming the complex growth logic for the environments and managed the Mixed Reality integration to ensure a smooth user experience, while collaborating with team members who handled the 3D animation and sound design.
+          </p>
+          <p>
+            <strong>Tech stack:</strong> Unreal Engine, Mixed Reality (MR/XR) Frameworks, Blueprints / C++.
+          </p>
+          <p>
+            🔒 Developed as an interactive prototype for the Game Spaces course at FH Upper Austria (private repository). The project provided vital practical insights into the technical constraints and high maintenance demands of deploying interactive ecosystems in public settings.
+          </p>
+        </>
+      )
+    }
+  },
+
+  {
+    id: 8,
+    slug: "longdrive",
+    title: "LongDrive",
+    description: `LongDrive is a semi-autonomous driving simulation built in Unity, based on Austria's real highway network. I co-developed the game systems and created the terrain and environment.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.0.0/LongDrive.mp4",
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.1.1/LongDrive.jpg",
+      content: (
+        <>
+          <p>
+            <strong>LongDrive</strong> is a collaborative Unity simulation inspired by truck-driving games like Euro Truck Simulator.
+            It was designed for testing automated driving behavior, featuring tasks like paying tolls or handling distractions
+            while monitoring the vehicle’s AI.
+          </p>
+          <p><strong>My contributions included:</strong></p>
+          <ul>
+            <li>Modeling the cities</li>
+            <li>Painting and shaping the terrain using imported heightmaps</li>
+            <li>Designing and placing natural environments, including trees, roadsides, and forests</li>
+            <li>Adjusting the scenery to align with the handcrafted road network (EasyRoads3D)</li>
+          </ul>
+          <p>My teammate developed the UI, delivery logic, and AI behavior.</p>
+          <p>
+            🔒 This project is part of an academic course and stored in a <strong>private repository</strong>,
+            so the source code is not publicly shareable.
+          </p>
+          <p>
+            <strong>Tech stack:</strong> Unity 2023.3, EasyRoads3D, RCC, Gley AI Traffic, Terrain Tools, custom prefabs.
+          </p>
+        </>
+      )
+    }
+  },
+  {
+    id: 9,
+    slug: "longdrive-extended",
+    title: "LongDrive: Extended",
+    description: `LongDrive: Extended is the finalized version of our semi-autonomous highway driving simulator. It introduces infotainment-based in-car tasks and G29 steering wheel support.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.1.0/LongDrive2.mp4",
+    modal: {
+      image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.2.1/Extended.jpg",
+      content: (
+        <>
+          <p>
+            <strong>LongDrive: Extended</strong> builds on the original prototype, enhancing realism and complexity.
+            Players drive on a recreated Austrian highway network while managing tasks in a fully interactive infotainment system.
+          </p>
+          <p><strong>Key features include:</strong></p>
+          <ul>
+            <li>Infotainment system with live internet radio, media player, phone, navigation, and task menus</li>
+            <li>Task system requiring the player to complete road tax payments, phone calls, and text messages during autonomous driving</li>
+            <li>Support for G29 steering wheel with Force Feedback and realistic controls</li>
+            <li>Position selector scene for custom spawn points</li>
+            <li>AI improvements for NPCs and player-car lane behavior</li>
+          </ul>
+          <p>
+            My contributions focused on terrain and environment design, implementing internet-radio and media player, building the task system, traffic-signs and car interior, as well as designing the UI for the main menu and ensuring visual polish across the scene.
+          </p>
+          <p>
+            <strong>Tech stack:</strong> Unity 2023.3, VLC for Unity, Gley AI Traffic, RCC, Terrain Tools, Logitech SDK.
+          </p>
+          <p>
+            🔒 This project is part of an academic study on driver distraction and trust in automation. Repository access is private.
+          </p>
+        </>
+      )
+    }
+  },
+
+
+
+  {
+    id: 10,
+    slug: "fishing-simulator",
+    title: "Fishing Simulator",
+    showVideoInDetail: true,
+    description: `A VR-ready Unity simulation recreating a peaceful fishing experience with natural terrain and immersive audio-visual design.`,
+    video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.2.0/FishingSimulator.mp4",
+    modal: {
+      content: (
+        <>
+          <p>
+            <strong>Fishing Simulator</strong> is a calm, immersive Unity-based simulation originally built for VR headsets, 
+            but also playable without them for exhibition purposes. The experience focuses on sensory realism through detailed environmental design.
+          </p>
+          <p><strong>My contributions included:</strong></p>
+          <ul>
+            <li>Designing and updating the high-fidelity environment of the simulation.</li>
+            <li>Helped with integrating the simulation with VR hardware (head tracking, input controls)</li>
+          </ul>
+          <p>
+            The simulation was designed with accessibility in mind, allowing seamless transitions between VR and screen-based setups for demonstrations.
+          </p>
+          <p><strong>Tech stack:</strong> Unity HDRP, VR Toolkit (XR Interaction Toolkit), baked lighting, water shaders, and Gaia procedural world.</p>
+          <p>🔗 <a href="https://github.com/reapphil/HGB_FishingSimulator" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+        </>
+      )
+    }
+  },
+
+  // {
+  //   id: 10,
+  //   slug: "recoil-rumble",
+  //   title: "Recoil Rumble",
+  //   description: `Recoil Rumble is a fast-paced, retro-style multiplayer FPS with powerful knockback mechanics and stylized visuals.`,
+  //   video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.3.0/MultiplayerShooter.mp4",
+  //   modal: {
+  //     image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.3.1/Recoil.jpg",
+  //     content: (
+  //       <>
+  //         <p>
+  //           <strong>Recoil Rumble</strong> is a multiplayer arena shooter built in Unreal Engine, focused on chaotic movement and tactical physics. Players battle using a unique recoil system that launches them across maps using high-knockback weapons.
+  //         </p>
+  //         <p><strong>Game highlights:</strong></p>
+  //         <ul>
+  //           <li>Fast-paced gameplay with 7 distinct weapons, including a grappling hook and remote-detonated mines</li>
+  //           <li>3 game modes: Team Deathmatch, Free For All, Capture The Flag</li>
+  //           <li>3 stylized, retro-inspired maps</li>
+  //           <li>Retro PSX-style visuals using dithering shaders and minimalist lighting</li>
+  //         </ul>
+  //         <p><strong>My contributions included:</strong></p>
+  //         <ul>
+  //           <li>Helped with the Design and implementation of all user interface components (menus, HUD, status elements)</li>
+  //           <li>Ensuring UI responsiveness and styling to match the PSX aesthetic</li>
+  //         </ul>
+  //         <p><strong>Tech stack:</strong> Unreal Engine 5, Blueprints, custom UI widgets, multiplayer networking.</p>
+  //         <p>
+  //           🔒 This project is part of a university collaboration and is stored in a <strong>private repository</strong>,
+  //           so the source code is not publicly accessible.
+  //         </p>
+  //       </>
+  //     )
+  //   }
+  // },
   {
     id: 11,
     slug: "in-the-shackles-of-suffocation",
