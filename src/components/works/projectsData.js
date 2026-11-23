@@ -2,7 +2,7 @@
 import React from "react";
 
 export const projects = [
-    {
+  {
     id: 1,
     slug: "virtuart",
     title: "VirtuArt (Master's Thesis)",
@@ -15,12 +15,12 @@ export const projects = [
           <p>
             <strong>VirtuArt: Exploring Art Appreciation Through Embodied Difficulty and Physical Friction in Virtual Reality</strong> is my Master's thesis project at FH Upper Austria. Rather than smoothing strokes like commercial VR art tools, it restores fine motor effort, physical friction, and irreversibility to examine how embodied resistance shapes viewer judgment of minimalist painting.
           </p>
-          <p><strong>System Architecture & Friction Mechanics:</strong></p>
+          <p><strong>System Architecture &amp; Friction Mechanics:</strong></p>
           <ul>
             <li><strong>GPU Camera-Capture Pipeline:</strong> A GPU-driven orthographic RenderTexture camera pipeline in Unity (URP) for Meta Quest 3 that records natural hand tremor directly onto the virtual canvas without stabilization or geometric snapping, benchmarked against a secondary CPU raycast-based prototype.</li>
-            <li><strong>Tactile & Physical Constraints:</strong> Combines continuous controller haptic pulses upon surface contact, proximity-dependent brush line weight, trigger-pressure-controlled paint opacity, a sustained-grip requirement, and the complete absence of undo.</li>
+            <li><strong>Tactile &amp; Physical Constraints:</strong> Combines continuous controller haptic pulses upon surface contact, proximity-dependent brush line weight, trigger-pressure-controlled paint opacity, a sustained-grip requirement, and the complete absence of undo.</li>
             <li><strong>Two-Stage Empirical Evaluation:</strong> Conducted a formative expert evaluation (N=4 across oil painting, digital art, graphics programming, and HCI; 3 of 4 preferred the GPU architecture, mean 3.93 vs. 3.50) followed by an exploratory 2×2 summative user study (N=20, painting experience × VR familiarity).</li>
-            <li><strong>Key Findings:</strong> Non-painters reported a substantially larger upward shift in perceived physical and cognitive effort than trained painters (exploratory Mann-Whitney U, p &lt; 0.001), and 15 of 20 participants reported changed appreciation of minimalist painting (none disagreed). Haptic realism scored lowest across usability dimensions (mean 3.75/5), highlighting the limits of vibrotactile feedback and motivating physical, deformable tactile interfaces.</li>
+            <li><strong>Key Findings:</strong> In an exploratory analysis (with no separate control condition), non-painters reported a larger upward shift in perceived physical and cognitive effort than trained painters (Mann-Whitney U, p &lt; 0.001), and 15 of 20 participants reported changed appreciation of minimalist painting (none disagreed). Haptic realism scored lowest across usability dimensions (mean 3.75/5), highlighting the limits of vibrotactile feedback and motivating physical, deformable tactile interfaces.</li>
           </ul>
           <p>
             <strong>Tech stack:</strong> Unity (URP), Meta Quest 3, XR Interaction Toolkit, C#, Orthographic RenderTexture / Shader Pipeline, Blender, Empirical User Study &amp; Non-Parametric Statistics.
@@ -29,7 +29,7 @@ export const projects = [
             🎓 Master's Thesis at FH Upper Austria (Defense: early December 2026). Manuscript in preparation.
           </p>
           <hr style={{ borderColor: 'rgba(255,255,255,0.1)', margin: '1.2rem 0' }} />
-          <p><strong>Open-Source Repositories & Prototypes:</strong></p>
+          <p><strong>Open-Source Repositories &amp; Prototypes:</strong></p>
           <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
             <li style={{ marginBottom: '12px' }}>
               🔗 <a href="https://github.com/Atousa98/VR_Painting" target="_blank" rel="noopener noreferrer" style={{ color: '#ec704c', textDecoration: 'none', fontWeight: 600 }}>VirtuArt: Final GPU RenderTexture Prototype (GitHub)</a>
@@ -113,10 +113,10 @@ export const projects = [
           <p>
             <strong>Smart Plants</strong> is a pervasive computing and IoT monitoring ecosystem engineered by a team of five. The project connects physical plant environments to the cloud, combining automated sensor telemetry, closed-loop environmental actuators, and subjective human observations into a unified plant care pipeline.
           </p>
-          <p><strong>System Architecture & Workflow:</strong></p>
+          <p><strong>System Architecture &amp; Workflow:</strong></p>
           <ul>
             <li>
-              <strong>Sensing & Edge Computing:</strong> Environmental data (soil moisture, ambient light via LDR voltage divider, temperature, and relative humidity via DHT11) are continuously gathered by an ESP32 microcontroller and published securely over MQTT (HiveMQ Cloud).
+              <strong>Sensing &amp; Edge Computing:</strong> Environmental data (soil moisture, ambient light via LDR voltage divider, temperature, and relative humidity via DHT11) are continuously gathered by an ESP32 microcontroller and published securely over MQTT (HiveMQ Cloud).
             </li>
             <li>
               <strong>Closed-Loop Light Actuation:</strong> A Raspberry Pi 4 edge hub runs a custom Python MQTT bridge and Zigbee2MQTT service to control smart lighting (IKEA TRÅDFRI via Sonoff Zigbee 3.0), automatically toggling supplemental grow light when ambient levels drop below calibrated thresholds.
@@ -144,7 +144,7 @@ export const projects = [
       )
     }
   },
-    {
+  {
     id: 4,
     slug: "tangible-optical-holograms",
     title: "Tangible Optical Holograms: Pepper's Ghost & Spatial MR Interfaces",
@@ -166,7 +166,7 @@ export const projects = [
             <strong>Tangible Optical Holograms</strong> is an exploratory spatial computing experiment investigating how analog optical phenomena can merge with digital graphics to project floating, volumetric visuals into physical space without requiring a VR/MR headset.
           </p>
 
-          <p><strong>The Core Concept & Optical Mechanism:</strong></p>
+          <p><strong>The Core Concept &amp; Optical Mechanism:</strong></p>
           <p>
             Using a handcrafted transparent pyramid combiner based on the classic <em>Pepper's Ghost</em> illusion, the prototype reflects multi-perspective 2D screen projections into a central 3D optical illusion. By projecting four synchronized views (Front, Back, Left, Right) over high-contrast black backgrounds, the light reflects off 45-degree angled transparent planes, creating the perception of a free-floating volumetric entity.
           </p>
@@ -192,31 +192,31 @@ export const projects = [
             </span>
           </div> */}
 
-          <p><strong>Technical Setup & Pipeline:</strong></p>
+          <p><strong>Technical Setup &amp; Pipeline:</strong></p>
           <ul>
             <li>
-              <strong>Physical Fabrication:</strong> Assembled a lightweight transparent prism combiner calibrated at precise 45-degree reflection angles to maximize internal refraction and minimize secondary ghosting.
+              <strong>Physical Fabrication:</strong> Assembled a lightweight transparent pyramid combiner with 45-degree angled faces to reflect the four-view screen projection into a central floating illusion.
             </li>
             <li>
-              <strong>Multi-Perspective Projection:</strong> Structured a synchronized 4-camera layout reflecting isometric angles around a shared center, maintaining rotational parallax as the observer moves around the display.
+              <strong>Multi-Perspective Projection:</strong> Structured a synchronized 4-camera isometric layout around a shared center, allowing 360-degree viewing around the display without a headset.
             </li>
             <li>
-              <strong>Spatial MR Convergence (Ongoing Work):</strong> Designing a real-time Unity 6 pipeline using Render Textures to feed dynamic, interactable 3D assets into the optical display, exploring shared physical interactions and hand tracking integrations.
+              <strong>Spatial MR Convergence (Ongoing Work):</strong> Designing a real-time Unity 6 pipeline using Render Textures to feed dynamic, interactable 3D assets into the optical display.
             </li>
           </ul>
 
           <p>
-            <strong>Methods & Tools:</strong> Optical Prototyping (Pepper's Ghost), Physical Fabrication, Unity 6, Real-time Volumetric Simulation, Spatial Computing, Human-Computer Interaction (HCI).
+            <strong>Methods &amp; Tools:</strong> Optical Prototyping (Pepper's Ghost), Physical Fabrication, Unity 6, Real-time Volumetric Simulation, Spatial Computing, Human-Computer Interaction (HCI).
           </p>
 
           <p>
-            🔒 <em>Ongoing hands-on R&D into tangible displays, optical illusions, and headset-free spatial computing interfaces.</em>
+            🔒 <em>Ongoing hands-on R&amp;D into tangible displays, optical illusions, and headset-free spatial computing interfaces.</em>
           </p>
         </>
       )
     }
   },
-    {
+  {
     id: 5,
     slug: "historical-portals",
     title: "Historical Portals: Spatial Memory & Material Archives",
@@ -269,7 +269,7 @@ export const projects = [
             </span>
           </div>
 
-          <p><strong>Technical Architecture & Rendering Pipeline:</strong></p>
+          <p><strong>Technical Architecture &amp; Rendering Pipeline:</strong></p>
           <ul>
             <li>
               <strong>Custom URP Stencil Shader Pipeline:</strong> Engineered a lightweight HLSL Stencil Shader (Geometry Queue) coupled with Universal Render Pipeline (URP) Render Objects features, to reveal the 360° historical photo only inside the opening of the frame.
@@ -278,7 +278,7 @@ export const projects = [
               <strong>High-Fidelity Equirectangular Projection:</strong> Mapped an 8K panorama inside an inverted sphere, rotated to match the real-world direction of Linz Hauptplatz.
             </li>
             <li>
-              <strong>Meta Quest Passthrough Integration:</strong> Implemented low-latency Passthrough underlay layers via Meta XR Core SDK and OpenXR, ensuring seamless occlusion and spatial alignment between real physical architecture and virtual archival geometry.
+              <strong>Meta Quest Passthrough Integration:</strong> Configured live Passthrough underlay via Meta XR Core SDK and OpenXR, keeping the portal anchored to the virtual frame so the archival 360° view appears strictly inside its opening against the real-world backdrop.
             </li>
             <li>
               <strong>Spatial Anchoring:</strong> Pinned the frame in place with spatial anchors so it stays locked to the ground as the user walks around.
@@ -307,11 +307,11 @@ export const projects = [
           </div>
 
           <p>
-            <strong>Core Methodologies & Technologies:</strong> Meta XR Core SDK (v60+), Unity 6 (URP), HLSL / Stencil Buffer Masking, Spatial Computing & Passthrough Underlay, Equirectangular 360 Mapping, Field Archiving, Cultural Heritage HCI.
+            <strong>Core Methodologies &amp; Technologies:</strong> Meta XR Core SDK (v60+), Unity 6 (URP), HLSL / Stencil Buffer Masking, Spatial Computing &amp; Passthrough Underlay, Equirectangular 360 Mapping, Field Archiving, Cultural Heritage HCI.
           </p>
 
           <p>
-            🔒 <em>Ongoing transdisciplinary R&D exploring affective urban memory, digital twins, and sensory spatial thresholds.</em>
+            🔒 <em>Ongoing transdisciplinary R&amp;D exploring affective urban memory, digital twins, and sensory spatial thresholds.</em>
           </p>
           <p>🔗 <a href="https://github.com/Atousa98/Historical_Portals" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
 
@@ -319,46 +319,46 @@ export const projects = [
       )
     }
   },
-    {
+  {
     id: 6,
     slug: "ar-flight-controller",
-    title: "AR Dragon: Mobile Tracking & Physical 3D Artifact Prototype",
+    title: "AR Dragon: Mobile Tracking & 3D-Printed Reference Model",
     showVideoInDetail: true,
-    description: `A mobile Augmented Reality system built with Unity AR Foundation and ARCore featuring dynamic 3D asset spawning and math-driven 6DoF flight physics—currently being extended from 2D image targets to physical 3D object tracking using a custom FDM 3D-printed dragon model.`,
+    description: `A mobile Augmented Reality prototype built with Unity AR Foundation and ARCore featuring 2D image-target tracking, dynamic 3D asset spawning, and joystick-driven flight control, accompanied by an FDM 3D-printed dragon model prepared as a reference object for planned 3D object-tracking experiments.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v9/587867536-05287f23-6b51-4c53-98d2-12ba2a796a40.mp4",
     modal: {
       content: (
         <>
           <p>
-            An interactive mobile Augmented Reality (AR) application built in Unity AR Foundation exploring real-time physical-to-digital anchoring, dynamic prefab instantiation, and kinematic flight control. Originally developed with 2D planar image targets, the project is being extended toward <strong>physical 3D object tracking</strong> using an FDM 3D-printed dragon target.
+            An interactive mobile Augmented Reality (AR) prototype built in Unity AR Foundation exploring 2D planar image tracking, dynamic prefab instantiation, and kinematic flight control. Alongside the working 2D image-tracking build, an FDM 3D-printed dragon model was fabricated as a physical reference object for planned 3D object-tracking experiments.
           </p>
           <p><strong>Core Architectural Features:</strong></p>
           <ul>
             <li>
-              <strong>AR Tracking Pipeline (2D Image to 3D Object Extension):</strong> Built on Unity’s <code>AR Tracked Image Manager</code> and serialized Reference Image Libraries to anchor digital twins to physical markers, now expanding toward 3D object recognition anchored to a fabricated physical dragon artifact.
+              <strong>AR Image Target Tracking:</strong> Built on Unity’s <code>AR Tracked Image Manager</code> and serialized Reference Image Libraries to anchor animated 3D assets to physical 2D markers.
             </li>
             <li>
-              <strong>Physical Fabrication (FDM 3D Printing):</strong> Sliced and FDM 3D-printed a physical dragon model to serve as a tangible tracking reference and test physical-digital spatial registration beyond flat markers.
+              <strong>Physical Fabrication (FDM 3D Printing):</strong> Sliced and FDM 3D-printed a physical dragon model as a tangible reference object for planned 3D object-tracking experiments beyond flat markers.
             </li>
             <li>
-              <strong>Dynamic Spawning & Offset Logic:</strong> Developed a responsive event listener (<code>trackedImagesChanged</code>) in C# to dynamically instantiate and orient rigged animated assets upon detection.
+              <strong>Dynamic Spawning &amp; Offset Logic:</strong> Developed an event listener (<code>trackedImagesChanged</code>) in C# to dynamically instantiate and orient rigged animated assets upon marker detection.
             </li>
             <li>
-              <strong>Math-Driven Flight Mechanics:</strong> Integrated on-screen UI joystick telemetry mapped to 3D world space. Real-time directional rotation is computed using <code>Mathf.Atan2(xVal, yVal) * Mathf.Rad2Deg</code> with non-gravitational kinematic physics (Rigidbody velocity control).
+              <strong>Joystick-Driven Flight Control:</strong> Mapped on-screen UI joystick input to 3D world-space heading using <code>Mathf.Atan2(xVal, yVal) * Mathf.Rad2Deg</code> with non-gravitational Rigidbody velocity control.
             </li>
             <li>
-              <strong>Mobile Performance & Pipeline Optimization:</strong> Stripped Vulkan dependencies in favor of OpenGLES3, compiled with 64-bit IL2CPP architecture, and balanced render hierarchies for optimal mobile thermal and frame rates.
+              <strong>Android Build Configuration:</strong> Configured the Android deployment pipeline with OpenGLES3 and 64-bit IL2CPP for reliable mobile execution.
             </li>
           </ul>
 
           {/* --- Section: Physical FDM 3D-Printed Dragon Target --- */}
           <div style={{ margin: "20px 0", textAlign: "center" }}>
             <p style={{ fontWeight: 600, marginBottom: "8px" }}>
-              Physical 3D-Printed Artifact (FDM Fabrication for 3D Object Tracking)
+              FDM 3D-Printed Reference Model (Prepared for 3D Object-Tracking Experiments)
             </p>
             <img
               src="https://github.com/atousasque/My_Portfolio/releases/download/1/photo_2024-09-03_14-37-39.jpg"
-              alt="FDM 3D-Printed Dragon Physical Target"
+              alt="FDM 3D-Printed Dragon Reference Model"
               style={{
                 width: "100%",
                 maxWidth: "520px",
@@ -368,12 +368,12 @@ export const projects = [
               }}
             />
             <span style={{ fontSize: "0.85rem", color: "#aaa", display: "block", marginTop: "6px" }}>
-              FDM 3D-printed dragon model fabricated as the physical reference target for transitioning from 2D image tracking to 3D object tracking.
+              FDM 3D-printed dragon model fabricated as a physical reference object for planned 3D object-tracking experiments.
             </span>
           </div>
 
           <p>
-            <strong>Tech Stack:</strong> Unity (C#), AR Foundation, ARCore XR Plugin, FDM 3D Printing, IL2CPP Architecture, Mobile UI Systems.
+            <strong>Tech Stack:</strong> Unity (C#), AR Foundation, ARCore XR Plugin, FDM 3D Printing, Android (IL2CPP / OpenGLES3).
           </p>
           <p>🔗 <a href="https://github.com/Atousa98/AR_Dragon" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
         </>
@@ -407,12 +407,12 @@ export const projects = [
       )
     }
   },
-    {
-    id: 7,
+  {
+    id: 8,
     slug: "rewild",
     title: "ReWild - Mixed Reality Ecosystem",
     showVideoInDetail: true,
-    description: `An interactive MR experience for the Ars Electronica Festival, allowing users to grow and nurture a digital ecosystem into physical space.`,
+    description: `An interactive MR ecosystem prototype conceived for the Ars Electronica Festival context, allowing users to grow and nurture digital flora and fauna in physical space.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v14/video_2026-10-15_07-14-20.mp4",
     modal: {
       content: (
@@ -441,9 +441,8 @@ export const projects = [
       )
     }
   },
-
   {
-    id: 8,
+    id: 9,
     slug: "longdrive",
     title: "LongDrive",
     description: `LongDrive is a semi-autonomous driving simulation built in Unity, based on Austria's real highway network. I co-developed the game systems and created the terrain and environment.`,
@@ -477,7 +476,7 @@ export const projects = [
     }
   },
   {
-    id: 9,
+    id: 10,
     slug: "longdrive-extended",
     title: "LongDrive: Extended",
     description: `LongDrive: Extended is the finalized version of our semi-autonomous highway driving simulator. It introduces infotainment-based in-car tasks and G29 steering wheel support.`,
@@ -511,11 +510,8 @@ export const projects = [
       )
     }
   },
-
-
-
   {
-    id: 10,
+    id: 11,
     slug: "fishing-simulator",
     title: "Fishing Simulator",
     showVideoInDetail: true,
@@ -578,7 +574,7 @@ export const projects = [
   //   }
   // },
   {
-    id: 11,
+    id: 12,
     slug: "in-the-shackles-of-suffocation",
     title: "In the Shackles of Suffocation",
     description: `A psychedelic, biomorphic illustration mapping the psychological impact of digital overstimulation and surveillance—core analog foundation and visual matrix for the VR installation "Canvas of Confinement".`,
@@ -598,7 +594,7 @@ export const projects = [
           <p>
             <strong>In the Shackles of Suffocation</strong> serves as the complete analog blueprint and visual infrastructure for the interactive VR installation, <em>Canvas of Confinement</em>. This piece maps the physical and psychological impact of severe data overstimulation, digital surveillance, and the modern commodification of human identity.
           </p>
-          <p><strong>Artistic & Conceptual Highlights:</strong></p>
+          <p><strong>Artistic &amp; Conceptual Highlights:</strong></p>
           <ul>
             <li>Utilizes the <em>Horror Vacui</em> (fear of empty space) technique to visually represent perfectionism, chronic mental anxiety, and the suffocating flood of high-speed digital information today.</li>
             <li>Features an overwhelming matrix of interwoven biomorphic textures and multiplying eyes, symbolizing the invasive, constant gaze of surveillance capitalism and modern economic control.</li>
@@ -613,7 +609,7 @@ export const projects = [
     }
   },
   {
-    id: 12,
+    id: 13,
     slug: "bloody-winter",
     title: "Bloody Winter",
     description: `A contemporary impressionist oil painting capturing the heavy, suffocating atmosphere of collective trauma during the "Woman, Life, Freedom" movement in Iran.`,
@@ -633,7 +629,7 @@ export const projects = [
           <p>
             <strong>Bloody Winter</strong> is a visceral translation of collective trauma, painted during the height of the "Woman, Life, Freedom" protests in Iran. The piece intentionally subverts the traditional tranquility and purity of a snow-covered winter landscape into a political and emotional metaphor.
           </p>
-          <p><strong>Artistic & Conceptual Highlights:</strong></p>
+          <p><strong>Artistic &amp; Conceptual Highlights:</strong></p>
           <ul>
             <li>Employs a contemporary impressionist style with heavy, textured impasto brushstrokes.</li>
             <li>Contrasts the stark, freezing white of the trees with a deep, bleeding crimson sky and river.</li>
@@ -646,7 +642,7 @@ export const projects = [
     }
   },
   {
-    id: 13,
+    id: 14,
     slug: "the-last-offering",
     title: "The Last Offering",
     description: `A socio-political gothic allegory painted after the January 2026 uprisings in Iran, depicting the cold commodification of human life in geopolitical bargains where human lives weigh less than oil.`,
@@ -666,7 +662,7 @@ export const projects = [
           <p>
             <strong>The Last Offering</strong> is a visceral socio-political allegory created in the aftermath of the January 2026 (Dey 1404) uprisings in Iran. It confronts the grotesque reality of global geopolitical deals, where human lives and collective struggles are bartered like plague-ridden commodities beneath the shadow of oil diplomacy.
           </p>
-          <p><strong>Artistic & Conceptual Highlights:</strong></p>
+          <p><strong>Artistic &amp; Conceptual Highlights:</strong></p>
           <ul>
             <li>
               <strong>Plague Doctors of Geopolitics:</strong> The central grotesque figures bear avian, plague-doctor silhouettes—symbolizing international political brokers trading silently above the suffering of ordinary people.
@@ -678,7 +674,7 @@ export const projects = [
               <strong>The Unmarked Grave:</strong> An anonymous tombstone stands quietly in the foreground beneath a petrified, dead landscape, honoring the forgotten lives sacrificed in backroom political bargains.
             </li>
             <li>
-              <strong>Texture & Tension:</strong> Combines dense, suffocating cross-hatching and decaying organic textures with dramatic violet and neon contrasts to capture the chilling indifference of modern power structures.
+              <strong>Texture &amp; Tension:</strong> Combines dense, suffocating cross-hatching and decaying organic textures with dramatic violet and neon contrasts to capture the chilling indifference of modern power structures.
             </li>
           </ul>
           <p>
