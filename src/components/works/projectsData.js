@@ -34,40 +34,37 @@ export const projects = [
     slug: "virtuart",
     title: "VirtuArt (Master's Thesis)",
     showVideoInDetail: true,
-    description: `A conceptual VR prototype that simulates the physical constraints, friction, and tactile resistance of traditional oil painting within a minimalist virtual canvas.`,
+    description: `My Master's thesis VR prototype (Unity URP, Meta Quest 3) investigating whether restoring embodied difficulty, hand tremor, and tactile friction alters viewer appreciation of minimalist painting.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.10.0/Atousa_Garousian.mp4",
     modal: {
       content: (
         <>
           <p>
-            <strong>VirtuArt</strong> is my Master's Thesis project, exploring the intersection of classical physical materiality and modern interactive technologies. It translates the sensory perception, tactile friction, and bodily constraints of traditional oil painting into the boundless realm of virtual reality.
+            <strong>VirtuArt: Exploring Art Appreciation Through Embodied Difficulty and Physical Friction in Virtual Reality</strong> is my Master's thesis project at FH Upper Austria. Rather than smoothing strokes like commercial VR art tools, it restores fine motor effort, physical friction, and irreversibility to examine how embodied resistance shapes viewer judgment of minimalist painting.
           </p>
-          <p><strong>Key features and focus areas include:</strong></p>
+          <p><strong>System Architecture & Friction Mechanics:</strong></p>
           <ul>
-            <li>Simulating the tactile resistance and physical friction of brushstrokes on a virtual canvas.</li>
-            <li>Integrating modern impressionism and heavy impasto techniques into an immersive VR environment.</li>
-            <li>Designing a minimalist virtual space that emphasizes the physical relationship between the artist and the medium.</li>
-            <li>Bridging the gap between physical materiality and digital expression through sensory-rich interaction mechanics.</li>
+            <li><strong>GPU Camera-Capture Pipeline:</strong> A GPU-driven orthographic RenderTexture camera pipeline in Unity (URP) for Meta Quest 3 that records natural hand tremor directly onto the virtual canvas without stabilization or geometric snapping, benchmarked against a secondary CPU raycast-based prototype.</li>
+            <li><strong>Tactile & Physical Constraints:</strong> Combines continuous controller haptic pulses upon surface contact, proximity-dependent brush line weight, trigger-pressure-controlled paint opacity, a sustained-grip requirement, and the complete absence of undo.</li>
+            <li><strong>Two-Stage Empirical Evaluation:</strong> Conducted a formative expert evaluation (N=4 across oil painting, digital art, graphics programming, and HCI; 3 of 4 preferred the GPU architecture, mean 3.93 vs. 3.50) followed by an exploratory 2×2 summative user study (N=20, painting experience × VR familiarity).</li>
+            <li><strong>Key Findings:</strong> Non-painters reported a substantially larger upward shift in perceived physical and cognitive effort than trained painters (exploratory Mann-Whitney U, p &lt; 0.001), and 15 of 20 participants reported changed appreciation of minimalist painting (none disagreed). Haptic realism scored lowest across usability dimensions (mean 3.75/5), highlighting the limits of vibrotactile feedback and motivating physical, deformable tactile interfaces.</li>
           </ul>
           <p>
-            As a transdisciplinary digital artist, this project represents my core philosophy: rethinking digital experiences by embedding human senses and artistic research into XR development.
+            <strong>Tech stack:</strong> Unity (URP), Meta Quest 3, XR Interaction Toolkit, C#, Orthographic RenderTexture / Shader Pipeline, Blender, Empirical User Study &amp; Non-Parametric Statistics.
           </p>
           <p>
-            <strong>Tech stack:</strong> Unity, XR Interaction Toolkit, C#, Shader Graph, 3D Modeling (Blender).
-          </p>
-          <p>
-            🎓 Master's Thesis project at FH Upper Austria (Defense: December 2026). Paper in preparation for submission to IEEE VR.
+            🎓 Master's Thesis at FH Upper Austria (Defense: early December 2026). Manuscript in preparation.
           </p>
           <hr style={{ borderColor: 'rgba(255,255,255,0.1)', margin: '1.2rem 0' }} />
           <p><strong>Open-Source Repositories & Prototypes:</strong></p>
           <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
             <li style={{ marginBottom: '12px' }}>
-              🔗 <a href="https://github.com/Atousa98/VR_Painting" target="_blank" rel="noopener noreferrer" style={{ color: '#ec704c', textDecoration: 'none', fontWeight: 600 }}>VirtuArt: Final RenderTexture Prototype (GitHub)</a>
-              <span style={{ display: 'block', fontSize: '0.85rem', opacity: 0.8, marginTop: '2px' }}>The final, selected architecture utilizing dynamic RenderTexture UV mapping to simulate continuous brush friction, tactile resistance, and material layering.</span>
+              🔗 <a href="https://github.com/Atousa98/VR_Painting" target="_blank" rel="noopener noreferrer" style={{ color: '#ec704c', textDecoration: 'none', fontWeight: 600 }}>VirtuArt: Final GPU RenderTexture Prototype (GitHub)</a>
+              <span style={{ display: 'block', fontSize: '0.85rem', opacity: 0.8, marginTop: '2px' }}>The selected architecture using a GPU-driven orthographic camera-capture pipeline to record natural hand tremor, proximity-dependent stroke weight, continuous surface haptics, and irreversible mark-making.</span>
             </li>
             <li style={{ marginTop: '10px' }}>
-              🔗 <a href="https://github.com/Atousa98/VR_Raycast" target="_blank" rel="noopener noreferrer" style={{ color: '#ec704c', textDecoration: 'none', fontWeight: 600 }}>VirtuArt: Raycast Drawing Prototype (GitHub)</a>
-              <span style={{ display: 'block', fontSize: '0.85rem', opacity: 0.8, marginTop: '2px' }}>Initial exploratory prototype evaluating collision-based Raycasting mechanics for spatial 2D canvas interaction.</span>
+              🔗 <a href="https://github.com/Atousa98/VR_Raycast" target="_blank" rel="noopener noreferrer" style={{ color: '#ec704c', textDecoration: 'none', fontWeight: 600 }}>VirtuArt: CPU Raycast Benchmark Prototype (GitHub)</a>
+              <span style={{ display: 'block', fontSize: '0.85rem', opacity: 0.8, marginTop: '2px' }}>Secondary CPU raycast-based prototype built to benchmark architectural responsiveness and tactile continuity during formative expert evaluation.</span>
             </li>
           </ul>
         </>
@@ -281,7 +278,7 @@ export const projects = [
     }
   },
 
-    {
+  {
     id: 6,
     slug: "tangible-optical-holograms",
     title: "Tangible Optical Holograms: Pepper's Ghost & Spatial MR Interfaces",
@@ -354,7 +351,7 @@ export const projects = [
     }
   },
 
-    {
+  {
     id: 7,
     slug: "smart-plants",
     title: "Smart Plants: Pervasive IoT Ecosystem",
@@ -438,20 +435,23 @@ export const projects = [
   {
     id: 9,
     slug: "ar-flight-controller",
-    title: "AR Image Tracking: Interactive Flight Controller",
+    title: "AR Dragon: Mobile Tracking & Physical 3D Artifact Prototype",
     showVideoInDetail: true,
-    description: `A mobile Augmented Reality system built with Unity AR Foundation and ARCore, featuring real-time 2D image target recognition, dynamic 3D asset spawning, and math-driven 6DoF flight physics.`,
+    description: `A mobile Augmented Reality system built with Unity AR Foundation and ARCore featuring dynamic 3D asset spawning and math-driven 6DoF flight physics—currently being extended from 2D image targets to physical 3D object tracking using a custom FDM 3D-printed dragon model.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v9/587867536-05287f23-6b51-4c53-98d2-12ba2a796a40.mp4",
     modal: {
       content: (
         <>
           <p>
-            An interactive mobile Augmented Reality (AR) application exploring 2D planar tracking, dynamic prefab instantiation, and real-time physical control within spatial computing environments.
+            An interactive mobile Augmented Reality (AR) application built in Unity AR Foundation exploring real-time physical-to-digital anchoring, dynamic prefab instantiation, and kinematic flight control. Originally developed with 2D planar image targets, the project is being extended toward <strong>physical 3D object tracking</strong> using an FDM 3D-printed dragon target.
           </p>
           <p><strong>Core Architectural Features:</strong></p>
           <ul>
             <li>
-              <strong>AR Image Target Tracking:</strong> Implemented using Unity’s <code>AR Tracked Image Manager</code> and serialized Reference Image Libraries, seamlessly anchoring digital twins to real-world physical markers.
+              <strong>AR Tracking Pipeline (2D Image to 3D Object Extension):</strong> Built on Unity’s <code>AR Tracked Image Manager</code> and serialized Reference Image Libraries to anchor digital twins to physical markers, now expanding toward 3D object recognition anchored to a fabricated physical dragon artifact.
+            </li>
+            <li>
+              <strong>Physical Fabrication (FDM 3D Printing):</strong> Sliced and FDM 3D-printed a physical dragon model to serve as a tangible tracking reference and test physical-digital spatial registration beyond flat markers.
             </li>
             <li>
               <strong>Dynamic Spawning & Offset Logic:</strong> Developed a responsive event listener (<code>trackedImagesChanged</code>) in C# to dynamically instantiate and orient rigged animated assets upon detection.
@@ -463,8 +463,30 @@ export const projects = [
               <strong>Mobile Performance & Pipeline Optimization:</strong> Stripped Vulkan dependencies in favor of OpenGLES3, compiled with 64-bit IL2CPP architecture, and balanced render hierarchies for optimal mobile thermal and frame rates.
             </li>
           </ul>
+
+          {/* --- Section: Physical FDM 3D-Printed Dragon Target --- */}
+          <div style={{ margin: "20px 0", textAlign: "center" }}>
+            <p style={{ fontWeight: 600, marginBottom: "8px" }}>
+              Physical 3D-Printed Artifact (FDM Fabrication for 3D Object Tracking)
+            </p>
+            <img
+              src="https://github.com/atousasque/My_Portfolio/releases/download/1/photo_2024-09-03_14-37-39.jpg"
+              alt="FDM 3D-Printed Dragon Physical Target"
+              style={{
+                width: "100%",
+                maxWidth: "520px",
+                borderRadius: "10px",
+                border: "1px solid rgba(255, 255, 255, 0.15)",
+                boxShadow: "0 6px 20px rgba(0,0,0,0.3)"
+              }}
+            />
+            <span style={{ fontSize: "0.85rem", color: "#aaa", display: "block", marginTop: "6px" }}>
+              FDM 3D-printed dragon model fabricated as the physical reference target for transitioning from 2D image tracking to 3D object tracking.
+            </span>
+          </div>
+
           <p>
-            <strong>Tech Stack:</strong> Unity (C#), AR Foundation, ARCore XR Plugin, IL2CPP Architecture, Mobile UI Systems.
+            <strong>Tech Stack:</strong> Unity (C#), AR Foundation, ARCore XR Plugin, FDM 3D Printing, IL2CPP Architecture, Mobile UI Systems.
           </p>
           <p>🔗 <a href="https://github.com/Atousa98/AR_Dragon" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
         </>
@@ -526,7 +548,7 @@ export const projects = [
           <p>
             <strong>In the Shackles of Suffocation</strong> serves as the complete analog blueprint and visual infrastructure for the interactive VR installation, <em>Canvas of Confinement</em>. This piece maps the physical and psychological impact of severe data overstimulation, digital surveillance, and the modern commodification of human identity.
           </p>
-          <p><strong>Artistic & Conceptual Highlights for MFRU:</strong></p>
+          <p><strong>Artistic & Conceptual Highlights:</strong></p>
           <ul>
             <li>Utilizes the <em>Horror Vacui</em> (fear of empty space) technique to visually represent perfectionism, chronic mental anxiety, and the suffocating flood of high-speed digital information today.</li>
             <li>Features an overwhelming matrix of interwoven biomorphic textures and multiplying eyes, symbolizing the invasive, constant gaze of surveillance capitalism and modern economic control.</li>
