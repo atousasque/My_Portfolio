@@ -163,12 +163,12 @@ export const projects = [
       content: (
         <>
           <p>
-            <strong>Tangible Optical Holograms</strong> is an exploratory spatial computing experiment investigating how analog optical phenomena can merge with digital graphics to project floating, volumetric visuals into physical space without requiring a VR/MR headset.
+            <strong>Tangible Optical Holograms</strong> is an exploratory spatial computing experiment investigating how analog optical phenomena can merge with digital graphics to project floating, 3D-looking visuals into physical space without requiring a VR/MR headset.
           </p>
 
           <p><strong>The Core Concept &amp; Optical Mechanism:</strong></p>
           <p>
-            Using a handcrafted transparent pyramid combiner based on the classic <em>Pepper's Ghost</em> illusion, the prototype reflects multi-perspective 2D screen projections into a central 3D optical illusion. By projecting four synchronized views (Front, Back, Left, Right) over high-contrast black backgrounds, the light reflects off 45-degree angled transparent planes, creating the perception of a free-floating volumetric entity.
+            Using a handcrafted transparent pyramid combiner based on the classic <em>Pepper's Ghost</em> illusion, the prototype reflects multi-perspective 2D screen projections into a central 3D optical illusion. By projecting four synchronized views (Front, Back, Left, Right) over high-contrast black backgrounds, the light reflects off 45-degree angled transparent planes, creating the perception of a free-floating 3D-looking object.
           </p>
 
           {/* --- Video / Media Showcase ---
@@ -198,7 +198,7 @@ export const projects = [
               <strong>Physical Fabrication:</strong> Assembled a lightweight transparent pyramid combiner with 45-degree angled faces to reflect the four-view screen projection into a central floating illusion.
             </li>
             <li>
-              <strong>Multi-Perspective Projection:</strong> Structured a synchronized 4-camera isometric layout around a shared center, allowing 360-degree viewing around the display without a headset.
+              <strong>Multi-Perspective Projection:</strong> Structured a synchronized four-view layout (front, back, left, right) around a shared center, allowing the object to be viewed from all four sides without a headset.
             </li>
             <li>
               <strong>Spatial MR Convergence (Ongoing Work):</strong> Designing a real-time Unity 6 pipeline using Render Textures to feed dynamic, interactable 3D assets into the optical display.
@@ -206,7 +206,7 @@ export const projects = [
           </ul>
 
           <p>
-            <strong>Methods &amp; Tools:</strong> Optical Prototyping (Pepper's Ghost), Physical Fabrication, Unity 6, Real-time Volumetric Simulation, Spatial Computing, Human-Computer Interaction (HCI).
+            <strong>Methods &amp; Tools:</strong> Optical Prototyping (Pepper's Ghost), Physical Fabrication, Unity 6, Real-time Multi-View Rendering, Spatial Computing, Human-Computer Interaction (HCI).
           </p>
 
           <p>
@@ -311,7 +311,7 @@ export const projects = [
           </p>
 
           <p>
-            🔒 <em>Ongoing transdisciplinary R&amp;D exploring affective urban memory, digital twins, and sensory spatial thresholds.</em>
+            🔒 <em>Ongoing transdisciplinary R&amp;D exploring affective urban memory and sensory spatial thresholds.</em>
           </p>
           <p>🔗 <a href="https://github.com/Atousa98/Historical_Portals" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
 
@@ -426,7 +426,7 @@ export const projects = [
             <li>Interactive MR mechanics allowing users to plant seeds and physically simulate watering them</li>
             <li>Dynamic environmental growth, evolving from bare ground into lush meadows or dense jungles based on user choices</li>
             <li>An ecosystem simulation where various animals dynamically populate the environments as they grow</li>
-            <li>Seamless blending of digital flora and fauna with the real-world exhibition space</li>
+            <li>Blending of digital flora and fauna with the surrounding physical space</li>
           </ul>
           <p>
             As the Unreal Engine Developer, my core contributions focused on co-engineering the gameplay loop and interaction mechanics. I helped programming the complex growth logic for the environments and managed the Mixed Reality integration to ensure a smooth user experience, while collaborating with team members who handled the 3D animation and sound design.
@@ -445,7 +445,7 @@ export const projects = [
     id: 9,
     slug: "longdrive",
     title: "LongDrive",
-    description: `LongDrive is a semi-autonomous driving simulation built in Unity, based on Austria's real highway network. I co-developed the game systems and created the terrain and environment.`,
+    description: `LongDrive is a semi-autonomous driving simulation built in Unity, based on Austria's real highway network. I created the terrain and environment and contributed to parts of the game systems.`,
     video: "https://github.com/atousasque/My_Portfolio/releases/download/v1.0.0/LongDrive.mp4",
     modal: {
       image: "https://github.com/atousasque/My_Portfolio/releases/download/v1.1.1/LongDrive.jpg",
